@@ -1,0 +1,37 @@
+smsurl=http://www.perfectsmsc.com/messageapi.asp?username=blueignite&password=madan&sender=BBuysell&mobile=
+
+xmlFileName=cities.xml
+xmlFilePath=/home/bbsadmin/countries/
+mappingFileName=mapping.xml
+mappingFilePath=/home/bbsadmin/mapping/
+countryLocation=/home/bbsadmin/countries/
+dbAddress=jdbc:mysql://192.168.1.2:3306/sb?user=mysql&password=
+typeFile=types.txt
+PRICE=N
+mail.from=archimadan@vsnl.net
+mail.server.host=smtp.vsnl.net
+mail.server.username=archimadan
+mail.server.user.password=buysell5
+db.connection.max.poolsize = 20
+db.connection.timeout = 600000
+site-add-sleep-time=60000
+add-loader-sleep-time=600000
+add-monitor-populate-number=600000
+imgsrc=/Buy-Sell/
+/basicSearch.do=R
+/createAd.do=R
+/clf.do=R
+/displayClfAds.do=R
+/rs.do=R
+/spoffer.do=R
+/ccs=R
+/specificAdsAction.do=R
+/edit_ad_for_renew.do=R
+/edit_ad_for_update.do=R
+/delete_specific_ads.do=R
+/delete_specific_ads.do=R
+/deleteSavedSearch.do=R
+/deleteSavedAlert.do=R
+/redemptionPage2.do=r
+jackrabbit.home=/Buy-Sell/jrb
+smsurl=http://www.perfectsmsc.com/messageapi.asp?username=blueignite&password=madan&sender=BBuysell&mobile=

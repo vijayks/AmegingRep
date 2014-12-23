@@ -1,0 +1,33 @@
+
+<table width="700" bgcolor="#4d9edf">
+  <tr>
+    <td><table width="698" bgcolor="#FFFFFF">
+      <tr>
+        <td> <table width="696" bgcolor="#4d9edf" style="color:#FFFFFF;">
+        <tr>
+          <td><table width="680" align="center"><tr>
+              <td width="530">Hello <strong>$fName,</strong><br /><br />
+                Thanks for posting Ad in Bharatbuysell.com.<br /><br />
+
+                Your Ad posting titled "$adTitle" is under approval process  and so in "Onhold" status. You will receive an e-mail once it is approved by  our admin team.</td>
+              <td width="152" valign="top"><img src="http://bharatbuysell.com/bbsimages/EmailLogo.gif" width="146" height="76" alt="Bharatbuysell" /></td></tr></table></td>
+            </tr>
+        <tr>
+          <td>
+          <table align="center" width="680"><tr><td><p>Note: It takes maximum 48 hrs to finish the approval process</p></td></tr></table>
+         </td>
+        </tr>
+        <tr>
+          <td>
+          <table align="center" width="680" ><tr><td height="59">Warm Regards,<br />
+              Bharatbuysell Team.<br />
+              e-mail: <a href="mailto:admin@bharatbuysell.com" style="color:#000000;text-decoration:underline;">admin@bharatbuysell.com</a></td></tr></table>
+              </td>
+          </tr>
+    </table></td>
+      </tr>
+    </table>
+     </td>
+  </tr>
+</table>
+

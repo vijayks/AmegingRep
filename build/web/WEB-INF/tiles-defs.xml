@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+
+
+    <!-- ==================================== --> <!-- ==================================== -->
+    <!-- Tiles Layouts -->
+    <!-- ==================================== --> <!-- ==================================== -->
+
+    <definition name=".tile1.mainLayout" path="/WEB-INF/layouts/tile.jsp">
+
+        <put name="title"  value="Bharatbuysell.com" />
+        <put name="body"   value="/WEB-INF/jsp/body.jsp" />
+        <put name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put name="searchBar" value="/WEB-INF/jsp/searchBar.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/menu.jsp" />
+        <put name="clock" value="/WEB-INF/jsp/clock.jsp" />
+        <put name="footer" value="/WEB-INF/jsp/footer.jsp" />
+        <put name="scrollads" value="/WEB-INF/bbsimages/scroll.jsp" />
+        <put name="recentSearches" value="/WEB-INF/jsp/recentSearches.jsp" />
+        <put name="button" value="" />
+
+        <!-- ==================================== -->
+        <!-- changed the name of footer -->
+        <!-- ===================================== -->
+    </definition>
+
+
+    <definition name=".tile2.layout" path="/WEB-INF/layouts/tile2.jsp" >
+        <put name="title"  value="Bharatbuysell.com" />
+        <put name="body"   value="/WEB-INF/jsp/body.jsp" />
+        <put name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put name="searchBar" value="/WEB-INF/jsp/searchBar.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/menu.jsp" />
+        <put name="footer" value="/WEB-INF/jsp/footer.jsp" />
+        <put name="clock" value="/WEB-INF/jsp/clock.jsp" />
+        <put name="recentSearches" value="/WEB-INF/jsp/recentSearches.jsp" />
+        <put name="button" value="" />
+    </definition>
+
+    <definition name=".tile3.layout" path="/WEB-INF/layouts/tile3.jsp" >
+        <put name="title"  value="Bharatbuysell : Dealer Ads" />
+        <put name="body"   value="/WEB-INF/jsp/dealerAds.jsp" />
+        <put name="header" value="/WEB-INF/jsp/dealerHeader.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/dealerSpecialOffer.jsp" />
+        <put name="footer" value="/WEB-INF/jsp/dealerFooter.jsp" />
+    </definition>
+
+    <definition name=".tile1.mainLayoutHome" extends=".tile5.layout" >
+        <put name="button" value="home" />
+    </definition>
+
+    <definition name=".tile5.layout" path="/WEB-INF/layouts/tile5.jsp" >
+        <put name="title"  value="Bharatbuysell.com" />
+        <put name="body"   value="/WEB-INF/jsp/body5.jsp" />
+        <put name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put name="footer" value="/WEB-INF/jsp/footer.jsp" />
+        <put name="button" value="auctions" />
+    </definition>
+
+
+
+    <definition name=".tile2.moreDetails" path="/WEB-INF/jsp/moreDetails.jsp">
+    </definition>
+    <definition name=".tile2.moreDetailsEmail" extends=".tile1.mainLayout">
+        <put name="body"   value="/WEB-INF/jsp/moreDetails.jsp" />
+    </definition>
+
+    <definition name=".tile.cuoffer" extends=".tile1.mainLayout" >
+        <put name="body" value="/WEB-INF/jsp/spoffer.jsp" />
+        <put name="button" value="currentOffers" />
+    </definition>
+
+    <definition name=".tile.spoffer" extends=".tile1.mainLayout" >
+        <put name="body" value="/WEB-INF/jsp/spOfferImg.jsp" />
+        <put name="button" value="home" />
+    </definition>
+
+
+
+
+
+    <definition name=".tile2.mobileLogin" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/mobileLogin.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <!-- Header related tiles -->
+
+
+    <definition name=".tile.currentOffers" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/currentOffers.jsp" />
+        <put name="button" value="currentOffers" />
+    </definition>
+
+    <definition name=".tile.currentOffersMore" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/currentOffersMore.jsp" />
+        <put name="button" value="currentOffers" />
+    </definition>
+
+    <definition name=".tile2.postAd1" extends=".tile1.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/postAd.jsp" />
+        <put name="button" value="postAd" />
+    </definition>
+
+    <definition name=".tile2.postAdNL" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/loginbody.jsp" />
+        <put name="button" value="login" />
+    </definition>
+
+    <definition name=".tile2.postAd_Ok" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/postAd_Ok.jsp" />
+        <put name="button" value="postAd" />
+    </definition>
+
+
+    <definition name=".tile2.aboutUs" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/aboutUs.jsp" />
+        <put name="button" value="home" />
+    </definition>
+    <definition name=".tile2.contactUs" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/contactUs.jsp" />
+        <put name="button" value="home" />
+    </definition>
+    <definition name=".tile2.feedBack" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/feedBack.jsp" />
+        <put name="button" value="home" />
+    </definition>
+    <definition name=".tile2.myAccount" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/myAccount_AdDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccountNL" extends=".tile5.layout">
+        <put name="body" value="/WEB-INF/jsp/loginbody.jsp" />
+        <put name="button" value="login" />
+    </definition>
+    <!-- this is for login at header top -->
+    <!-- Search Tiles start-->
+    <definition name=".search.book" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/tiles/search/bk.jsp" />
+    </definition>
+    <definition name=".search.price" path="/WEB-INF/tiles/search/price.tile" />
+
+
+    <!-- ******************************************************************************-->
+    <!-- Post Ad -->
+    <!-- ******************************************************************************-->
+
+
+
+
+    <definition name=".tile.adLayout" path="/WEB-INF/tiles/categoryTiles/adTemplate.jsp">
+
+
+        <put name="login"     value="/WEB-INF/tiles/categoryTiles/login.jsp" />
+        <put name="cselect"   value="/WEB-INF/tiles/categoryTiles/selectedCategory.jsp" />
+        <put name="price"     value="/WEB-INF/tiles/categoryTiles/price.jsp" />
+        <put name="rent"     value="/WEB-INF/tiles/categoryTiles/rentPMonth.jsp" />
+        <put name="vacprice"     value="/WEB-INF/tiles/categoryTiles/vacationPrice.jsp" />
+        <put name="addcon"    value="/WEB-INF/tiles/categoryTiles/additionalContent.jsp" />
+        <put name="submit"    value="/WEB-INF/tiles/categoryTiles/footer.jsp" />
+
+        <!-- Automobiles category mapping for createAd & Edit Ad -->
+        <put name="sauto"     value="/WEB-INF/tiles/categoryTiles/autoMobiles.jsp" />
+        <put name="sauto-sc"  value="/WEB-INF/tiles/categoryTiles/autoMobiles-sc.jsp" />
+        <put name="sauto-asa" value="/WEB-INF/tiles/categoryTiles/autoMobiles-asa.jsp" />
+        <put name="sauto-t"   value="/WEB-INF/tiles/categoryTiles/autoMobiles-t.jsp" />
+
+        <!-- RealEstate category mapping for createAd & Edit Ad -->
+        <put name="sreal-rr"     value="/WEB-INF/tiles/categoryTiles/realEstate.jsp" />
+        <put name="sreal-rr-pl"     value="/WEB-INF/tiles/categoryTiles/realEstate-rr-pl.jsp" />
+        <put name="sreal-rr-ih"     value="/WEB-INF/tiles/categoryTiles/realEstate-rr-ih.jsp" />
+        <put name="sreal-ld"     value="/WEB-INF/tiles/categoryTiles/realEstate-ld.jsp" />
+        <put name="sreal-cs-off"     value="/WEB-INF/tiles/categoryTiles/realEstate-cs-off.jsp" />
+        <put name="sreal-w"     value="/WEB-INF/tiles/categoryTiles/realEstate-w.jsp" />
+        <put name="sreal-cs-is"     value="/WEB-INF/tiles/categoryTiles/realEstate-cs-is.jsp" />
+        <put name="sreal-rs-a"     value="/WEB-INF/tiles/categoryTiles/realEstate-rs-a.jsp" />
+        <put name="sreal-rs-ih"     value="/WEB-INF/tiles/categoryTiles/realEstate-rs-ih.jsp" />
+        <put name="sreal-cr-off"     value="/WEB-INF/tiles/categoryTiles/realEstate-cr-off.jsp" />
+        <put name="sreal-cr-sh"     value="/WEB-INF/tiles/categoryTiles/realEstate-cr-sh.jsp" />
+        <put name="sreal-pgr"     value="/WEB-INF/tiles/categoryTiles/realEstate-pgr.jsp" />
+
+        <!-- Electronics & Computers category mapping for createAd & Edit Ad -->
+        <put name="selec"      value="/WEB-INF/tiles/categoryTiles/electronicsComputers.jsp" />
+        <put name="selec-cs"      value="/WEB-INF/tiles/categoryTiles/electronicsComputers-cs.jsp" />
+
+        <!-- Furniture category mapping for createAd & Edit Ad -->
+        <put name="sfurn"     value="/WEB-INF/tiles/categoryTiles/furniture.jsp" />
+
+        <!-- Home category mapping for createAd & Edit Ad -->
+        <put name="shome"     value="/WEB-INF/tiles/categoryTiles/homeAppliances.jsp" />
+
+        <!-- Domestic Services mapping for createAd & Edit Ad -->
+        <put name="sdomestic"  value="/WEB-INF/tiles/categoryTiles/domesticServices.jsp" />
+        <put name="sdomestic-sh"  value="/WEB-INF/tiles/categoryTiles/domesticServices-sh.jsp" />
+        <!-- Travels mapping for createAd & Edit Ad -->
+        <put name="stravel"  value="/WEB-INF/tiles/categoryTiles/travel.jsp" />
+        <put name="stravel-v"  value="/WEB-INF/tiles/categoryTiles/travel-v.jsp" />
+
+        <!-- Hot Jobs & Education mapping for createAd & Edit Ad -->
+        <put name="sjobs"  value="/WEB-INF/tiles/categoryTiles/jobs.jsp" />
+        <put name="sjobs-edu"  value="/WEB-INF/tiles/categoryTiles/jobs-edu.jsp" />
+
+        <!-- Clothing & Jewellary mapping for createAd & Edit Ad -->
+        <put name="sjewel"    value="/WEB-INF/tiles/categoryTiles/jewellery.jsp" />
+        <put name="sjewel-j"    value="/WEB-INF/tiles/categoryTiles/jewellery-j.jsp" />
+
+        <!-- Financial Services mapping for createAd & Edit Ad -->
+        <put name="sfinance"    value="/WEB-INF/tiles/categoryTiles/finiance.jsp" />
+
+        <!-- Equipment mapping for createAd & Edit Ad -->
+        <put name="soffice"    value="/WEB-INF/tiles/categoryTiles/office.jsp" />
+
+        <!-- Health,Fitness & Beauty mapping for createAd & Edit Ad -->
+        <put name="shealth" value="/WEB-INF/tiles/categoryTiles/health.jsp" />
+        <put name="shealth-hc" value="/WEB-INF/tiles/categoryTiles/health-hc.jsp" />
+        <put name="shealth-ph" value="/WEB-INF/tiles/categoryTiles/health-ph.jsp" />
+        <put name="shealth-hs" value="/WEB-INF/tiles/categoryTiles/health-hs.jsp" />
+
+        <!--Arts & Antiques mapping for createAd & Edit Ad -->
+        <put name="santiq"    value="/WEB-INF/tiles/categoryTiles/antiquesCollectables.jsp" />
+
+        <!--Astro services mapping for createAd & Edit Ad -->
+        <put name="sastro"    value="/WEB-INF/tiles/categoryTiles/astroServices.jsp" />
+
+        <!-- Pets & Animals mapping for createAd & Edit Ad -->
+        <put name="spets"     value="/WEB-INF/tiles/categoryTiles/pets.jsp" />
+        <put name="spets-pe"     value="/WEB-INF/tiles/categoryTiles/pets-pe.jsp" />
+        <put name="spets-ac"     value="/WEB-INF/tiles/categoryTiles/pets-ac.jsp" />
+        <put name="spets-lp"     value="/WEB-INF/tiles/categoryTiles/pets-lp.jsp" />
+
+        <!-- Musical equipment mapping for createAd & Edit Ad -->
+        <put name="smusic"    value="/WEB-INF/tiles/categoryTiles/musicalInstruments.jsp" />
+
+        <!-- Kids stuff mapping for createAd & Edit Ad -->
+        <put name="skids"     value="/WEB-INF/tiles/categoryTiles/kidsStuff.jsp" />
+
+        <!-- Community mapping for createAd & Edit Ad-->
+        <put name="scommunity"     value="/WEB-INF/tiles/categoryTiles/community.jsp" />
+
+        <!-- books & Magzines mapping for createAd & Edit Ad -->
+        <put name="sbook"     value="/WEB-INF/tiles/categoryTiles/books.jsp" />
+
+        <!--Entertainment & events mapping for createAd & Edit Ad -->
+        <put name="senter"     value="/WEB-INF/tiles/categoryTiles/enter.jsp" />
+        <put name="senter-ev"     value="/WEB-INF/tiles/categoryTiles/enter-ev.jsp" />
+        <put name="senter-mu"     value="/WEB-INF/tiles/categoryTiles/enter-mu.jsp" />
+
+        <!-- matrimony for createAd & Edit Ad -->
+        <put name="smat" value="/WEB-INF/tiles/categoryTiles/matrimony.jsp" />
+
+        <!--Sports & recreation mapping for createAd & Edit Ad -->
+        <put name="ssport"    value="/WEB-INF/tiles/categoryTiles/sportsEquipment.jsp" />
+        <put name="ssport-t"    value="/WEB-INF/tiles/categoryTiles/sportsEquipment-t.jsp" />
+
+        <!--Construction mapping for createAd & Edit Ad -->
+        <put name="scon"     value="/WEB-INF/tiles/categoryTiles/construction.jsp" />
+        <put name="scon-m"     value="/WEB-INF/tiles/categoryTiles/construction-m.jsp" />
+
+        <put name="button" value="postAd" />
+    </definition>
+
+
+
+
+    <definition name=".tile.ad" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/tiles/categoryTiles/adTemplate.jsp" />
+        <!--<put name="menu"   value="/WEB-INF/jsp/refineMenu.jsp" />-->
+        <put name="button" value="postAd" />
+    </definition>
+
+
+    <definition name=".tile.ad.My" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/tiles/categoryTiles/adTemplate.jsp" />
+        <put name="button" value="postAd" />
+    </definition>
+
+
+    <definition name=".tile.adEditRenew" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value=".tile.adLayout" />
+        <put name="button" value="myAccount" />
+
+    </definition>
+
+    <definition name=".tile2.ok" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/ok.jsp" />
+    </definition>
+
+    <definition name=".tile2.err" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/err.jsp" />
+    </definition>
+
+
+
+    <definition name=".tile2.my.ok" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/ok.jsp" />
+    </definition>
+
+
+    <definition name=".tile2.my.err" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/err.jsp" />
+    </definition>
+
+    <!-- Left menu related tiles -->
+
+
+
+    <definition name=".tile2.latestAds.ma" extends=".tile1.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/refine.jsp" />
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="button" value="latestAds" />
+    </definition>
+
+    <definition name=".tile2.latestAds" extends=".tile1.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/refine.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/refineMenu.jsp" />
+        <put name="button" value="latestAds" />
+    </definition>
+
+    <!-- Search Tiles start-->
+
+    <definition name="s-price" path="/WEB-INF/tiles/search/price.jsp" />
+    <definition name="s-rl" path="/WEB-INF/tiles/search/rl.jsp" />
+    <!-- Automobiles search Mapping -->
+    <definition name="s-auto"     path="/WEB-INF/tiles/search/s-autoMobiles.jsp" />
+    <definition name="s-auto-sc"  path="/WEB-INF/tiles/search/s-autoMobiles-sc.jsp" />
+    <definition name="s-auto-asa" path="/WEB-INF/tiles/search/s-autoMobiles-asa.jsp" />
+    <definition name="s-auto-t"   path="/WEB-INF/tiles/search/s-autoMobiles-t.jsp" />
+
+    <!-- RealEstate search Mapping -->
+    <definition name="s-real-rr"     path="/WEB-INF/tiles/search/s-realEstate.jsp" />
+    <definition name="s-real-pgr"     path="/WEB-INF/tiles/search/s-realEstate-pgr.jsp" />
+    <!-- <definition name="s-real-rr-pl"     path="/WEB-INF/tiles/search/s-realEstate-rr-pl.jsp" />
+    <definition name="s-real-rr-ih"     path="/WEB-INF/tiles/search/s-realEstate-rr-ih.jsp" />
+    <definition name="s-real-ld"     path="/WEB-INF/tiles/search/s-realEstate-ld.jsp" />
+    <definition name="s-real-cs-off"     path="/WEB-INF/tiles/search/s-realEstate-cs-off.jsp" />
+    <definition name="s-real-w"     path="/WEB-INF/tiles/search/s-realEstate-w.jsp" />
+    <definition name="s-real-cs-is"     path="/WEB-INF/tiles/search/s-realEstate-cs-is.jsp" />
+    <definition name="s-real-rs-a"     path="/WEB-INF/tiles/search/s-realEstate-rs-a.jsp" />
+    <definition name="s-real-rs-ih"     path="/WEB-INF/tiles/search/s-realEstate-rs-ih.jsp" />
+    <definition name="s-real-cr-off"     path="/WEB-INF/tiles/search/s-realEstate-cr-off.jsp" />
+    <definition name="s-real-cr-sh"     path="/WEB-INF/tiles/search/s-realEstate-cr-sh.jsp" />-->
+
+    <!-- Electronics & Computers search Mapping -->
+    <definition name="s-elec"      path="/WEB-INF/tiles/search/s-electronicsComputers.jsp" />
+    <definition name="s-elec-cs"      path="/WEB-INF/tiles/search/s-electronicsComputers-cs.jsp" />
+
+    <!-- Furniture search Mapping -->
+    <definition name="s-furn"     path="/WEB-INF/tiles/search/s-furniture.jsp" />
+
+    <!-- Home search Mapping -->
+    <definition name="s-home"     path="/WEB-INF/tiles/search/s-homeAppliances.jsp" />
+
+    <!-- Domestic Services mapping for createAd & Edit Ad -->
+    <definition name="s-domestic"  path="/WEB-INF/tiles/search/s-domesticServices.jsp" />
+    <definition name="s-domestic-sh"  path="/WEB-INF/tiles/search/s-domesticServices-sh.jsp" />
+
+    <!-- Travels mapping for createAd & Edit Ad -->
+    <definition name="s-travel"  path="/WEB-INF/tiles/search/s-travel.jsp" />
+    <definition name="s-travel-v"  path="/WEB-INF/tiles/search/s-travel-v.jsp" />
+
+    <!-- Hot Jobs & Education mapping for createAd & Edit Ad -->
+    <definition name="s-jobs"  path="/WEB-INF/tiles/search/s-jobs.jsp" />
+    <definition name="s-jobs-edu"  path="/WEB-INF/tiles/search/s-jobs-edu.jsp" />
+
+    <!-- Clothing & Jewellary mapping for createAd & Edit Ad -->
+    <definition name="s-jewel"    path="/WEB-INF/tiles/search/s-jewellery.jsp" />
+    <definition name="s-jewel-j"    path="/WEB-INF/tiles/search/s-jewellery-j.jsp" />
+
+    <!-- Financial Services mapping for createAd & Edit Ad -->
+    <definition name="s-finance"    path="/WEB-INF/tiles/search/s-finance.jsp" />
+
+    <!-- Equipment mapping for createAd & Edit Ad -->
+    <definition name="s-office"    path="/WEB-INF/tiles/search/s-office.jsp" />
+
+    <!-- Health,Fitness & Beauty mapping for createAd & Edit Ad -->
+    <definition name="s-health" path="/WEB-INF/tiles/search/s-health.jsp" />
+    <definition name="s-health-hc" path="/WEB-INF/tiles/search/s-health-hc.jsp" />
+    <definition name="s-health-ph" path="/WEB-INF/tiles/search/s-health-ph.jsp" />
+    <definition name="s-health-hs" path="/WEB-INF/tiles/search/s-health-hs.jsp" />
+
+    <!--Arts & Antiques mapping for createAd & Edit Ad -->
+    <definition name="s-antiq"    path="/WEB-INF/tiles/search/s-antiquesCollectables.jsp" />
+
+    <!--Astro services mapping for createAd & Edit Ad -->
+    <definition name="s-astro"    path="/WEB-INF/tiles/search/s-astroServices.jsp" />
+
+    <!-- Pets & Animals mapping for createAd & Edit Ad -->
+    <definition name="s-pets"     path="/WEB-INF/tiles/search/s-pets.jsp" />
+    <definition name="s-pets-pe"     path="/WEB-INF/tiles/search/s-pets-pe.jsp" />
+    <definition name="s-pets-ac"     path="/WEB-INF/tiles/search/s-pets-ac.jsp" />
+    <definition name="s-pets-lp"     path="/WEB-INF/tiles/search/s-pets-lp.jsp" />
+
+    <!-- Musical equipment mapping for createAd & Edit Ad -->
+    <definition name="s-music"    path="/WEB-INF/tiles/search/s-musicalInstruments.jsp" />
+
+    <!-- Kids stuff mapping for createAd & Edit Ad -->
+    <definition name="s-kids"     path="/WEB-INF/tiles/search/s-kidsStuff.jsp" />
+
+    <!-- Community mapping for createAd & Edit Ad -->
+    <definition name="s-community"     path="/WEB-INF/tiles/search/s-community.jsp" />
+
+    <!-- books & Magzines mapping for createAd & Edit Ad -->
+    <definition name="s-book"     path="/WEB-INF/tiles/search/s-books.jsp" />
+
+    <!--Entertainment & events mapping for createAd & Edit Ad -->
+    <definition name="s-enter"     path="/WEB-INF/tiles/search/s-enter.jsp" />
+    <definition name="s-enter-ev"     path="/WEB-INF/tiles/search/s-enter-ev.jsp" />
+    <definition name="s-enter-mu"     path="/WEB-INF/tiles/search/s-enter-mu.jsp" />
+
+    <!-- matrimony for createAd & Edit Ad -->
+    <definition name="s-mat" path="/WEB-INF/tiles/search/s-matrimony.jsp" />
+
+    <!--Sports & recreation mapping for createAd & Edit Ad -->
+    <definition name="s-sport"    path="/WEB-INF/tiles/search/s-sportsEquipment.jsp" />
+    <definition name="s-sport-t"    path="/WEB-INF/tiles/search/s-sportsEquipment-t.jsp" />
+
+
+    <!--Construction mapping for createAd & Edit Ad -->
+    <definition name="s-con"     path="/WEB-INF/tiles/search/s-construction.jsp" />
+    <definition name="s-con-m"     path="/WEB-INF/tiles/search/s-construction-m.jsp" />
+
+
+    <!-- end search tiles -->
+
+
+
+    <definition name=".tile2.register" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/register.jsp" />
+        <put name="regFromtile"  value="normal" />
+        <put name="button" value="register" />
+    </definition>
+
+    <definition name=".tile2.registerp" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/register.jsp" />
+        <put name="regFromtile"  value="postAd" />
+        <put name="button" value="register" />
+    </definition>
+
+
+
+    <definition name=".tile2.bestDealers" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/bestDealers.jsp" />
+        <put name="button" value="bestDealers" />
+    </definition>
+    <definition name=".tile2.savedAdLogin" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/savedAdLogin.jsp" />
+    </definition>
+
+    <definition name=".tile2.clf" extends=".tile1.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/clfDisplay.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/refineMenu.jsp" />
+    </definition>
+
+    <definition name=".tile.moreDetailsDealer" path="/WEB-INF/jsp/dealerMoreDetails.jsp">
+        <put name="title"  value="Bharatbuysell.com" />
+    </definition>
+
+
+
+
+    <definition name=".tile.nodealers" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/bestDealers.jsp"/>
+    </definition>
+
+
+
+    <!-- My Account Tile definitions   -->
+
+    <definition name=".tile2.myAccount_AccountDetails" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_AccountDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_AdDetails" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_AdDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".home.OfferCreation" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/scrollOffersCreation.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+
+
+    <definition name=".tile2.myAccount_ChangePassword" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_ChangePassword.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_DeleteAds" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_DeleteAds.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+    <definition name=".tile2.myAccount_EditMyProfile" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_EditMyProfile.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_PostAd" extends=".tile1.mainLayout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/postAd.jsp" />
+        <put name="button" value="postAd" />
+    </definition>
+
+    <definition name=".tile2.myAccount_EditRenewAds" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_EditRenewAds.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.rejectedAds" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/rejectedAds.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_SavedAds" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_SavedAds.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_SavedSearches" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+        <put name="body" value="/WEB-INF/jsp/myAccount_SavedSearches.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.changePWD_Ok" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/changePWD_Ok.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_User_Profile_Update_Ok" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_User_Profile_Update_Ok.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.specific_ads_list" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/specific_ads_list.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_edit_ad_for_update_ok" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_User_Profile_Update_Ok.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccount_edit_ad_for_renew_ok" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_edit_ad_for_renew_ok.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.edit_ad_for_renew" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_edit_ad_for_renew.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.edit_ad_for_update" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_edit_ad_for_update.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.postAd_Ok_My" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/postAd_Ok.jsp" />
+        <put name="button" value="postAd" />
+    </definition>
+
+    <definition name=".tile2.article" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/articlePosting.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myArticles" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myArticles.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.myAccountBbspoints" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/bbsPoints.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.preferences" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/preferences.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.redemptionPage" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/redemption.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.redemptionPage2" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/redemptionPage2.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.savedSearches" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/mySavedSearches.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.savedAlerts" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/mySavedAlerts.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+    <definition name=".tile2.invite" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/inviteFriends.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.inviteList" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/displayContacts.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+
+    <definition name=".tile2.feedOk" extends=".tile1.mainLayout">
+
+        <put name="body" value="/WEB-INF/jsp/ok.jsp" />
+        <put name="button" value="home" />
+    </definition>
+
+    <definition name=".tile.help" extends=".tile1.mainLayout">
+
+        <put name="body" value="/WEB-INF/jsp/help.jsp" />
+        <put name="button" value="home" />
+    </definition>
+    <definition name=".tile.siteMap" extends=".tile1.mainLayout">
+
+        <put name="body" value="/WEB-INF/jsp/siteMap.jsp" />
+        <put name="button" value="home" />
+    </definition>
+  
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+
+
+
+    <!-- *********************************************************** -->
+    <!-- DEALER my Account MAPPINGS Start -->
+    <!-- *********************************************************** -->
+
+    <definition name=".tile1.dealerBody" extends=".tile1.mainLayout" >
+        <put name="body" value="/WEB-INF/jsp/dealerBody.jsp"/>
+        <put name="button" value="bestDealers" />
+    </definition>
+    <definition name=".tile2.bestDealers" extends=".tile2.layout" >
+        <put name="body" value="/WEB-INF/jsp/bestDealers.jsp"/>
+        <put name="button" value="bestDealers" />
+    </definition>
+
+
+    <definition name=".tile.accountDetails" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/accountDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name="tile.offer.success" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myOffersDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.requestOffers" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/requestedOffers.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.renewEditOffers" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_EditRenewOffers.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.delOffers" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_DeleteOffers.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.rejectedOffers" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_RejectedOffers.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.editOffer" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/editOffer.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <definition name=".tile2.smsDetails" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_SmsDetails.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <!--Create Links Module-->
+    <definition name=".tile.createLink1" extends=".tile1.mainLayout">
+        <put name="menu" value="/WEB-INF/jsp/linkMenu.jsp"/>
+        <put name="body" value="/WEB-INF/jsp/linkList.jsp"/>
+        <put name="searchBar" value="" />
+        <!--<put name="clock" value="/WEB-INF/jsp/clock_link.jsp" />-->
+        <put name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+    <definition name=".tile.createLink" extends=".tile1.mainLayout">
+        <put name="menu" value="/WEB-INF/jsp/linkMenu.jsp"/>
+        <put name="body" value="/WEB-INF/jsp/createLink.jsp"/>
+        <put name="searchBar" value=""/>
+        <put name="clock" value="/WEB-INF/jsp/clock.jsp"/>
+        <put name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+    <!--WebShop-->
+    <definition name=".tile4.mainLayoutHome" extends=".tile4.mainLayout" >
+        <put name="button" value="wsHome" />
+    </definition>
+    <definition name=".tile4.productList" extends=".tile4.mainLayout" >
+        <put name="body" value="/WEB-INF/jsp/wsProductsList.jsp" />
+        <put name="button" value="wsProducts" />
+    </definition>
+
+    <definition name=".tile4.productDetails" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/wsProductDetails.jsp"/>
+        <put name="button" value="wsProducts" />
+    </definition>
+    <definition name=".tile4.mainLayout" path="/WEB-INF/layouts/tile4.jsp">
+
+        <put name="title"  value="WebShopBharatbuysell.com" />
+        <put name="body" value="/WEB-INF/jsp/wsBody.jsp" />
+        <put name="header" value="/WEB-INF/jsp/wsHeader.jsp" />
+        <put name="searchBar" value="/WEB-INF/jsp/wsMenu.jsp" />
+        <put name="menu"   value="/WEB-INF/jsp/wsLMenu.jsp" />
+        <put name="scrollads" value="" />
+        <put name="recentSearches" value="" />
+        <put name="clock" value="" />
+        <put name="footer" value="/WEB-INF/jsp/wsFooter.jsp" />
+        <put name="rightDiv" value="/WEB-INF/jsp/wsRMenu.jsp" />
+    </definition>
+    <definition name=".tile2.wsCreateCategory" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/wsCreateCategory.jsp"/>
+        <put name="menu"   value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+    </definition>
+
+    <definition name=".tile2.wsCreateSubCategory" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/wsSubCategoryCreation.jsp"/>
+        <put name="menu"   value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+    </definition>
+
+    <definition name=".tile2.wsProductCreation" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/wsProductCreation.jsp"/>
+        <put name="menu"   value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+    </definition>
+   
+    <!--Top N List-->
+    <definition name=".tile2.createTopNList" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/wsCreateTopNList.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+
+    <!--Special Offers-->
+    <definition name=".tile2.createSpecialOffer" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/CreateSpecialOffer.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+
+    <!--What's New-->
+    <definition name=".tile2.createWhatsNew" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/CreateWhatsNew.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+
+    <definition name=".tile2.assignProducts" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/productAssignReassign.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name="tile2.assigner" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/productAssignReassign.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name=".tile2.editWebshop" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/editWebShop.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name=".tile2.categoryPref" extends=".tile1.mainLayout">
+        <put name="body" value="/WEB-INF/webshop/webshopCreation.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+    </definition>
+    <definition name=".tile2.defineWebshop" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/defineWebshop.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name=".tile2.prodEditList" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/editProductsList.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name=".tile2.prodDetails" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/editProductDetails.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+    <definition name=".tile2.assignWebshop" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/assignWebshop.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+
+    <!--============================WEBSHOP UI=====================================-->
+
+    <definition name=".tile4.whatsNew" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/webshop/whatsNewOffer.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/wsLMenu.jsp"/>
+    </definition>
+    <definition name=".tile4.splOfferProdDet" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/jsp/wsProductDetails.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/wsLMenu.jsp"/>
+    </definition>
+    <definition name=".tile4.photogallery" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/webshop/ProductsPhotoGallery.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/wsLMenu.jsp"/>
+    </definition>
+
+    <definition name=".tile4.listProducts" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/webshop/listProducts.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/wsLMenu.jsp"/>
+    </definition>
+    <definition name=".tile4.wsContactUs" extends=".tile4.mainLayout">
+        <put name="body" value="/WEB-INF/webshop/wsContactUs.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/wsLMenu.jsp"/>
+    </definition>
+    <definition name=".tile2.wsCreateAds" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/webshop/createWSAds.jsp"/>
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp"/>
+    </definition>
+
+    <definition name=".tile5.bids" extends=".tile5.layout">
+        <put name="body" value="/WEB-INF/jsp/bids.jsp" />
+    </definition>
+    <definition name=".tile5.bidDetails" extends=".tile5.layout">
+        <put name="body" value="/WEB-INF/jsp/bidDetails.jsp" />
+    </definition>
+    <definition name=".tile2.bidsWatchList" extends=".tile2.layout">
+        <put name="body" value="/WEB-INF/jsp/bidsWatchList.jsp"/>
+        <put name="menu"   value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+    </definition>
+
+    <definition name=".tile5.recentAds" extends=".tile5.layout">
+        <put name="body" value="/WEB-INF/jsp/recentAds.jsp" />
+        <put name="button" value="home" />
+    </definition>
+
+    <definition name=".tile2.myAccount_ChangeMobile" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_ChangeMobile.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+
+    <!--Karteek-->
+    <!--/Karteek-->
+
+    <!--Karteek-->
+
+    <definition name=".tile2.myAccount_RespDtls" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_RespDtls.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+    
+    <definition name=".tile2.myAccount_DelRespDtls" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_DelRespDtls.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+    
+    <definition name=".tile2.myAccount_MsRespDtls" extends=".tile2.layout">
+        <put name="menu" value="/WEB-INF/jsp/myAccount_Menu.jsp" />
+        <put name="body" value="/WEB-INF/jsp/myAccount_MsRespDtls.jsp" />
+        <put name="button" value="myAccount" />
+    </definition>
+    <definition name=".tile2.leadForm" path="/WEB-INF/jsp/leadForm.jsp"></definition>
+    <!--/Karteek-->
+</tiles-definitions>

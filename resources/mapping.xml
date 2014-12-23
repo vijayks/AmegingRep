@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Object Mapping DTD Version 1.0//EN" "http://castor.exolab.org/mapping.dtd">
+
+<mapping>
+    <description>A mapping file providing city Address</description>
+    <class name="com.buysell.util.Address">
+        <map-to xml="cities"/>
+        <field name="cities" type="com.buysell.util.City" collection="arraylist">
+            <bind-xml name="city" node="element"/>
+        </field>
+    </class>
+
+    <class name="com.buysell.util.City">
+        <field name="area">
+            <bind-xml name="area" node="attribute" type="string"/>
+        </field>
+        <field name="pincode">
+            <bind-xml name="pincode" node="attribute" type="string"/>
+        </field>
+	<field name="location">
+            <bind-xml name="location" node="attribute" type="string" />
+        </field>
+	<field name="loc" type="com.buysell.util.Location" collection="arraylist">
+            <bind-xml name="loc" node="element"  />
+        </field>
+	<field name="name">
+            <bind-xml name="name" node="attribute" type="string"/>
+        </field>
+        <field name="readyState">
+            <bind-xml name="readyState" node="attribute" type="string"/>
+        </field>
+        
+    </class> 
+	<class name="com.buysell.util.Location">
+        <field name="name">
+            <bind-xml name="name" node="attribute" type="string"/>
+        </field>
+	<field name="pin">
+            <bind-xml name="pin" node="attribute" type="string"/>
+        </field>
+	</class> 
+  
+</mapping>
+

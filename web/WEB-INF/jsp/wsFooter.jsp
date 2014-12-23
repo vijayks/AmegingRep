@@ -1,0 +1,18 @@
+<%-- 
+    Document   : wsFooter
+    Created on : Feb 25, 2010, 10:47:46 AM
+    Author     : bbsadmin
+--%>
+
+<style>
+    #foot a{
+        color:gray;
+    }
+</style>
+<div style="padding:3px 0;background-color:#878787"></div>
+<div id="foot" style="margin-top:10px;font-size:10px;color:gray">
+    <div style="float:left;font-size:12px">Copyright &copy; 2010 <a href="http://bharatbuysell.com" target="_blank" style="text-decoration:none">Bharatbuysell.com</a> , powered by <a href="http://focus9.in" target="_blank" style="text-decoration:none">Focus9</a> (India) </div>
+    <div style="float:right">
+        <a href="#">Help</a> | <a href="">About Us</a> | <a href="wsContact.do">Contact Us</a><br>
+    </div>
+</div>

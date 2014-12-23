@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="createCategory" type="com.buysell.webshop.beans.createCategory"/>
+        <form-bean name="rsfm" type="com.buysell.beans.RSFM"/>
+       <!-- <form-bean name="adminChangePWDActionForm" type="com.buysell.admin.beans.AdminChangePWDActionForm"/>-->
+        <form-bean name="addPlaceActionForm" type="com.buysell.admin.beans.AddPlaceActionForm"/>
+        <form-bean name="postAdFormBean" type="com.buysell.beans.PostAdFormBean"/>
+        <form-bean name="adminChangePWDActionForm" type="com.buysell.admin.beans.AdminChangePWDActionForm" />
+        <form-bean name="adminActionForm" type="com.buysell.admin.beans.AdminActionForm"/>
+        <form-bean name="userActionForm" type="com.buysell.beans.UserActionForm"/>
+        <form-bean name="registerFormBean" type="com.buysell.beans.RegisterFormBean"/>
+        <form-bean name="changePWDFormBean" type="com.buysell.beans.ChangePWDFormBean"/>
+        <form-bean name="ScrollOffersFormBean" type="com.buysell.beans.ScrollOffersFormBean"/>
+        <form-bean name="createCategoryFormbean" type="com.buysell.webshop.beans.createCategoryFormbean"/>
+        <form-bean name="ProductCreationActionForm" type="com.buysell.webshop.beans.ProductCreationActionForm"/>
+    </form-beans>
+
+    <global-exceptions>
+
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="notLogin" path="/myAccountNL.do" redirect="true" />
+    </global-forwards>
+
+    <action-mappings>
+     <!-- *********************************************************** -->
+                    <!-- Home page  mapping -->
+       <!-- *********************************************************** -->
+
+        <action path="/tile1" type="com.buysell.actionclass.LatestAdAction">
+            <forward name="success" path=".tile1.mainLayoutHome" />
+        </action>
+
+        <action path="/city" type="com.buysell.actionclass.CitySelectionAction" >
+            <forward name="success" path="/WEB-INF/jsp/city.jsp" />
+        </action>
+
+
+        <!-- *********************************************************** -->
+                      <!-- left menu scroll  mapping -->
+        <!-- *********************************************************** -->
+        <action path="/scroll" type="com.buysell.actionclass.ScrollAdsAction">
+            <forward name="success" path="/WEB-INF/jsp/scroll.jsp" />
+        </action>
+
+        <action path="/currentOffers" type="com.buysell.actionclass.CurrentOffers">
+            <forward name="success" path=".tile.currentOffers" />
+        </action>
+
+        <action path="/moreCurrentOffers" type="com.buysell.actionclass.CurrentOffers">
+            <forward name="success" path=".tile.currentOffersMore" />
+        </action>
+
+        <!-- *********************************************************** -->
+                      <!-- login validate mapping -->
+        <!-- *********************************************************** -->
+
+        <action path="/validate"
+                name="userActionForm"
+                type="com.buysell.actionclass.UserAction"
+                scope="session"
+                validate="false">
+            <forward name="normal" path="/my_ads_details.do" redirect="true" />
+            <forward name="mobile" path=".tile2.mobileLogin" redirect="true" />
+            <forward name="postAd" path="/createAd.do" />
+            <forward name="failure" path=".tile2.myAccountNL" />
+            <forward name="quick" path="/myAccount_EditMyProfile.do" />
+        </action>
+
+
+        <action path="/mobileLogin" type="org.apache.struts.actions.ForwardAction" parameter=".tile2.mobileLogin" />
+
+        <action path="/mobileVerification" type="com.buysell.actionclass.MobileVerificationAction">
+            <forward name="success" path="/my_ads_details.do" />
+            <forward name="failure" path=".tile2.mobileLogin" />
+
+        </action>
+
+
+<!-- ********************************************************************************************************************* -->
+                            <!-- logout validate mapping -->
+<!-- ********************************************************************************************************************* -->
+
+        <action path="/logout"
+                    type="com.buysell.actionclass.UserLogoutAction"
+                     >
+            <forward name="signout" path=".tile2.myAccountNL" redirect="true" />
+        </action>
+
+
+
+
+<!-- ********************************************************************************************************************* -->
+                      <!-- MY ACCOUNT MENU MAPPINGS -->
+<!--*********************************************************** *********************************************************** -->
+        <action path="/myAcDet" type="com.buysell.actionclass.MyACDetails">
+            <forward name="success" path=".tile2.myAccount_AccountDetails"/>
+            <forward name="failure" path=".tile2.myAccountNL"/>
+        </action>
+
+        <action path="/my_ads_details"
+                type="com.buysell.actionclass.MyAdDetailsAction">
+            <forward name="success" path=".tile2.myAccount_AdDetails"/>
+            <forward name="failure" path=".tile2.myAccountNL"/>
+        </action>
+
+        <action path="/offcr" type="com.buysell.actionclass.CategoryProviderAction" scope="request" validate="false">
+            <forward name="success" path=".home.OfferCreation"  />
+        </action>
+
+        <action path="/scoUpload" name="ScrollOffersFormBean" type="com.buysell.actionclass.ScrollOfferCreation" scope="request" validate="false">
+            <forward name="success" path="/offcr.do"  />
+        </action>
+
+
+        <action path="/specificAdsAction"
+                type="com.buysell.actionclass.SpecificAdsAction">
+            <forward name="success" path=".tile2.specific_ads_list"/>
+            <forward name="failure" path=".tile2.specific_ads_list"/>
+        </action>
+
+        <action path="/myAccount_ChangePassword"
+                type="com.buysell.actionclass.CategoryProviderMAAction" >
+            <forward name="success" path=".tile2.myAccount_ChangePassword"/>
+
+        </action>
+
+
+        <action path="/changepwd"
+                name="changePWDFormBean"
+                type="com.buysell.actionclass.ChangePWDAction"
+                scope="request">
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+            <forward name="failure" path=".tile2.myAccount_ChangePassword"/>
+        </action>
+
+        <action path="/successDo"
+                type="com.buysell.actionclass.CategoryProviderAction" >
+            <forward name="success" path=".tile2.ok"/>
+        </action>
+
+        <action path="/successDoMy"
+                type="com.buysell.actionclass.CategoryProviderMAAction" >
+            <forward name="success" path=".tile2.my.ok"/>
+        </action>
+
+
+        <action path="/myAccount_EditMyProfile"
+                type="com.buysell.actionclass.MyAccountEditMyProfileAction" >
+            <forward name="success" path=".tile2.myAccount_EditMyProfile" />
+        </action>
+
+        <action path="/update_user_profile"
+                input="/WEB-INF/jsp/myAccount_EditMyProfile.jsp"
+                name="registerFormBean"
+                scope="session"
+                type="com.buysell.actionclass.UpdateUserProfileAction"
+                validate="false">
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+        </action>
+
+
+
+        <action path="/edit_or_renew_ads"
+                type="com.buysell.actionclass.EditOrRenewAdsAction">
+            <forward name="success" path=".tile2.myAccount_EditRenewAds"/>
+            <forward name="failure" path=".tile2.myAccount_EditRenewAds"/>
+        </action>
+
+        <action path="/rejectedAds"
+                 type="com.buysell.actionclass.RejectedAdsAction">
+            <forward name="success" path=".tile2.rejectedAds"/>
+        </action>
+
+
+
+
+        <action path="/delete_ads"
+                type="com.buysell.actionclass.DeleteAdsAction">
+            <forward name="success" path=".tile2.myAccount_DeleteAds"/>
+            <forward name="failure" path=".tile2.myAccount_DeleteAds"/>
+        </action>
+
+        <action path="/delete_specific_ads"
+                type="com.buysell.actionclass.DeleteSpecificAdsAction">
+            <forward name="success" path="/delete_ads.do"/>
+        </action>
+
+
+
+
+        <action path="/upload_renew_ad"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.UploadAction"
+                scope="request"
+                 validate="false">
+            <forward name="success" path="/renew_ad.do"/>
+            <forward name="failure" path=".tile2.myAccount_ChangePassword"/>
+        </action>
+
+
+        <action path="/renew_ad"
+                type="com.buysell.actionclass.RenewAdAction"
+                name="postAdFormBean"
+                scope="request"
+                validate="false">
+
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+            <forward name="failure" path=".tile2.err"/>
+        </action>
+
+        <action path="/upload_update_ad"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.UploadAction"
+                scope="request"
+                 validate="false">
+
+            <forward name="success" path="/update_ad.do"/>
+            <forward name="failure" path=".tile2.myAccount_ChangePassword"/>
+        </action>
+
+        <action path="/update_ad"
+                type="com.buysell.actionclass.UpdateAdAction"
+                name="postAdFormBean"
+                scope="request"
+                validate="false">
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+            <forward name="failure" path=".tile2.err"/>
+        </action>
+
+        <action path="/edit_ad_for_renew"
+                type="com.buysell.actionclass.EditAdForUpdateAction">
+            <forward name="success" path=".tile.adEditRenew"/>
+            <forward name="failure" path="/edit_or_renew_ads.do?from=failure"/>
+        </action>
+
+
+        <action path="/edit_ad_for_update"
+                type="com.buysell.actionclass.EditAdForUpdateAction">
+            <forward name="success" path=".tile.adEditRenew"/>
+            <forward name="failure" path="/edit_or_renew_ads.do?from=failure"/>
+        </action>
+
+        <action path="/myAccount_SavedSearches"
+                 parameter=".tile2.myAccount_SavedSearches"
+                 type="org.apache.struts.actions.ForwardAction" />
+<!-- Bbs points start -->
+        <action path="/article"
+        type="com.buysell.actionclass.CategoryProviderMAAction" >
+            <forward name="success" path=".tile2.article" />
+        </action>
+
+
+        <action path="/myArticles" type="com.buysell.actionclass.MyArticlesAction">
+            <forward name="success" path=".tile2.article" />
+        </action>
+
+
+        <action   path="/articlePosting"
+            type="com.buysell.actionclass.ArticlePostingAction">
+            <forward name="success" path=".tile2.article" />
+        </action>
+
+        <action path="/bbsPoints"
+                type="com.buysell.actionclass.BbsPointsAction" >
+            <forward name="success" path=".tile2.myAccountBbspoints" />
+            <forward name="failure" path=".tile2.myAccountBbspoints" />
+        </action>
+
+        <action path="/preferences"
+                type="com.buysell.actionclass.PreferenceGetAction"
+                scope="request">
+            <forward name="success" path=".tile2.preferences"/>
+        </action>
+
+        <action path="/prefsInsert"
+        type="com.buysell.actionclass.PreferencesInsertAction" >
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+        </action>
+
+
+        <action path="/redemptionPage"
+        type="com.buysell.actionclass.RedemptionPageAction">
+            <forward name="success" path=".tile2.redemptionPage" />
+            <forward name="failure" path=".tile2.redemptionPage" />
+        </action>
+
+        <action path="/redemptionPageV" scope="request" type="com.buysell.actionclass.RedemptionPageAction">
+            <forward name="success" path="/redemptionPageV1.do"/>
+
+        </action>
+
+        <action path="/redemptionPageV1" scope="request" type="com.buysell.actionclass.RedemptionPointsCheck">
+            <forward name="success" path="/redemptionPage2.do"/>
+            <forward name="failure" path="/redemptionPage.do"/>
+        </action>
+
+
+        <action path="/redemptionPage2"
+         type="com.buysell.actionclass.CategoryProviderMAAction" >
+            <forward name="success" path=".tile2.redemptionPage2" />
+            <forward name="failure" path="/redemptionPage.do" redirect="true" />
+        </action>
+
+        <action path="/redemption"
+         type="com.buysell.actionclass.RedemptionAction" >
+            <forward name="success" path="/WEB-INF/jsp/successMy.jsp"/>
+            <forward name="failure" path="/redemptionPage.do" redirect="true" />
+        </action>
+
+        <action path="/redemnPoints"
+         type="com.buysell.actionclass.RedemptionPointsAction" >
+            <forward name="success" path=".tile2.myAccountBbspoints" />
+            <forward name="failure" path=".tile2.myAccountBbspoints" />
+        </action>
+
+        <!-- Bbs points ends -->
+
+<!-- Alerts start -->
+        <action path="/saveAlert1" parameter="/WEB-INF/jsp/alertWindow.jsp" type="org.apache.struts.actions.ForwardAction" />
+
+        <action path="/saveAlert2"
+         type="com.buysell.actionclass.SaveAlertAction">
+            <forward name="success" path="/WEB-INF/jsp/redemnOk.jsp" />
+        </action>
+
+        <action path="/mySavedAlerts"
+                type="com.buysell.actionclass.MySavedAlertsAction" >
+            <forward name="success" path=".tile2.savedAlerts" />
+        </action>
+
+        <action path="/deleteSavedAlert"
+                type="com.buysell.actionclass.DeleteSavedAlertAction">
+            <forward name="success" path="/mySavedAlerts.do" />
+        </action>
+
+<!-- Alerts ends -->
+
+  <!-- saved searches start -->
+
+        <action path="/mySavedSearches"
+type="com.buysell.actionclass.MySavedSearchesAction" >
+            <forward name="success" path=".tile2.savedSearches" />
+        </action>
+
+        <action path="/deleteSavedSearch"
+type="com.buysell.actionclass.DeleteSavedSearchAction" >
+            <forward name="success" path="/mySavedSearches.do" />
+        </action>
+
+        <action path="/savedAdvalidate"
+                name="userActionForm"
+                type="com.buysell.actionclass.UserAction"
+                scope="session"
+                validate="false">
+            <forward name="success" path="/latestAds.do" />
+            <forward name="failure" path=".tile2.savedAdLogin" />
+        </action>
+<!-- saved searches ends -->
+
+   <!-- ************************************************************* -->
+                    <!-- SAVED ADS MAPPINGS  in the home page  -->
+     <!--  *************************************************************-->
+
+        <action path="/saved_ads_validate"
+                name="userActionForm"
+                type="com.buysell.actionclass.UserAction"
+                scope="session"
+                validate="false">
+            <forward name="success" path="/saved_ads.do" />
+            <forward name="failure" path=".tile2.savedAdInvalidate" />
+        </action>
+
+
+        <action path="/saved_ads"
+                type="com.buysell.actionclass.SaveAdAction"
+                scope="request">
+            <forward name="success" path="/my_saved_ads.do"/>
+        </action>
+
+        <!-- this mapping for saved ad validation & saving ad -->
+        <action path="/sv"
+                name="userActionForm"
+                type="com.buysell.actionclass.UserAction"
+                scope="session"
+                validate="false">
+            <forward name="saveAd" path="/sv1.do" />
+
+        </action>
+        <action path="/sv1"
+                type="com.buysell.actionclass.SaveAdAction"
+                scope="request">
+            <forward name="success" path="/my_saved_ads.do"/>
+        </action>
+
+
+
+     <!-- ************************************************************* -->
+                    <!-- SAVED ADS MAPPINGS  in the home page  -->
+     <!--  *************************************************************-->
+
+
+        <action path="/my_saved_ads"
+                type="com.buysell.actionclass.MySavedAdsAction">
+
+            <forward name="success" path=".tile2.myAccount_SavedAds"/>
+        </action>
+
+
+
+
+        <action path="/delete_my_saved_ads"
+                type="com.buysell.actionclass.DeleteMySavedAdsAction">
+
+            <forward name="success" path="/my_saved_ads.do"/>
+        </action>
+
+
+
+
+
+
+<!-- ============================================================================================ -->
+<!--                              post Ad mappings                                               -->
+<!-- ============================================================================================= -->
+
+        <action path="/postAd"  type="com.buysell.actionclass.CategoryProviderAction"  >
+            <forward name="success" path="/createAd.do"/>
+        </action>
+
+        <action path="/postAdMy"  type="com.buysell.actionclass.CategoryProviderMAAction"  >
+            <forward name="success" path="/createAdMy.do" />
+
+        </action>
+
+        <action  path="/createAd" type="com.buysell.actionclass.CreateAdAction" scope="request" parameter="h" >
+            <forward name="success" path=".tile.ad" />
+        </action>
+
+        <action  path="/createAdMy" type="com.buysell.actionclass.CreateAdAction" scope="request" parameter="ma" >
+            <forward name="success" path=".tile.ad.My" />
+        </action>
+
+         <!-- this mapping for to upload image of post ad -->
+
+        <action path="/upload_postAd_submit"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.UploadAction"
+                scope="request" >
+            <forward name="success" path="/postAd_submit.do"/>
+            <forward name="failure" path=".tile2.err"/>
+        </action>
+
+        <!-- This mapping for to save the post ad information & decrease the balance ads to the user account -->
+
+        <action path="/postAd_submit"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.PostAdAction"
+                scope="request"
+                validate="false">
+
+            <forward name="regpostad" path="/validate.do" redirect="true" />
+            <forward name="postadnormal" path="/WEB-INF/jsp/successMy.jsp" />
+            <forward name="failure" path=".tile2.err"/> <!-- This error tile is not created till now -->
+        </action>
+
+
+
+       <!-- this mapping for myaccount post button -->
+
+
+        <!-- post ad in my account mappings -->
+
+        <action path="/upload_postAd_submit_my"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.UploadAction"
+                scope="request">
+            <forward name="success" path="/postAd_submit_my.do"/>
+            <forward name="failure" path=".tile2.error"/>
+        </action>
+
+        <action path="/postAd_submit_my"
+                name="postAdFormBean"
+                type="com.buysell.actionclass.PostAdAction"
+                scope="request"
+                validate="false">
+            <forward name="postadnormal" path="/WEB-INF/jsp/successMy.jsp"/>
+            <forward name="failure" path=".tile2.postAd"/>
+        </action>
+
+
+
+        <!-- **********************************************************-->
+        <!-- this mapping for uploading the file in server -->
+        <!-- **********************************************************-->
+        <action path="/uploaded"
+                name="userActionForm"
+                type="com.buysell.actionclass.UploadAction"
+                scope="request">
+            <forward name="success" path="/index.html"/>
+            <forward name="failure" path=".tile2.myAccount_ChangePassword"/>
+        </action>
+
+
+
+
+
+<!-- ************************************************************* -->
+                    <!-- Header login links  -->
+<!--  *************************************************************-->
+
+
+        <action path="/login"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.login"/>
+        </action>
+
+        <action path="/myAccountNL"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.myAccountNL"/>
+        </action>
+
+
+<!-- ************************************************************* -->
+                    <!-- search  buttons  -->
+<!--  *************************************************************-->
+
+
+       <!-- <action path="/advancedSearch"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.advancedSearch"/>
+        </action>-->
+
+        <action path="/basicSearch" type="com.buysell.actionclass.BasicSearchAction">
+            <forward name="success" path="/adSearch.do"/>
+        </action>
+
+        <action path="/adSearch"  type="com.buysell.actionclass.AdSearchTilesDisplayAction" >
+            <forward name="success" path=".tile2.latestAds"/>
+            <forward name="h"    path=".tile2.latestAds"/>
+            <forward name="ma" path=".tile2.latestAds.ma"/>
+        </action>
+
+        <action path="/sRefine" type="com.buysell.actionclass.RefineSearch"  >
+            <forward name="success" path="/adSearch.do"/>
+        </action>
+
+
+<!-- ************************************************************************ -->
+                    <!-- Send to friend Mapping -->
+<!-- ************************************************************************ -->
+
+        <action path="/sendToFriendLogin" type="com.buysell.actionclass.UserAction"  >
+            <forward name="success" path="/sendToFriend.do"/>
+            <forward name="failure" path=".tile2.myAccountNL" />
+            <forward name="quick" path="/sendToFriend.do" />
+        </action>
+
+        <action path="/sendToFriend" type="com.buysell.actionclass.SendToFriendAction">
+            <forward name="success" path=".tile2.aboutUs" />
+        </action>
+
+
+
+
+
+
+<!-- ************************************************************* -->
+                    <!-- Header menu buttons  -->
+<!--  *************************************************************-->
+
+
+        <action path="/aboutUs"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.aboutUs"/>
+        </action>
+
+        <action path="/contactUs"
+                type="com.buysell.actionclass.CategoryProviderAction"
+                scope="request">
+            <forward name="success" path=".tile2.contactUs"/>
+        </action>
+
+        <action path="/feedBack"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.feedBack"/>
+        </action>
+
+
+
+
+<!-- *************************************************** *********************-->
+                    <!-- Left menu starts -->
+ <!-- **************************************************************************-->
+
+
+
+        <action path="/latestAds"
+               type="com.buysell.actionclass.LatestAdAction">
+            <forward name="success" path=".tile2.latestAds"/>
+
+        </action>
+
+        <action path="/moreDetails"
+                type="com.buysell.actionclass.MoreDetailsAction" >
+            <forward name="success" path=".tile2.moreDetails"/>
+            <!--<forward name="sauto" path=".tile2.moreDetails"/>
+            <forward name="sreal" path=".tile2.moreDetails"/>
+            <forward name="selec" path=".tile2.moreDetails"/>
+            <forward name="sfurn" path=".tile2.moreDetails"/>
+            <forward name="shome" path=".tile2.moreDetails"/>
+            <forward name="sdomestic" path=".tile2.moreDetails"/>
+            <forward name="stravel" path=".tile2.moreDetails"/>
+            <forward name="sjobs" path=".tile2.moreDetails"/>
+            <forward name="sjewel" path=".tile2.moreDetails"/>
+            <forward name="soffice" path=".tile2.moreDetails"/>
+            <forward name="sfinance" path=".tile2.moreDetails"/>
+            <forward name="ssport" path=".tile2.moreDetails"/>
+            <forward name="santiq" path=".tile2.moreDetails"/>
+            <forward name="sastro" path=".tile2.moreDetails"/>
+            <forward name="spets" path=".tile2.moreDetails"/>
+            <forward name="smusic" path=".tile2.moreDetails"/>
+            <forward name="skids" path=".tile2.moreDetails"/>
+            <forward name="scommunity" path=".tile2.moreDetails"/>
+            <forward name="sbook" path=".tile2.moreDetails"/>
+            <forward name="senter" path=".tile2.moreDetails"/>
+            <forward name="spersonal" path=".tile2.moreDetails"/>
+            <forward name="clock" path=".tile2.moreDetails"/>-->
+
+        </action>
+
+        <action path="/moreDetailsEmail"  type="com.buysell.actionclass.RefreshAction" scope="request">
+            <forward name="success" path="/moreDetailsEmail1.do" />
+        </action>
+        <action path="/moreDetailsEmail1"
+                type="com.buysell.actionclass.MoreDetailsAction" >
+            <forward name="success" path="/fullLayoutServer.jsp"/>
+            <!--<forward name="sauto" path=".tile2.moreDetailsEmail"/>
+            <forward name="sreal" path=".tile2.moreDetailsEmail"/>
+            <forward name="selec" path=".tile2.moreDetailsEmail"/>
+            <forward name="sfurn" path=".tile2.moreDetailsEmail"/>
+            <forward name="shome" path=".tile2.moreDetailsEmail"/>
+            <forward name="sdomestic" path=".tile2.moreDetailsEmail"/>
+            <forward name="stravel" path=".tile2.moreDetailsEmail"/>
+            <forward name="sjobs" path=".tile2.moreDetailsEmail"/>
+            <forward name="sjewel" path=".tile2.moreDetailsEmail"/>
+            <forward name="soffice" path=".tile2.moreDetailsEmail"/>
+            <forward name="sfinance" path=".tile2.moreDetailsEmail"/>
+            <forward name="ssport" path=".tile2.moreDetailsEmail"/>
+            <forward name="santiq" path=".tile2.moreDetailsEmail"/>
+            <forward name="sastro" path=".tile2.moreDetailsEmail"/>
+            <forward name="spets" path=".tile2.moreDetailsEmail"/>
+            <forward name="smusic" path=".tile2.moreDetailsEmail"/>
+            <forward name="skids" path=".tile2.moreDetailsEmail"/>
+            <forward name="scommunity" path=".tile2.moreDetailsEmail"/>
+            <forward name="sbook" path=".tile2.moreDetailsEmail"/>
+            <forward name="senter" path=".tile2.moreDetailsEmail"/>
+            <forward name="spersonal" path=".tile2.moreDetailsEmail"/>
+            <forward name="clock" path=".tile2.moreDetailsEmail"/>-->
+        </action>
+
+
+        <action path="/register"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.register"/>
+        </action>
+
+        <action path="/register1" type="com.buysell.actionclass.RegisterAction"  name="registerFormBean"  scope="session" >
+            <forward name="normal" path="/validate.do" redirect="true" />
+            <forward name="postad" path="/upload_postAd_submit.do" />
+            <forward name="regError" path="/register.do" />
+        </action>
+
+        <action path="/referFriendReg"  type="com.buysell.actionclass.RefreshAction" scope="request">
+            <forward name="success" path="/register1.do"/>
+        </action>
+
+        <!-- this action class to put user in seesion for post ad & registration -->
+
+
+
+        <action path="/postRegister"  type="com.buysell.actionclass.RegisterAction" name="postAdFormBean" scope="session">
+            <forward name="normal" path="/validate.do" redirect="true" />
+            <forward name="postad" path="/upload_postAd_submit.do" />
+            <forward name="regError" path="/register.do" />
+        </action>
+
+
+
+        <action path="/bestDealers"  type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path=".tile2.bestDealers"/>
+        </action>
+
+        <!--<action path="/clf" type="com.buysell.actionclass.CategoryProviderAction" scope="request">
+            <forward name="success" path="/fd.do" />
+        </action>-->
+
+        <action path="/displayClfAds"
+                type="com.buysell.actionclass.DisplayClfAdsAction">
+            <forward name="success" path="/displayClfTiles.do"/>
+        </action>
+
+
+        <action path="/clf" type="com.buysell.actionclass.ClfDisplayAction" scope="request">
+            <forward name="success" path="/clfTiles.do" />
+        </action>
+
+
+        <action path="/spoffer" type="com.buysell.actionclass.SpOfferAction" scope="request">
+            <forward name="scrolloffer" path=".tile.spoffer" />
+            <forward name="success" path=".tile.cuoffer" />
+        </action>
+
+
+ <!-- *************************************************** *********************-->
+                    <!-- Left menu Ends -->
+<!-- **************************************************************************-->
+
+
+        <action path="/tile2" parameter=".tile2.layout" type="org.apache.struts.actions.ForwardAction" />
+
+
+        <!-- *********************************************************** -->
+                      <!-- ADMIN CONSOLE MAPPINGS START -->
+       <!-- *********************************************************** -->
+        <action path="/admin" type="com.buysell.admin.actionclasses.AdminEntryAction" >
+            <forward name="success" path="/WEB-INF/jsp/admin.jsp" />
+        </action>
+
+        <action path="/adminLogin"
+               type="com.buysell.admin.actionclasses.AdminAction"
+               name="adminActionForm"
+               scope="session" >
+            <forward name="success" path=".tile.admin"/>
+            <forward name="failure" path="/WEB-INF/jsp/admin.jsp" />
+
+        </action>
+
+        <action   path="/add_countryN"
+                 name="addPlaceActionForm"
+                 scope="session"
+                 type="com.buysell.admin.actionclasses.AddCountryAction">
+
+            <forward name="success" path=".tile.admin"/>
+        </action>
+
+        <action  name="addPlaceActionForm"
+                  path="/add_stateN"
+                  scope="session"
+                  type="com.buysell.admin.actionclasses.AddStateAction">
+            <forward name="success" path=".tile.admin" />
+        </action>
+
+        <action  name="addPlaceActionForm"
+                 path="/add_cityN"
+                 scope="session"
+                 type="com.buysell.admin.actionclasses.AddCityAction">
+            <forward name="success" path=".tile.admin" />
+        </action>
+
+        <action name="addPlaceActionForm"
+                path="/add_areaN"
+                scope="session"
+                type="com.buysell.admin.actionclasses.AddAreaAction">
+            <forward name="success" path=".tile.admin" />
+        </action>
+
+        <action name="addPlaceActionForm"
+                path="/add_localityN"
+                scope="session"
+                type="com.buysell.admin.actionclasses.AddLocalityAction">
+            <forward name="success" path=".tile.admin" />
+        </action>
+        <action path="/admin_logout"
+                    type="com.buysell.admin.actionclasses.AdminLogoutAction"
+                    scope="request">
+            <forward name="success" path="/WEB-INF/jsp/admin.jsp"/>
+        </action>
+
+        <action path="/admin_change_password" parameter=".tile.admin_change_pwd" type="org.apache.struts.actions.ForwardAction" />
+
+        <action path="/admin_change_pwd"
+                name="adminChangePWDActionForm"
+                type="com.buysell.admin.actionclasses.AdminChangePWDAction"
+                scope="request">
+            <forward name="success" path=".tile.admin_change_pwd_ok"/>
+            <forward name="failure" path="/WEB-INF/jsp/admin.jsp"/>
+        </action>
+
+        <action  name="addPlaceActionForm"
+                 path="/adsDisplay"
+                 scope="session"
+                 type="com.buysell.actionclass.AdsDisplayAction">
+        </action>
+
+
+
+
+
+
+
+ <!-- ************************************************************************ -->
+                    <!-- Feed Back Mapping -->
+<!-- ************************************************************************ -->
+        <action path="/feedBack" type="com.buysell.actionclass.FeedBackAction">
+            <forward name="success" path="/WEB-INF/jsp/success.jsp"/>
+        </action>
+
+        <action path="/sendMail" type="com.buysell.actionclass.EmailSend">
+            <forward name="success" path="/WEB-INF/jsp/success.jsp"/>
+        </action>
+
+        <action path="/detailAd" type="com.buysell.actionclass.DetailAdAction">
+            <forward name="success" path="/WEB-INF/jsp/detailVew.jsp"/>
+        </action>
+
+
+        <action path="/tc" parameter="/WEB-INF/jsp/tc.jsp" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/ps" parameter="/WEB-INF/jsp/ps.jsp" type="org.apache.struts.actions.ForwardAction" />
+
+
+
+
+ <!-- ************************************************************************ -->
+                    <!-- Invite Friends Mapping -->
+<!-- ************************************************************************ -->
+
+        <action path="/inviteFriends" type="com.buysell.actionclass.InviteFriendsBeforeAction">
+            <forward name="success" path=".tile2.invite"/>
+        </action>
+
+
+        <action path="/inviteFriends1" type="com.buysell.actionclass.InviteFriends">
+            <forward name="displaylist" path=".tile2.inviteList"/>
+        </action>
+
+        <action path="/inviteFriends2" type="com.buysell.actionclass.InviteFriends">
+            <forward name="success" path=".tile2.invite"/>
+
+        </action>
+
+        <action path="/regChk" type="com.buysell.actionclass.RegistrationCheck" >
+            <forward name="success" path="/WEB-INF/jsp/regChk.jsp" />
+        </action>
+
+
+
+        <action path="/help" type="com.buysell.actionclass.CategoryProviderAction" >
+            <forward name="success" path=".tile.help" />
+        </action>
+        <action path="/quickReg" type="com.buysell.actionclass.QuickRegistrationAction">
+            <forward name="qrnsave" path="/validate.do" redirect="true" />
+            <forward name="qrnsearch" path="/validate.do" redirect="true" />
+            <forward name="qrnsms" path="/validate.do" redirect="true" />
+            <forward name="qrnalert" path="/validate.do" redirect="true" />
+            <forward name="qrnemail" path="/validate.do" redirect="true" />
+
+        </action>
+
+
+        <action path="/siteMap"
+                type="com.buysell.actionclass.CategoryProviderAction"
+                scope="request">
+            <forward name="success" path=".tile.siteMap"/>
+        </action>
+
+
+
+
+    <!--    <action  path="/pa100" scope="request" type="com.buysell.testingClasses.postAd100">
+             <forward name="success" path=".tile.siteMap"/>
+       </action>
+  -->
+
+
+        <!-- Admin related tiles mapping-->
+
+        <action path="/add_country" parameter=".tile.add_country" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/add_state" parameter=".tile.add_state" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/add_city" parameter=".tile.add_city" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/add_area" parameter=".tile.add_area" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/add_locality" parameter=".tile.add_locality" type="org.apache.struts.actions.ForwardAction" />
+
+
+         <!-- Myaccount page Action Mapping -->
+
+
+
+
+
+       <!-- *********************************************************** -->
+                      <!-- ADMIN CONSOLE MAPPINGS END -->
+       <!-- *********************************************************** -->
+
+
+
+
+
+
+               <!-- *********************************************************** -->
+                      <!-- DEALER my Account MAPPINGS END -->
+               <!-- *********************************************************** -->
+
+
+
+
+
+        <action path="/accountDetails" parameter=".tile.accountDetails" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/contactPersonDetails" parameter=".tile.contactPersonDetails" type="org.apache.struts.actions.ForwardAction" />
+        <!--<action path="/smsDetails" parameter=".tile.smsDetails" type="org.apache.struts.actions.ForwardAction" />-->
+        <!--<action path="/myOfferDetails" parameter=".tile.myOfferDetails" type="org.apache.struts.actions.ForwardAction" />-->
+        <action path="/postOffers" parameter=".tile.postOffers" type="org.apache.struts.actions.ForwardAction" />
+
+
+
+        <action path="/hom" parameter=".tile.hom" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/prod" parameter=".tile.prod" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/adsBBS" parameter=".tile.adsBBS" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/aboutUsDealer" parameter=".tile.aboutUsDealer" type="org.apache.struts.actions.ForwardAction" />
+        <action path="/contactUsDealer" parameter=".tile.contactUsDealer" type="org.apache.struts.actions.ForwardAction" />
+
+                <!-- *********************************************************** -->
+                      <!-- DEALER  Mappings -->
+               <!-- *********************************************************** -->
+        <action path="/bestDealers" type="com.buysell.actionclass.CategoryProviderAction">
+            <forward name="success" path=".tile1.dealerBody" />
+        </action>
+        <action path="/dealers" type="com.buysell.actionclass.DealersDisplayAction">
+            <forward name="success" path=".tile2.bestDealers" />
+        </action>
+
+        <action path="/myOffersDetails" type="com.buysell.actionclass.MyOffersAC">
+            <forward name="success" path="tile.offer.success"/>
+        </action>
+        <action path="/requestOffers" type="com.buysell.actionclass.GetOffersList">
+            <forward name="success" path=".tile2.requestOffers"/>
+        </action>
+        <action path="/renewEditOffers" type="com.buysell.actionclass.EditOrRenewOffersAction" >
+            <forward name="success" path=".tile2.renewEditOffers" />
+        </action>
+        <action path="/delOffers" type="com.buysell.actionclass.DeleteOffersAction" >
+            <forward name="success" path=".tile2.delOffers" />
+        </action>
+        <action path="/rejectedOffers" type="com.buysell.actionclass.GetOffersList" >
+            <forward name="success" path=".tile2.rejectedOffers" />
+        </action>
+        <action path="/editOffer" type="com.buysell.actionclass.EditOfferAction">
+            <forward name="success" path=".tile2.editOffer" />
+        </action>
+        <action path="/updateOffer" name="ScrollOffersFormBean" type="com.buysell.actionclass.UpdateOfferAction">
+            <forward name="success" path="/successDoMy.do"/>
+        </action>
+        <action path="/deleteSelectedOffers" type="com.buysell.actionclass.DeleteSelectedOffersAction">
+            <forward name="success" path="/delOffers.do"/>
+        </action>
+
+
+        <action path="/dealerMoreDetails" type="com.buysell.actionclass.DealerMoreDetailsAC" >
+            <forward name="success" path=".tile.moreDetailsDealer" />
+        </action>
+        <action path="/dealersAllAds" type="com.buysell.actionclass.GetDealerAllAds" >
+            <forward name="success" path=".tile3.layout" />
+            <forward name="failure" path="/bestDealers.do" />
+        </action>
+        <action path="/dealerScrolls" type="com.buysell.actionclass.DealerScrolls">
+            <forward name="success" path="/WEB-INF/jsp/scroll.jsp" />
+        </action>
+        <action path="/smsDetails" type="com.buysell.actionclass.DealerMySmsAction">
+            <forward name="success" path=".tile2.smsDetails" />
+        </action>
+
+           <!--=======   Link Creation Module=======-->
+
+        <action path="/cL" type="com.buysell.actionclass.CategoryProviderAction">
+            <forward name="success" path=".tile.createLink1"/>
+        </action>
+           <!--creation-->
+        <action path="/createLink"  type="com.buysell.actionclass.CategoryProviderAction">
+            <forward name="success" path=".tile.createLink"/>
+        </action>
+        <action path="/createLinkAc"  name="ScrollOffersFormBean" type="com.buysell.actionclass.CreateLinkAction">
+            <forward name="success" path="/createLink.do"/>
+        </action>
+        <action path="/getLinks" type="com.buysell.actionclass.GetLinksAction">
+            <forward name="success" path="/cL.do"/>
+        </action>
+           <!--WebShop -->
+        <action path="/ws" type="com.buysell.webshop.actionclasses.WebsiteAction">
+            <forward name="success" path=".tile4.mainLayoutHome"/>
+            <forward name="nsd" path="/tile1.do?city=All India"/>
+        </action>
+        <action path="/wsPl" type="com.buysell.webshop.actionclasses.GetWCTProducts" >
+            <forward name="success" path=".tile4.productList" />
+        </action>
+        <action path="/wsProdDet" type="com.buysell.actionclass.CategoryProviderAction">
+            <forward name="success" path=".tile4.productDetails"/>
+        </action>
+        <action  path="/createCat" name="createCategoryFormbean" scope="session" type="com.buysell.webshop.actionclasses.CreateCategoryAction">
+            <forward name="success" path=".tile2.wsCreateCategory"/>
+        </action>
+
+        <action  path="/wsCreateCategory" type="com.buysell.webshop.actionclasses.CreateCategoryAction">
+            <forward name="success" path=".tile2.wsCreateCategory"/>
+        </action>
+
+        <action  path="/wsSubCategory"  type="com.buysell.webshop.actionclasses.CreateCategoryAction">
+            <forward name="success" path=".tile2.wsCreateSubCategory"/>
+        </action>
+
+        <action  path="/wsCreateSubCategory" name="createCategoryFormbean" scope="session" type="com.buysell.webshop.actionclasses.CreateCategoryAction">
+            <forward name="success" path=".tile2.wsCreateSubCategory"/>
+        </action>
+
+        <action path="/wsProductCreation" type="com.buysell.webshop.actionclasses.ProductProviderAction" >
+            <forward name="success" path=".tile2.wsProductCreation"/>
+        </action>
+
+        <action path="/wsCreateProduct" name="ProductCreationActionForm" type="com.buysell.webshop.actionclasses.ProductCreationActionClass">
+            <forward name="success" path="/wsProductCreation.do"/>
+        </action>
+
+        <action path="/editCat" name="createCategoryFormbean" type="com.buysell.webshop.actionclasses.UpdateCategoryAction">
+            <forward  name="success" path="/wsCreateCategory.do?f=ret"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/deleteCat" name="createCategoryFormbean" type="com.buysell.webshop.actionclasses.UpdateCategoryAction">
+            <forward name="success" path="/wsCreateCategory.do?f=ret"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+
+        <action path="/editSubCat" name="createCategoryFormbean" type="com.buysell.webshop.actionclasses.UpdateCategoryAction">
+            <forward  name="success" path="/wsCreateSubCategory.do?f=ret"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/deleteSubCat" name="createCategoryFormbean" type="com.buysell.webshop.actionclasses.UpdateCategoryAction">
+            <forward name="success" path="/wsCreateSubCategory.do?f=ret"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+                                                  <!--Top N List-->
+        <action path="/wsCreateTopNList" type="com.buysell.webshop.actionclasses.AssignProducts_WCT_Action">
+            <forward name="topNList" path=".tile2.createTopNList"/>
+        </action>
+
+        <action path="/assignWCT" type="com.buysell.webshop.actionclasses.AssignProducts_WCT_Action">
+            <forward name="topNList" path="/wsCreateTopNList.do?lT=tnl&amp;m=s"/>
+            <forward name="spcOffers" path="/wsCreateSpecialOffers.do?lT=spl&amp;m=s"/>
+            <forward name="whatsNew" path="/wsCreateWhatsNew.do?lT=new&amp;m=s"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+
+        <action path="/delAssign" type="com.buysell.webshop.actionclasses.DeleteAssignProducts">
+            <forward name="nSuccess" path="/wsCreateWhatsNew.do"/>
+            <forward name="sSuccess" path="/wsCreateSpecialOffers.do"/>
+            <forward name="tSuccess" path="/wsCreateTopNList.do"/>
+        </action>
+                                                 <!--Special offer-->
+
+        <action path="/wsCreateSpecialOffers" type="com.buysell.webshop.actionclasses.AssignProducts_WCT_Action">
+            <forward name="spcOffers" path=".tile2.createSpecialOffer"/>
+        </action>
+                                                 <!--What's New-->
+
+        <action path="/wsCreateWhatsNew" type="com.buysell.webshop.actionclasses.AssignProducts_WCT_Action">
+            <forward name="whatsNew" path=".tile2.createWhatsNew"/>
+        </action>
+        <action path="/wsProductAssignment" type="com.buysell.webshop.actionclasses.CategoryWSProviderAction">
+            <forward name="success" path=".tile2.assignProducts"/>
+        </action>
+        <action path="/productAssigner" type="com.buysell.webshop.actionclasses.ProductsAssigner">
+            <forward name="success" path="/wsProductAssignment.do"/>
+        </action>
+        <action path="/assignD" type="com.buysell.webshop.actionclasses.AssignDProducts">
+            <forward name="success" path="/defineWebshop.do"/>
+        </action>
+                                    <!--webshop preferences-->
+        <action path="/wSc" type="com.buysell.webshop.actionclasses.CategoryWSProviderAction">
+            <forward name="success" path=".tile2.categoryPref"/>
+        </action>
+        <action path="/wsCreation" type="com.buysell.webshop.actionclasses.WebshopCreationAction">
+            <forward name="success" path="/wSc.do"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/edtWs" type="com.buysell.webshop.actionclasses.EditWebshopAction">
+            <forward name="success" path=".tile2.editWebshop"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+            <forward name="editSuccess" path=".tile2.categoryPref"/>
+        </action>
+        <action path="/updateWS" type="com.buysell.webshop.actionclasses.UpdateWebshopAction">
+            <forward name="success" path="/edtWs.do"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/defineWebshop" type="com.buysell.webshop.actionclasses.GetDefinedWebshopDetails">
+            <forward name="success" path=".tile2.defineWebshop"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/getProducts" type="com.buysell.webshop.actionclasses.GetProductsAction">
+            <forward name="success" path=".tile2.prodEditList"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/edtProd" name="ProductCreationActionForm" type="com.buysell.webshop.actionclasses.UpdateProductsAction">
+            <forward name="success" path=".tile2.prodDetails"/>
+            <forward name="upSuccess" path="/getProducts.do?et=et"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <action path="/assignWW" type="com.buysell.webshop.actionclasses.EditWebshopAction">
+            <forward name="success" path=".tile2.assignWebshop"></forward>
+        </action>
+        <action path="/assignWeb" type="com.buysell.webshop.actionclasses.AssignWebshopAction">
+            <forward name="success" path=".tile2.assignWebshop"/>
+        </action>
+        <action path="/defineWS" type="com.buysell.webshop.actionclasses.DefineWebshopAction">
+            <forward name="notLogin" path="/myAccountNL.do"/>
+            <forward name="success" path="/edtWs.do"/>
+        </action>
+
+          <!--==============================  WEBSHOP UI =================================-->
+        <action path="/getWatsNew" type="com.buysell.webshop.actionclasses.AssignProducts_WCT_Action">
+            <forward name="topNList" path=".tile4.whatsNew"/>
+            <forward name="spcOffers" path=".tile4.whatsNew"/>
+            <forward name="whatsNew" path=".tile4.whatsNew"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+         <!-- <action path="/newProdDet" type="com.buysell.webshop.actionclasses.UpdateProductsAction">
+              <forward name="success" path=".tile4.splOfferProdDet"/>
+          </action>-->
+        <action path="/photGal" type="org.apache.struts.actions.ForwardAction" parameter=".tile4.photogallery"/>
+
+        <action path="/getWCT" type="com.buysell.webshop.actionclasses.GetWCTProducts">
+            <forward name="success" path=".tile4.whatsNew"/>
+            <forward name="failure" path="/myAccountNL.do"/>
+        </action>
+        <action path="/newProdDet" type="com.buysell.webshop.actionclasses.GetProductsDetails">
+            <forward name="success" path=".tile4.splOfferProdDet"/>
+        </action>
+        <action path="/listProducts" type="com.buysell.webshop.actionclasses.ProductsAssigner">
+            <forward name="success" path=".tile4.listProducts"/>
+        </action>
+        <action path="/wsContact" type="org.apache.struts.actions.ForwardAction" parameter=".tile4.wsContactUs"/>
+
+        <action path="/upWdtAds" name="ProductCreationActionForm" type="com.buysell.webshop.actionclasses.UpdateWebsiteAdsAction">
+            <forward name="success" path=".tile2.wsCreateAds"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+
+        <action path="/wstAds" name="ProductCreationActionForm" type="com.buysell.webshop.actionclasses.WebsiteAdsAction">
+            <forward name="success" path="/upWdtAds.do"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+        <!--<action path="/getWSProducts" type="com.buysell.webshop.actionclasses.GetWebshopProducts">
+            <forward name="success" path=".tile4.listProducts"/>
+        </action>-->
+        <action path="/getWSProducts" type="com.buysell.webshop.actionclasses.GetWebshopProductAction">
+            <forward name="success" path=".tile4.listProducts"/>
+            <forward name="failure" path="/ws.do"/>
+        </action>
+        <action path="/auctions" type="com.buysell.bids.BidListsAction">
+            <forward name="success" path=".tile5.bids"/>
+        </action>
+        <action path="/bidMoreDetails" type="com.buysell.bids.BidListsAction">
+            <forward name="success" path=".tile5.bidDetails"/>
+        </action>
+        <action path="/bidsWatchList" type="com.buysell.bids.GetWLBidsAction">
+            <forward name="success" path=".tile2.bidsWatchList"/>
+            <forward name="notLogin" path="/myAccountNL.do"/>
+        </action>
+
+        <action path="/bidScroll" type="com.buysell.bids.BidListsAction">
+            <forward name="success" path="/WEB-INF/jsp/scroll.jsp" />
+        </action>
+
+        <action path="/recentAds" type="com.buysell.actionclass.RecentAdsAction">
+            <forward name="success" path=".tile1.mainLayoutHome" />
+        </action>
+
+        <action path="/clfTiles" type="com.buysell.actionclass.AdSearchTilesDisplayAction" scope="request">
+            <forward name="success" path=".tile2.clf" />
+        </action>
+        <action path="/displayClfTiles" type="com.buysell.actionclass.AdSearchTilesDisplayAction" scope="request">
+            <forward name="success" path=".tile2.latestAds" />
+        </action>
+
+        <action path="/adStatusUpdateR" type="com.buysell.actionclass.AuthLoginAction">
+            <forward name="success" path="/edit_ad_for_renew.do"/>
+            <forward name="failure" path=".tile2.myAccountNL" />
+            <forward name="mobile" path=".tile2.mobileLogin" />
+        </action>
+        <action path="/adStatusUpdateD" type="com.buysell.actionclass.AuthLoginAction">
+            <forward name="success" path="/delete_specific_ads.do"/>
+            <forward name="failure" path=".tile2.myAccountNL" />
+            <forward name="mobile" path=".tile2.mobileLogin" />
+        </action>
+
+        <action path="/relatedClfAds" type="com.buysell.actionclass.DisplayClfAdsAction">
+            <forward name="success" path="/WEB-INF/jsp/relatedClfAds.jsp" />
+        </action>
+
+        <action path="/myAccount_ChangeMobile" type="org.apache.struts.actions.ForwardAction" parameter=".tile2.myAccount_ChangeMobile" />
+
+       <!-- <action path="/wsProductAssignment" type="org.apache.struts.actions.ForwardAction"  parameter=".tile2.assignProducts"/>-->
+
+
+       <!--   Karteek Starts-->
+
+        <action path="/resp_dtl" type="com.buysell.actionclass.GetResponsesAction">
+            <forward name="success" path=".tile2.myAccount_RespDtls"/>
+            <!--<forward name="failure" path=".tile2.myAccount_RespDtls"/>-->
+        </action>
+        
+         <action path="/delRespDtl" type="com.buysell.actionclass.GetDelResponsesAction">
+            <forward name="success" path=".tile2.myAccount_DelRespDtls"/>
+          </action>
+        
+         <action path="/microsite_respDtls" type="com.buysell.actionclass.GetResponsesAction">
+            <forward name="success" path=".tile2.myAccount_MsRespDtls"/>
+            </action>
+
+        <action path="/specificPreffAdsAction"
+                type="com.buysell.actionclass.SpecificPreffAdsAction">
+            <forward name="success" path=".tile2.specific_ads_list"/>
+            <forward name="failure" path=".tile2.specific_ads_list"/>
+        </action>
+
+        <action path="/leadForm" type="com.buysell.actionclass.CategoryProviderAction">
+            <forward name="success" path=".tile2.leadForm"/>
+        </action>
+       
+        <!--   Karteek Ends-->
+
+
+
+
+
+    </action-mappings>
+
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>
+
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+
+    <!-- ========================= Validator plugin =================================
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>-->
+
+</struts-config>

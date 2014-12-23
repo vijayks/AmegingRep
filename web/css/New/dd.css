@@ -1,0 +1,571 @@
+
+.dd2 {
+    /*display:inline-block !important;*/
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    position:relative;
+}
+.dd2 .ddTitle {
+    background:transparent url(../../bbsimages/New/all_india_img.png) no-repeat;
+    padding:0 0px;
+    text-indent:0;
+    cursor:default;
+    overflow:hidden;
+    height:19px;
+    cursor:pointer;
+    width:150px;
+}
+.dd2 .ddTitle:hover {
+    background-position:0 -19px;
+}
+
+.dd2 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:19px;
+                                font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#383838; padding-left:5px;}
+.dd2 .ddTitle span.ddTitleText img{text-align:left; }
+.dd2 .ddTitle img.selected {
+    padding:0 0px 0 0;
+    vertical-align:top;
+}
+.dd2 .ddChild {
+    position:absolute;
+    border:1px solid #c3c3c3;
+    border-top:none;
+    display:none;
+    margin:0;
+    width: auto;
+    overflow:auto;
+    overflow-x:hidden !important;
+    background-color:#ffffff;
+    font-size:12px;
+}
+.dd2 .ddChild .opta a, .dd2 .ddChild .opta a:visited {padding-left:10px}
+.dd2 .ddChild a {
+    display:block;
+    padding:0px 0 3px 5px;
+    text-decoration:none;
+    color:#000;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.dd2 .ddChild a:hover {
+    background-color: #eeeeee;
+}
+
+
+
+.dd3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+    margin: 2px 0 0 5px;
+	position:relative;
+    text-align: left;
+}
+.dd3 .ddTitle {
+    background: url("../../bbsimages/New/catery_aroow_new.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 24px;
+    overflow: hidden;
+    padding: 0 0;
+	text-indent:0;
+	width:200px;
+}
+.dd3 .ddTitle:hover {
+	background-position:0 -24px;
+}
+.dd3 .ddTitle span.ddTitleText {
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 5px;
+    text-indent: 1px;
+}
+.dd3 .ddTitle span.ddTitleText img {
+    text-align: left;
+}
+.dd3 .ddTitle img.selected {
+    padding: 0 0 0 0;
+	vertical-align:top;
+}
+.dd3 .ddChild {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+	display:none;
+    font-size: 12px;
+	margin:0;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    position: absolute;
+	width: auto;
+}
+.dd3 .ddChild .opta a, .dd2 .ddChild .opta a:visited {
+    padding-left: 0;
+}
+.dd3 .ddChild a {
+    color: #000000;
+    cursor: pointer;
+	display:block;
+    overflow: hidden;
+    padding: 0 0 3px 10px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.dd3 .ddChild a:hover {
+    background-color: #EEEEEE;
+}
+
+
+.dd4 {
+    /*display:inline-block !important;*/
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    position:relative;
+    margin:2px 0 0 0px;
+}
+.dd4 .ddTitle {
+    background:transparent url(../../bbsimages/New/catery_aroow.png) no-repeat;
+    padding:0 0px 0 10px;
+    text-indent:0;
+    cursor:default;
+    overflow:hidden;
+    height:24px;
+    cursor:pointer;
+    width:115px;
+}
+.dd4 .ddTitle:hover {
+    background-position:0 -24px;
+}
+.dd4 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#000000; padding-left:0px;}
+.dd4 .ddTitle span.ddTitleText img{text-align:left; }
+.dd4 .ddTitle img.selected {
+    padding:0 0px 0 0;
+    vertical-align:top;
+}
+.dd4 .ddChild {
+    position:absolute;
+    border:solid 1px #CCCCCC;
+    border-top:none;
+    display:none;
+    margin:0;
+    width: auto;
+    overflow:auto;
+    overflow-x:hidden !important;
+    background-color:#ffffff;
+    font-size:12px;
+}
+.dd4 .ddChild .opta a, .dd4 .ddChild .opta a:visited {padding-left:10px}
+.dd4 .ddChild a {
+    display:block;
+    padding:0px 0 3px 10px;
+    text-decoration:none;
+    color:#000;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.dd4 .ddChild a:hover {
+    background-color: #eeeeee;
+
+}
+
+
+
+/*Karteek*/
+.dd5 {
+    /*display:inline-block !important;*/
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    position:relative;
+}
+.dd5 .ddTitle {
+    padding:0 0px;
+    text-indent:0;
+    cursor:default;
+    overflow:hidden;
+    height:19px;
+    cursor:pointer;
+    width:150px;
+}
+.dd5 .ddTitle:hover {
+    background-position:0 -19px;
+}
+
+.dd5 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:19px;
+                                font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#383838; padding-left:5px;}
+.dd5 .ddTitle span.ddTitleText img{text-align:left; }
+.dd5 .ddTitle img.selected {
+    padding:0 0px 0 0;
+    vertical-align:top;
+}
+.dd5 .ddChild {
+    position:absolute;
+    border:1px solid #c3c3c3;
+    border-top:none;
+    display:none;
+    margin:0;
+    width: auto;
+    overflow:auto;
+    overflow-x:hidden !important;
+    background-color:#ffffff;
+    font-size:12px;
+}
+.dd5 .ddChild .opta a, .dd5 .ddChild .opta a:visited {padding-left:10px}
+.dd5 .ddChild a {
+    display:block;
+    padding:0px 0 3px 5px;
+    text-decoration:none;
+    color:#000;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.dd5 .ddChild a:hover {
+    background-color: #eeeeee;
+}
+
+
+
+.dd7 {
+	/*display:inline-block !important;*/
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	position:relative;
+	margin:2px 0 0 0px;
+}
+.dd7 .ddTitle {
+	background:transparent url(../../bbsimages/New/reg_input_bg.jpg) no-repeat;
+	padding:0 0px 0 0px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:24px;
+	cursor:pointer;
+	width:208px;
+}
+.dd7 .ddTitle:hover {
+	background-position:0 -24px;
+}
+.dd7 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:#000000; padding-left:5px;}
+.dd7 .ddTitle span.ddTitleText img{text-align:left; }
+.dd7 .ddTitle img.selected {
+	padding:0 0px 0 0;
+	vertical-align:top;
+}
+.dd7 .ddChild {
+	position:absolute;
+	display:none;
+	margin:0;
+	width: auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#e7e7e7;
+	font-size:12px;
+}
+.dd7 .ddChild .opta a, .dd3 .ddChild .opta a:visited {padding-left:0px}
+.dd7 .ddChild a {
+	display:block;
+	padding:0px 0 3px 10px;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd7 .ddChild a:hover {
+	background-color: #c3d8ff;
+}
+
+
+
+.dd9 {
+    /*display:inline-block !important;*/
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    position:relative;
+}
+.dd9 .ddTitle {
+    background:transparent url(../../bbsimages/New/date_bg.jpg) no-repeat;
+    padding:0 0px;
+    text-indent:0;
+    cursor:default;
+    overflow:hidden;
+    height:23px;
+    cursor:pointer;
+    width:63px;
+}
+.dd9 .ddTitle:hover {
+    background-position:0 -23px;
+}
+
+.dd9 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:19px; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:#383838; padding-left:5px;}
+.dd9 .ddTitle span.ddTitleText img{text-align:left; }
+.dd9 .ddTitle img.selected {
+    padding:0 0px 0 0;
+    vertical-align:top;
+}
+.dd9 .ddChild {
+    position:absolute;
+    border-top:none;
+    display:none;
+    margin:0;
+    width: auto;
+    overflow:auto;
+    overflow-x:hidden !important;
+    background-color:#ffffff;
+    font-size:12px;
+}
+.dd9 .ddChild .opta a, .dd9 .ddChild .opta a:visited {padding-left:10px}
+.dd9 .ddChild a {
+    display:block;
+    padding:0px 0 3px 5px;
+    text-decoration:none;
+    color:#000;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.dd9 .ddChild a:hover {
+    background-color: #eeeeee;
+}
+
+
+
+.dd9 {
+    /*display:inline-block !important;*/
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    position:relative;
+    margin:2px 0 0 0px;
+}
+.dd9 .ddTitle {
+    /*background:transparent url(images/catery_aroow_new.png) no-repeat;*/
+    padding:0 0px 0 0px;
+    text-indent:0;
+    cursor:default;
+    overflow:hidden;
+    height:23px;
+    cursor:pointer;
+    width:65px;
+}
+.dd9 .ddTitle:hover {
+    background-position:0 -24px;
+}
+.dd9 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:#000000; padding-left:5px;}
+.dd9 .ddTitle span.ddTitleText img{text-align:left; }
+.dd9 .ddTitle img.selected {
+    padding:0 0px 0 0;
+    vertical-align:top;
+}
+.dd9 .ddChild {
+    position:absolute;
+    display:none;
+    margin:0;
+    width: auto;
+    overflow:auto;
+    overflow-x:hidden !important;
+    background-color:#e7e7e7;
+    font-size:12px;
+}
+.dd9 .ddChild .opta a, .dd9 .ddChild .opta a:visited {padding-left:0px}
+.dd9 .ddChild a {
+    display:block;
+    padding:0px 0 3px 10px;
+    text-decoration:none;
+    color:#000;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.dd9 .ddChild a:hover {
+    background-color: #c3d8ff;
+}
+
+/*/Karteek*/
+
+
+
+
+.dd11 {
+	/*display:inline-block !important;*/
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	position:relative;
+	margin:0px 0 0 0px;
+}
+.dd11 .ddTitle {
+	background:transparent url(../../bbsimages/New/registering_bg2.png) no-repeat;
+	padding:0px 0px 0 10px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:32px;
+	cursor:pointer;
+	width:236px;
+}
+.dd11 .ddTitle:hover {
+	background-position:0 -32px;
+}
+.dd11 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#000000; padding-left:0px;}
+.dd11 .ddTitle span.ddTitleText img{text-align:left; }
+.dd11 .ddTitle img.selected {
+	padding:0 0px 0 0;
+	vertical-align:top;
+}
+.dd11 .ddChild {
+	position:absolute;
+	border:solid 1px #CCCCCC;
+	border-top:none;
+	display:none;
+	margin:0;
+	width: auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#ffffff;
+	font-size:12px;
+}
+.dd11 .ddChild .opta a, .dd11 .ddChild .opta a:visited {padding-left:10px}
+.dd11 .ddChild a {
+	display:block;
+	padding:0px 0 3px 10px;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd11 .ddChild a:hover {
+	background-color: #eeeeee;
+
+}
+
+
+
+
+.dd12 {
+	/*display:inline-block !important;*/
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	position:relative;
+	margin:2px 0 0 0px;
+}
+.dd12 .ddTitle {
+	background:transparent url(../../bbsimages/New/registering_bg2.png) no-repeat;
+	padding:0px 0px 0 10px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:32px;
+	cursor:pointer;
+	width:236px;
+}
+.dd12 .ddTitle:hover {
+	background-position:0 -32px;
+}
+.dd12 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#000000; padding-left:0px;}
+.dd12 .ddTitle span.ddTitleText img{text-align:left; }
+.dd12 .ddTitle img.selected {
+	padding:0 0px 0 0;
+	vertical-align:top;
+}
+.dd12 .ddChild {
+	position:absolute;
+	border:solid 1px #CCCCCC;
+	border-top:none;
+	display:none;
+	margin:0;
+	width: auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#ffffff;
+	font-size:12px;
+}
+.dd12 .ddChild .opta a, .dd12 .ddChild .opta a:visited {padding-left:10px}
+.dd12 .ddChild a {
+	display:block;
+	padding:0px 0 3px 10px;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd12 .ddChild a:hover {
+	background-color: #eeeeee;
+
+}
+
+.dd10 {
+	/*display:inline-block !important;*/
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	position:relative;
+	margin:2px 0 0 0px;
+}
+.dd10 .ddTitle {
+	background:transparent url(../../bbsimages/New/support_scroll_bg.png) no-repeat;
+	padding:5px 0px 0 10px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:31px;
+	cursor:pointer;
+	width:342px;
+}
+.dd10 .ddTitle:hover {
+	background-position:0 -36px;
+}
+.dd10 .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:24px; font-family:Arial, Helvetica, sans-serif, Times, serif; font-size:12px; font-weight:normal; color:#000000; padding-left:0px;}
+.dd10 .ddTitle span.ddTitleText img{text-align:left; }
+.dd10 .ddTitle img.selected {
+	padding:0 0px 0 0;
+	vertical-align:top;
+}
+.dd10 .ddChild {
+	position:absolute;
+	border:solid 1px #CCCCCC;
+	border-top:none;
+	display:none;
+	margin:0;
+	width: auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#ffffff;
+	font-size:12px;
+}
+.dd10 .ddChild .opta a, .dd10 .ddChild .opta a:visited {padding-left:10px}
+.dd10 .ddChild a {
+	display:block;
+	padding:0px 0 3px 10px;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd10 .ddChild a:hover {
+	background-color: #eeeeee;
+
+}
+
+
+

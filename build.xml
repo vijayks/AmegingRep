@@ -1,0 +1,72 @@
+<project name="Ameging" basedir="." default="build">
+
+	<!-- Build property file -->
+	<property file="build.properties" />
+
+	<!-- classpath -->
+	<path id="classpath">
+ 		<fileset dir="lib">
+    		<include name="**/*.jar" />
+  		</fileset>
+		<pathelement path="${jar.dir}"/> 	 
+	</path>	
+
+  	 <!-- Build task -->
+   	<target name="build" depends="clean,make,compile,jar,war">
+    	   	<echo message="${ant.project.name} : build" />		
+   	</target>
+	
+	<!-- Compile task -->
+	<target name="compile" depends="make">
+   	   	<echo message="${ant.project.name} : compile" />
+           	<mkdir dir="${out.dir}"/>
+           	<javac srcdir="${src.dir}" destdir="${out.dir}/${class.dir}" classpathref="classpath" debug="on"/>
+	</target>
+
+	<!-- Jar task -->	
+	<target name="jar" depends="compile">
+		<echo message="About to create jar" />
+		<copy todir="${out.dir}/${jar.dir}">
+		<fileset dir="${out.dir}/${class.dir}" />
+		</copy>
+		<jar destfile="${out.dir}/${jar.name}" basedir="${out.dir}/${jar.dir}"/>
+		<delete dir="${out.dir}/${jar.dir}"/>
+	</target>
+
+	<!-- War task -->
+	<target name="war" depends="jar">
+		<echo message="About to create war"/>
+		<copy todir="${out.dir}/${war.dir}">
+		<fileset dir="${web.dir}" />
+		</copy>
+		<copy todir="${out.dir}/${war.dir}/WEB-INF/lib">
+		<fileset dir="${lib.dir}" />
+		</copy>
+		<copy todir="${out.dir}/${war.dir}/WEB-INF/classes">
+		<fileset dir="${out.dir}/${class.dir}" />
+		</copy>
+		<copy todir="${out.dir}/${war.dir}/WEB-INF/classes">
+		<fileset dir="${resource.dir}" />
+		</copy>
+		<war destfile="${out.dir}/${war.name}" basedir="${out.dir}/${war.dir}"/>
+		<delete dir="${out.dir}/${war.dir}"/>
+	</target>
+	
+	<!-- Clean task -->
+	<target name="clean">
+	   	<echo message="${ant.project.name} : clean" />
+	   	<delete dir="${out.dir}" /> 	   
+	</target>
+	
+	<!-- Make ready -->
+	<target name="make">
+	  	 <echo message="${ant.project.name} : make" />	   
+ 	  	 <mkdir dir="${out.dir}/${class.dir}"/>
+	  	 <mkdir dir="${out.dir}/${jar.dir}"/>
+	  	 <mkdir dir="${out.dir}/${war.dir}"/>
+	  	 <mkdir dir="${out.dir}/${war.dir}/WEB-INF/classes"/>
+         <mkdir dir="${out.dir}/${war.dir}/WEB-INF/lib"/>
+	</target>
+
+</project>
+

@@ -1,0 +1,2167 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.dnldLink{float: right !important;
+margin-left:2px !important;
+}
+a {
+	text-decoration: none;
+	color: #0f7e9f;
+	font-size: 12px;
+}
+a:hover{color:#333;}
+body {
+	background: url(../images/diamond-pattern.png) fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	overflow-y: scroll;
+}
+.clear-both{clear:both;}
+.smlgp{width:100%; height:20px; float:left;}
+.gryBg{background:#cdcdcd !important;}
+.wrapper {
+	width: 990px;
+	height: auto;
+	margin: 0px auto;
+}
+.statusmsg4asc{
+  text-align:center;padding-top:5px;background-color:lightgray;color:#800080;height:20px;font-weight:bold;
+}
+.greenBtn {
+	width: auto;
+	padding: 0 12px;
+	height: 26px;
+	line-height: 26px;
+	background: url(../images/grn-btn-bg.png);
+	color: #3e5706;
+	float: left;
+	text-shadow: 1px 1px #b7d279;
+	font-weight: bold;
+}
+.greenBtn:hover {
+	background: #5b7c11;
+	color: #b7d279;
+	text-shadow: 1px 1px #3e5706;
+}
+.radius15 {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+.radius6 {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.radius2 {
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.radius6Top {
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+}
+.shadow {
+	-moz-box-shadow: 0 0 10px #e1e0e0;
+	-webkit-box-shadow: 0 0 10px #e1e0e0;
+	box-shadow: 0 0 10px #e1e0e0;
+}
+.clear-both {
+	clear: both;
+}
+.NoresultFound{float: left;
+    height: auto;
+    line-height: 16px;
+    margin: 30px 57px;
+    padding: 19px;
+    text-align: center;
+    width: 563px;-moz-box-shadow:    inset 0 0 10px #666;
+   -webkit-box-shadow: inset 0 0 10px #666;
+   box-shadow:         inset 0 0 10px #666;}
+.NoresultFound h1{width:100%; height:auto; line-height:30px; margin-bottom:10px;}
+.statusMsg{width:950px; margin:8px 0 0 20px; height:25px; line-height:25px; text-align:center; float:left; background:#6c980b; border:1px solid #d6d6d6; color:#fff; font-weight:bold;}
+.NstatusMsg{width:100%; line-height:25px; text-align:center; float:left; color:#093; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+.scsMsg{width:985px; margin:0 0 8px 0px; height:25px; line-height:25px; text-align:center; display: table; background:#6c980b; border:1px solid #d6d6d6; color:#fff; font-weight:bold;}
+#successmsg{width:950px; margin:0 0 8px 0px; height:25px; line-height:25px; text-align:center; display: table; background:#6c980b; border:1px solid #d6d6d6; color:#fff; font-weight:bold; display:none;}
+.errorMsg{width:985px; margin:0 0 8px 0px; height:25px; line-height:25px; text-align:center; display: table; background:#990000; border:1px solid #d6d6d6; color:#fff; font-weight:bold;}
+.PopContainer #statusMsg{width:auto ; height:auto; float:left; padding:5px;  float:right; color:#fff;}
+.PopContainer #statusMsg1{
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 6px;
+    position: absolute;
+    top: 50px;}
+.PopContainer #LostatusMsg1{
+    background: #FCE7E7; display:none;
+	border: 1px solid #B00;
+	color: #B00;
+	padding: 5px;
+	text-align: left;
+    position: absolute;
+    top: 60px;
+left: 180px;}
+.PopContainer #LostatusMsg2{
+    background: #FCE7E7; display:none;
+	border: 1px solid #B00;
+	color: #B00;
+	padding: 5px;
+	text-align: left;
+    position: absolute;
+    top:127px;
+	left: 198px;}
+.PopContainer #fpwdstatusmsg{color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 6px;
+    position: absolute;
+    top: 197px;right: 0;}
+.rightAdd{width: 210px;
+height: auto;
+float: right;
+margin: 40px 15px 0 0;
+}
+/*-----------------------Top Header---------------------------------------*/
+#tophead {
+	width: 100%;
+	height: 80px;
+	background: url(../images/bg-topheader.png) repeat-x left;
+}
+#logo {
+	width: 280px;
+	height: 58px;
+	float: left; margin-right:15px;
+	text-indent: -99999px;
+	background: url(../images/logo.png) no-repeat left 10px;
+	/*position: absolute;*/
+}
+#menu {
+	width: auto;
+	float: left;
+	height: 56px;
+	margin: 1px 0 0 0px;
+}
+#menu ul {
+	float: left;
+	list-style: none;
+}
+#menu li {
+	float: left;
+}
+#menu li.last {
+	border-left: 1px solid #000000;
+	height: 56px;
+}
+#menu li.first {
+	border-right: 1px solid #303030;
+	height: 56px;
+}
+#menu a {
+	width: auto;
+	float: left;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 18px;
+	color: #fff;
+	text-decoration: none;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #303030;
+	font-weight: bold;
+}
+#menu a:hover, #menu a.active {
+	background: url(../images/menu-hover.png) repeat-x left;
+}
+#menu a.advactive{position:absolute; z-index:110;background: url("../images/menu-hover.png") repeat-x scroll left center transparent;}
+.employers {
+	width: auto;
+	height: auto;
+	float: right;
+	margin-right: 22px;
+	margin-top: 14px;
+}
+/*-----------------------Main Container---------------------------------------*/
+#container {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	min-height: 150px;
+	display: table;
+	position: relative;
+	margin-bottom: 22px;
+}
+#container .tophead {
+	width: 100%;
+	height: 50px;
+	float: left;
+	border-bottom: 1px solid #d1d1d1;
+	background: url(../images/container-top-bg.png) repeat-x;
+}
+#container .tophead h2 {
+	width: auto;
+	float: left;
+	height: 51px;
+	line-height: 50px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #606060;
+	background: #fff;
+	padding: 0 20px;
+	min-width: 100px;
+	border-right: 1px solid #d1d1d1;
+	border-radius: 6px 0px 0 0;
+	-moz-border-radius: 6px 0px 0 0;
+	-webkit-border-radius: 6px 0px 0 0;
+}
+/*-----------------------Login BTN---------------------------------------*/
+#container .tophead .lgnbtns {
+	width: auto;
+	height: 31px; position:relative;
+	float: right;
+	margin: 13px 21px 0 5px
+}
+.lgnbtns a.register {
+	text-indent: -99999px;
+	background-image: url(../images/login_signup.png);
+	background-position: -90px -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.lgnbtns a.register:hover {
+	background-position: -90px -36px;
+}
+.lgnbtns a.register:active {
+	background-position: -90px -69px;
+}
+.lgnbtns a.login {
+	text-indent: -99999px;
+	background-image: url(../images/login_signup.png);
+	background-position: 0 -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.lgnbtns a.login:hover {
+	background-position: 0 -36px;
+}
+.lgnbtns a.login:active {
+	background-position: 0 -69px;
+}
+.lgnbtns a.logout {
+	text-indent: -99999px;
+	background-image: url(../images/logout_setting.png);
+	background-position: 0 -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.lgnbtns a.logout:hover {
+	background-position: 0 -36px;
+}
+.lgnbtns a.logout:active {
+	background-position: 0 -69px;
+}
+.lgnbtns a.settings {
+	text-indent: -99999px;
+	background-image: url(../images/logout_setting.png);
+	background-position: -90px -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.lgnbtns a.settings:hover {
+	background-position: -90px -36px;
+}
+.lgnbtns a.settings:active {
+	background-position: -90px -69px;
+}
+/*-----------------------Seach Box---------------------------------------*/
+#container .tophead .searchBox {
+	width: 640px;
+	height: 30px;
+	float: right;
+	margin-top: 14px;
+	position: relative; color:#666; font-weight:bold;
+}
+.searchBox input {
+	width: 325px;
+	padding: 0 30px 0 20px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;
+}
+.searchBox input.fstch{width:180px }
+.searchBox input.sml{width:100px !important;}
+.searchBox .searchBtn {
+	 background: url("../images/advanced-searchBtn.png") repeat scroll 0 0 transparent;
+    height: 34px;
+    position: absolute;
+    right: 4px;
+    text-indent: -99999px;
+    top: -3px;
+    width: 88px;
+}
+.searchBox .fsrchbtn{right: 145px !important;}
+.searchBox .searchBtn:hover {
+	background: url(../images/advanced-searchBtnH.png);
+	cursor: pointer;
+}
+.advancsfview{width: auto;
+float: right;
+margin: 2px 2px 0 0;
+font-size: 13px;
+font-weight: bold;
+padding: 3px 6px;
+background: url(../images/apply-bg.png) repeat-x;
+border: 1px solid white;
+color: white;}
+.advancsfview img {
+float: right;
+margin: 4px 0 0 5px;
+}
+.advancsfview:hover{cursor:pointer;}
+/*-------------------------------HOme PAge-------------------------------------------*/
+h1.homtag{width:auto; float:left; padding-left:20px; line-height:53px; font-size:24px; color:#0166a6;}
+h1.lineheight{line-height:65px !important;} h1.homtag span{position:absolute; font-size:13px; line-height:15px; margin-top:7px;}
+.homeLeft{width:625px; height:auto; float:left; margin:10px 0 0 15px;}
+.homeLeft .imlooking{
+	width:595px; float:left; position:relative;
+	height:60px; padding:12px 10px 4px 10px;
+	background: #f4f4f4; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNmQ2ZDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-8 */
+border:1px solid #dddddd; margin-bottom:20px;}
+.imlooking h3{color:#787878; width:100%; height:auto; margin-bottom:5px; line-height:20px; font-weight:normal;}
+.imlooking input.keyword{width: 320px;
+	padding: 0 10px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.imlooking input.locaion{width: 100px;
+	padding: 0 30px 0 20px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.imlooking .searchBtn {
+    background: url("../images/advanced-searchBtn.png") repeat scroll 0 0 transparent;
+    height: 34px;
+    position: absolute;
+    right: 3px;
+    text-indent: -99999px;
+    top: 34px;
+    width: 88px;
+}
+.imlooking .searchBtn:hover {
+	background: url(../images/advanced-searchBtnH.png);
+	cursor: pointer;
+}
+.imlooking .advncdSearch{width:auto; float:right; height:auto; line-height:25px; color:#fff; font-size:13px; font-weight:normal; margin:3px 3px 0 0;position:absolute; top:5px; right:5px;padding: 0px 6px;background: url(../images/apply-bg.png) repeat-x;}
+.imlooking .advncdSearch:hover{cursor:pointer; color:#000;}
+.advncdSearch img{float:right; margin:8px 0 0 5px;}
+
+.imlooking #advncdSrchfields{display:none; margin:10px 0 0 0; float:left; width:100%;}
+#advncdSrchfields .adfrmset{width:177px; float:left; height:auto; margin:0 9px 9px 0;}
+#advncdSrchfields .adfrmMultset{width:182px; float:left; height:auto; margin:0 9px 2px 0;}
+#advncdSrchfields label{width:100%; height:20px; line-height:20px; float:left; font-size:12px; color:#4c4c4c; }
+#advncdSrchfields input {
+    background: url("../images/search-input-bg.png") repeat-x scroll left top transparent;
+    border: 1px solid #CFCFCF;
+    color: #5A5A5A;
+    float: left;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 !important;
+    width: 100% !important;
+}
+#advncdSrchfields select {
+    background: url("../images/search-input-bg.png") repeat-x scroll left top #fff;
+    border: 1px solid #CFCFCF;
+    color: #5A5A5A;
+    float: left;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    padding: 4px !important;
+    width: 100% !important;
+}
+#advncdSrchfields select[multiple='multiple']{
+   height:83px !important;
+}
+#advncdSrchfields .searchBtn1{width:88px; height:34px; background:url(../images/advanced-searchBtn.png) no-repeat; float:right; margin:75px 120px 0 0; }
+#advncdSrchfields .searchBtn1:hover{background:url(../images/advanced-searchBtnH.png); cursor:pointer;}
+
+
+
+.homeLeft .homeCont{width:100%; height:auto; float:left;}
+.homeCont .items, .itemsa{width:300px;  float:left; height:50px; padding:10px 0; padding-left:5px;border-bottom:1px dotted #c2c2c2;}
+.homeCont .items:hover{background:#f9f9f9; cursor:pointer;}
+.homeCont .items:active, .homeCont .items.active{width:300px;  position:relative; z-index:100; float:left; height:50px; padding:10px 0;background:#f9f9f9;padding-left:5px; cursor:pointer; border:1px solid #dddddd !important; border-right:0px !important;
+	-webkit-box-shadow: 2px 8px 6px -6px #e1e0e0;
+	   -moz-box-shadow: 2px 8px 6px -6px #e1e0e0;
+	        box-shadow: 2px 8px 6px -6px #e1e0e0;
+}
+.homeCont .itemss{border-bottom:0px;}
+.homeCont .items h3, .itemsa h3{width:225px; float:left; font-size:16px; color:#02558a; margin-top:5px;}
+.homeCont .items .discription, .itemsa .discription{width: 225px;float: left;font-size: 11px;color: #636363;}
+.homeCont .items h2, .itemsa h2{width:225px; float:left;  font-size:16px; color:#02558a; margin-top:10px;}
+
+.icon-Profile{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat left top; text-indent:-99999px;}
+.icon-greatImpr{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -49px top; text-indent:-99999px;}
+.icon-Capture{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -98px top; text-indent:-99999px;}
+.icon-connected{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -147px top; text-indent:-99999px;}
+.icon-100free{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -198px top; text-indent:-99999px;}
+.icon-postJobs{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -250px top; text-indent:-99999px;}
+.icon-searchCnd{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -300px top; text-indent:-99999px;}
+.icon-view33Sec{margin-right:15px; width:50px; height:50px; float:left; background:url(../images/homeicon.png) no-repeat -350px top; text-indent:-99999px;}
+
+.homeRight{width:345px; height:440px; float:right; background:url(../images/HomeRight.jpg) repeat-y left;}
+.rightDetails h3{width:100%; float:left; font-size:14px; color:#02558a; height:auto; padding-bottom:5px; border-bottom:1px dashed #d5d5d5; margin-bottom:10px; font-weight:normal;}
+.rightDetails h2{width:100%; float:left; font-size:16px; color:#6e921c; height:auto; padding-bottom:5px;margin-bottom:0px; font-weight:bold;}
+.rightDetails ul{float:left; list-style:none; margin:0px 0px 0px 10px; padding:0px;}
+.rightDetails ul li{padding-left:18px; background:url(../images/tick.png) no-repeat left 3px; line-height:15px; font-weight:normal; font-size:12px; color:#636363; margin-bottom:12px;}
+.rightDetails ul li ul{margin:10px 0 0px 0;}.rightDetails ul li ul li{background:none !important;}
+.rightDetails ul li strong, .rightDetails h2 strong{color:#00568d}
+.rightDetails p{width:100%; height:auto; float:left; margin-bottom:10px;}
+.rightDetails img{float:left; margin-bottom:10px;}
+.defaultCont{width:310px; float:left; height:auto; margin: 10px 0 0 25px;}
+.defaultCont .videoBG{width:292px; padding:9px; height:237px; background:#e3e3e3; margin-bottom:15px; position:relative;}
+.defaultCont .videoPlace{width:293px; height:215px;background:#161616;}
+.defaultCont .videoBG h3{width:100%; height:30px; line-height:30px; font-size:16px; color:#0166a6; text-align:center; font-family:Arial, Helvetica, sans-serif}
+.defaultCont .steps{width:100%; height:auto; float:left; border-bottom:1px solid #dfdfdf;padding-bottom: 7px;font-size: 12px;}
+.defaultCont .steps h2{width:100%; height:20px; float:left; line-height:20px; color:#046b89; font-size:14px;}
+.defaultCont .steps:last-child{border-bottom:0px;}
+.videoBG  .tryagain{position:absolute; right:10px; top:196px; display:none;}
+.rightDetails{
+	width: 290px;
+float: left;
+height: 320px;
+margin: 10px 0 0 -2px;
+display: none;
+position: absolute; padding:10px;
+top: 135px; border:1px solid #dfdfdf;
+right: 358px;
+background: #f9f9f9;
+}
+
+#companyHome .rightDetails{height: 334px; top:51px;}
+/*-----------------------ProfileHead---------------------------------------*/
+
+#container .ProfileHead {
+	width: 950px;
+	height: 75px;
+	margin: 0 auto 20px 20px;
+	float: left;
+	border-bottom: 3px solid #9ac244;
+}
+.ProfileHead .completionStatus {
+	width: 620px;
+	height: 55px;
+	margin: 14px 0 0 0;
+	float: left;
+}
+.completionStatus .title {
+	width: auto;
+	float: left;
+	height: 15px;
+	line-height: 15px;
+	font-size: 11px;
+}
+.completionStatus .placeHolder {
+	width: 610px;
+	height: 29px;
+	border: 1px solid #bababa;
+	background: url(../images/profilecompletion-bg.png) repeat-x;
+	float: left;
+}
+.placeHolder .left {
+	width: 550px;
+	height: 23px;
+	padding: 3px;
+	float: left;
+	border-right: 1px solid #f2f2f2;
+}
+.placeHolder .right {
+	width: 52px;
+	height: 29px;
+	line-height: 29px;
+	float: left;
+	border-left: 1px solid #e5e3e3;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	color: #333;
+	text-align: center;
+}
+.placeHolder .progress {
+	width: 100%;
+	height: 20px; margin-top:1px;
+	background-color:transparent;
+	border: 1px solid #ccc;
+
+}
+.placeHolder .ui-progressbar-value { background-image: url(../images/pbar-ani.gif) !important; height:20px; border:0px !important; }
+.ProfileHead .profileStatus {
+	width: 85px;
+	height: 28px;
+	float: right;
+	margin: 30px 0 0 0;
+}
+.improveProfile{width:126px;
+height:28px; float:left; margin-left:5px; background:url(../images/btn-improve.png) no-repeat left; text-indent:-9999px; margin-top:31px;}.improveProfile:hover{cursor:pointer;background:url(../images/btn-improvehover.png) no-repeat left;}
+.improveProfile a{width:126px;height:28px; float:left; text-indent:-9999px; }
+/*-----------------------ProfileLeft---------------------------------------*/
+
+.ProfileWelc{width:auto; height:auto; float:right; margin:8px 10px 0 0; position:relative;}
+.ProfileWelc .profileImg{width:auto; height:42px; float:left;  margin-right:5px;}
+.profileImg img{width:auto; height:42px; max-width: 125px;}
+.ProfileWelc .welcome{width:auto; line-height:15px; float:left; font-size:10px; color:#969696;}
+.welcome strong{font-size:12px; color:#fff;}
+
+.prfVisbl{width: auto;
+float: left;
+margin: 29px 0 0 0px;
+padding: 5px 3px;
+background: url(../images/profilecompletion-bg.png) repeat-x;
+border: 1px solid #E3E3E3;
+font-size: 13px;}
+
+.ProfileLeft {
+	width: 620px;
+	float: left;
+	height: auto;
+	margin: 0 0 20px 20px;
+	min-height: 150px;
+}
+.ProfileLeft .requre {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../images/requir.png) no-repeat;
+	right: 0px;
+	top: 20px;
+	z-index: 1
+}
+.details .requre{right: 120px !important;top: 5px !important;}
+.companyName .requre{right: 8px !important;}
+.ProfileLeft .lbright {
+	position: absolute;
+	width: 36px;
+	height: 28px;
+	background: url(../images/labelrightbg.png) repeat-x;
+	right: 1px; display:none;
+	top: 21px;
+	border-left: 1px solid #d2d1d1;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #4f4f4f;
+	font-size: 16px;
+}
+.ProfileLeft .lbright img {
+	margin-top: 11px;
+}
+.ProfileLeft .lbright img.clndr {
+	margin: 6px 0 0 3px;
+	float: left;
+}
+.ProfileLeft .submitBtns {
+	width: 100%;
+	height: 33px;
+	float: left;
+	margin: 10px 0;
+}
+.submitBtns a.save {
+	text-indent: -99999px;
+	background-image: url(../images/save_cancel.png);
+	;
+	background-position: 0 -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.submitBtns a.save:hover {
+	background-position: 0 -36px;
+}
+.submitBtns a.save:active {
+	background-position: 0 -69px;
+}
+.submitBtns a.cancel {
+	text-indent: -99999px;
+	background-image: url(../images/save_cancel.png);
+	background-position: -91px -3px;
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+.submitBtns a.cancel:hover {
+	background-position: -91px -36px;
+}
+.submitBtns a.cancel:active {
+	background-position: -91px -69px;
+}
+.ProfileLeft .bset {
+	width: 100%;
+	height: 10px;
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+.ProfileLeft .suprator {
+	width: 580px;
+	height: 10px;
+	float: left;
+	margin: 10px 0px 0px 15px;
+	border-bottom: 1px solid #CDCDCD;
+}
+.ProfileLeft label {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	font-size: 12px;
+	color: #6f6f6f;
+	font-weight: bold;
+}
+.ProfileLeft .set{
+	width: 220px;
+	height: auto;
+	float: left;
+	margin: 10px 15px 0px 0px;
+	position: relative;
+}
+ .ProfileLeft .setedu {
+	width: 120px;
+	height: auto;
+	float: left;
+	margin: 10px 5px 0px 5px;
+	position: relative;
+}
+
+.ProfileLeft .set input{
+	width: 213px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+
+ .ProfileLine input{
+	width: 213px;
+	height: 25px;
+	line-height: 25px;
+	float: left; margin-bottom:5px;
+	border: 1px solid #b8b8b8;margin-top:5px;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+.ProfileLine select {
+	width: 220px;
+	height: 25px;
+	line-height: 25px;
+	float: left; margin-bottom:5px; margin-top:5px;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;padding: 2px 20px 2px 0;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	color: #8c8c8c;
+}
+
+.ProfileLeft .setedu input {
+	width: 113px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+.ProfileLeft .set select {
+	width: 270px;
+	height: 30px;
+	line-height: 28px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding: 5px 20px 5px 5px;
+	color: #8c8c8c;
+}
+.ProfileLeft .set2 {
+	width: 155px;
+	height: auto;
+	float: left;
+	margin: 10px 7px 0px 15px;
+	position: relative;
+}
+.ProfileLeft .set2 input {
+	width: 148px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+.ProfileLeft button{
+	position: absolute;
+	width: 45px;
+	height: 28px;
+	background: url(../images/labelrightbg.png) repeat-x;
+	right: 1px;
+	top: 21px;
+	border: 0px;
+	border-left: 1px solid #d2d1d1;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #4f4f4f;
+	font-size: 16px;
+}
+
+
+.CompanyProfile .section button {
+	position: absolute;
+	width: 45px;
+	height: 26px;
+	background: url(../images/labelrightbg.png) repeat-x;
+	right: -1px;
+	top: 29px;
+	border: 0px;
+	border-left: 1px solid #d2d1d1;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #4f4f4f;
+	font-size: 16px;
+}
+.ProfileLeft button img {
+	float: left;
+	margin-left: 8px;
+}
+.ProfileLeft .set3 {
+	width: 108px;
+	height: auto;
+	float: left;
+	margin: 10px 15px 0px 0px;
+	position: relative;
+}
+.ProfileLeft .set3 select {
+	width: 108px;
+	height: 30px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding: 5px 20px 5px 5px;
+	color: #8c8c8c;
+}
+.ProfileLeft .set3 input {
+	width: 101px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+.ProfileLeft .educationmain {
+	width: 570px; position:relative;
+	height: auto;
+	float: left;
+	margin: 17px 0 0 12px;
+	border-bottom: 5px solid #d4d4d4;
+}
+.clonedInput{position:relative;}
+.educationmain select {
+	width: 100%;
+	height: 30px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding: 5px 15px 5px 0px;
+	color: #8c8c8c;
+}
+.educationmain input, .academicmain input, .trainingmain input, .uploadmain input, .experiancemain input {
+	width: 95%;
+	height: 28px;
+	line-height: 26px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+}
+.academicmain textarea, .trainingmain textarea {
+	width: 560px;
+	height: 75px;
+	line-height: 15px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+	resize: none;
+}
+.educationmain .dicipline {
+	width: 155px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .program {
+	width: 135px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .status, .educationmain .year {
+	width: 115px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .college {
+	width: 265px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .college input {
+	width: 258px !important;
+}
+.educationmain .location {
+	width: 165px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .mark {
+	width: 80px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.educationmain .mark input {
+	width: 73px !important;
+}
+.ProfileLeft .action-btn {
+	width: 580px;
+	height: auto;
+	margin: 10px 0 10px 15px;
+	float: left;
+}
+.ProfileLeft .action-btn .add {
+	width: 63px;
+	height: 28px;
+	background: url(../images/icon-add.png) no-repeat;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+	text-indent: -99999px;
+}
+.ProfileLeft .action-btn .delete {
+	width: 71px;
+	height: 28px;
+	background: url(../images/icon-delete.png) no-repeat;
+	cursor: pointer;
+	float: left;
+	text-indent: -99999px;
+}
+.ProfileLeft .academicmain, .ProfileLeft .trainingmain, .ProfileLeft .uploadmain, .ProfileLeft .experiancemain, .ProfileLeft .experianceDtlsmain {
+	width: 570px;
+	height: auto;
+	float: left; position:relative;
+	margin: 17px 0 0 8px;
+	border-bottom: 5px solid #d4d4d4;
+}
+
+#experianceDetailsDiv .rowhead{
+	background:#9cc3d0; font-weight:bold; height:25px; border:1px solid #fff !important; color:#fff;
+	}
+#experianceDetailsDiv .rowfooter{ margin: 0 0 0px 9px !important;
+border-bottom: 0px solid #D4D4D4;
+height: 6px;
+background: #D4D4D4;}
+#experianceDetailsDiv .row{
+	background:#bed5dd; font-weight:bold; height:25px; border:1px solid #fff !important; margin-top:-1px !important;
+	}
+#experianceDetailsDiv .skill{
+	width:175px; float:left; height:25px; line-height:25px; border-right:1px solid #fff; padding-left:3px;
+	}
+#experianceDetailsDiv .skill input{width: 160px;
+	height: 21px;
+	line-height: 21px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c; margin:1px;}
+#experianceDetailsDiv .year{
+	width:127px; float:left; height:25px; line-height:25px; border-right:1px solid #fff; padding-left:3px; text-align:center;
+	}
+#experianceDetailsDiv .month{
+	width:127px; float:left; height:25px; line-height:25px; border-right:1px solid #fff; padding-left:3px; text-align:center;
+	}
+#experianceDetailsDiv .level{
+	width:107px; float:left; height:25px; line-height:25px; padding-left:3px; text-align:center;
+	}
+#experianceDetailsDiv select{width: 95%;
+	height: 21px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding:0; margin:2px;
+	color: #8c8c8c;}
+.academicmain .title, .trainingmain .title{
+	width: 272px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.academicmain .title input, .trainingmain .title input {
+	width: 263px !important;
+}
+.academicmain .date input, .trainingmain .date input, .experiancemain .date input {
+	width: 123px !important;
+}
+.academicmain .date, .trainingmain .date, .experiancemain .date {
+	width: 130px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.experiancemain .presentTxt{ display:none; margin-top:27px; color:#999;}
+.chk_present{width:20px !important; float:left !important;}
+.prestlyWorking{width: 150px;
+float: left;
+height: 25px;
+line-height: 25px;
+margin-top: -49px;
+font-size: 12px;
+color: #555;
+margin-left: 139px;}
+.academicmain .details, .trainingmain .details {
+	width: 595px;
+	height: 90px;
+	float: left;
+	margin: 0 0 12px 0;
+}
+
+#upploadDiv p {
+	float: left;
+	margin: 10px 0 0px 15px;
+	font-size: 11px;
+	width: 580px;
+	color: #666;
+	padding: 0px;
+}
+.experiancemain .companyName {
+	width: 270px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.experiancemain .expdetails {
+	width: 260px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.experiancemain .expdetails textarea {
+	width: 255px;
+	height: 65px;
+	line-height: 15px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;
+	color: #8c8c8c;
+	resize: none;
+}
+.ProfileRight {
+	width: 295px;
+	float: right;
+	height: auto;
+	margin: 0 20px 20px 0px;
+	min-height: 150px;
+	position: relative;
+}
+.ProfileRight .flotingdiv {
+	width: 293px;
+	height: auto;
+	float: left;
+}
+.ProfileRight .videoPlaceHolder {
+	width: 293px;
+	height: auto;
+	float: left;
+}
+.ProfileRight .captureVideo {
+	width: 264px;
+	height: 78px;
+	float: left;
+	margin: 15px 15px 0 15px;
+	background: url(../images/btn-capturevideo.png) no-repeat left;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ProfileRight .uploadedDocuments {
+	width: 293px;
+	height: auto; margin-top:15px;
+	float: left;
+}
+.uploadedDocuments .head {
+	width: 293px;position: relative;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	border: 1px solid #d1d1d1;
+	background: #ebeeef;
+	font-size: 16px;
+}
+.uploadedDocuments .head img {
+	float: left;
+	margin: 7px 5px 0 2px
+}
+.uploadedDocuments .documents {
+	width: 293px; padding:0;
+	height: auto;
+	border: 1px solid #d1d1d1;
+	border-top: 0px;max-height: 208px; overflow:auto;
+	background: #eeeeee;
+	float: left;
+}
+.documents .urow{width:98%; position:relative; height:auto; line-height:25px; padding:0 0px 0 5px; border-bottom:1px solid #e3e3e3; color:#999; font-size:12px;}
+.urow a{margin-left:10px;}
+.urow:hover{cursor:pointer; background:#e3e3e3; color:#333;}
+
+.vdieoList{width:283px; height:auto; line-height:25px; float:left; padding:0 5px; color:#333; font-size:11px;border-bottom:1px solid #e3e3e3; }
+.vdieoList .recordedOn{width:220px; float:left; height:auto; line-height:25px;}
+.recordedOn a{font-size:11px;}
+.vdieoList .Vstatus{width:60px; float:left; height:auto; line-height:25px;}
+.videoActive{width:14px; height:14px; background:url(../images/vstatus.png) no-repeat -14px;  float:left; margin:5px}
+.videoPending{width:14px; height:14px; background:url(../images/vstatus.png) no-repeat;  float:left; margin:5px}
+.deleteItem{width:14px; height:14px; background:url(../images/vstatus.png) no-repeat -29px;  float:left; margin:5px}
+.charsLeft{width:100%; float:left; height:auto; font-size:11px; color:#666; margin-bottom:10px; margin-top:-5px;}
+.profileViewMain {
+	width: 620px;
+	height: auto;
+	float: left;
+}
+.profileViewMain .mainDvdr {
+	width: 100%;
+	height: 21px;
+	float: left;
+	margin-top: 5px;
+	background: url(../images/profileviewDvdr.png) repeat-x left;
+}
+.profileViewMain h1 {
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #0f7e9f;
+	float: left;
+}
+.personalInfoView {
+	width: 600px;
+	padding: 10px;
+	height: auto;
+}
+.personalInfoView .profilePhoto {
+	width: 100px;
+	height: auto;
+	float: left; position:relative;
+	text-align: center;
+}
+.profilePhoto input[type=file]{
+    cursor: pointer; width:100px; margin-bottom:15px;
+    left: 0; float:left;
+     /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* Netscape */
+  -moz-opacity: 0;
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Good browsers */
+  opacity: 0;
+    position: absolute;}
+.exprtPDF{width: 116px;
+height: 39px;
+float: left;
+text-indent: -9999px;
+background: url(../images/export-pdf.png) no-repeat;
+position: absolute;
+top: 285px; cursor:pointer;}
+
+
+.editProfile{position:absolute; right:3px; top:2px; width:62px; height:27px; background:url(../images/icon-edit.png) no-repeat left; text-indent:-9999px; float:left;}
+.CneditProfile{position:absolute; right:3px; top:2px; width:74px; height:27px; background:url(../images/icon-cancel.png) no-repeat left; text-indent:-9999px; float:left; display:none;}
+.editProfile:hover, .CneditProfile:hover{opacity:.8;}
+
+.editDiv{display:none;}
+.personalInfoView .profileDetails {
+	width: 480px;
+	height: auto;
+	float: right;
+	position:relative;
+}
+.profileDetails .profileTitle {
+	width: 100%;
+	height: auto;
+	float: left;
+	font-size: 11px;
+	color: #505050;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.profileDetails .ProfileLine {
+	width: 460px;
+	height: auto;
+	border-bottom: 1px solid #e5e5e5;
+	margin-left: 10px;
+	float: left;
+}
+.profileDetails .ProfileLine .title {
+	width: 120px;
+	height: auto;
+	line-height: 23px;
+	float: left;
+	color: #7f7f7f;
+	font-size: 12px;
+}
+#editProfile .title {
+	line-height: 35px !important;
+}
+.ProfileLeft .details button{
+	position: absolute;
+	width: 45px;
+	height: 25px;
+	background: url(../images/labelrightbg.png) repeat-x;
+	right: 121px;
+	top: 6px;
+	border: 0px;
+	border-left: 1px solid #d2d1d1;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #4f4f4f;
+	font-size: 16px;
+}
+.NewBtn{width: 100%;
+height: auto;
+float: left;
+margin: 10px;}
+.NewBtn a{float:left; margin-right:10px;border: 1px solid #53644C;}
+.profileDetails .ProfileLine .details {
+	width: 340px; position:relative;
+	height: auto;
+	line-height: 23px;
+	float: left;
+	color: #575757;
+	font-size: 12px;
+}
+.profileDetails .last {
+	border-bottom: 0px solid #e5e5e5 !important;
+}
+.EductionInfoView {
+	width: 600px;position:relative;
+	padding: 10px; float:left;
+	height: auto;
+}
+.AcademicInfoView {
+	width: 600px; position:relative;
+	padding: 10px; float:left;
+	height: auto;
+}
+.MainTable {
+	width: 100%;
+	height: auto;
+	font-size: 12px;
+	display: table;
+	border: 1px solid #cdcdcd;
+	margin-top: 5px;
+	float: left; margin-bottom:10px;
+}
+.TableRowHead {
+	font-weight: bold;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	float: left;
+	background: #ebeeef;
+	display: table-row;
+}
+.TableRow {
+	width: 100%;
+	color:#333;
+	height: auto;
+	line-height: 27px;
+	float: left;
+	background: #fff; position:relative;
+	display: table-row;
+	border-top: 1px solid #cdcdcd;
+}
+.lightgreen{background:#cadea0; color:#65783a !important;}
+.lightblue{background:#aee5f5; color:#487f8f !important;}
+.lightred{background:#ffbfbf; color:#995a5a !important;}
+.slClm {
+	width: 20px;
+	max-width: 20px;
+word-wrap: break-word;
+	height: auto;
+	min-height: 27px;
+	text-align: center;
+	line-height: 27px;
+	display: table-cell;
+}
+.DeciClm {
+	width: 89px;
+	max-width: 89px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.TitleClm {
+	width: 225px;
+	max-width: 255px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.DateClm {
+	width: 75px;
+	max-width:75px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.DetailsClm {
+	width: 180px;
+	max-width: 180px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.CompanyClm{
+	width: 110px;
+	max-width: 110px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;}
+.ProgClm {
+	width: 132px;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+	max-width: 132px;
+word-wrap: break-word;
+}
+.StatClm {
+	width: 65px;max-width: 65px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.YearClm {
+	width: 35px;
+	max-width:35px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.ClgClm {
+	width: 120px;max-width: 120px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 17px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.LocClm {
+	width: 68px;max-width: 68px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+.MarkClm {
+	width: 34px;max-width:34px;
+word-wrap: break-word;
+	padding-left: 5px;
+	height: auto;
+	min-height: 27px;
+	line-height: 27px;
+	display: table-cell;
+	border-left: 1px solid #cdcdcd;
+}
+
+.MainTable .skill{
+	width:210px; display: table-cell; height:25px; line-height:25px; border-left: 1px solid #CDCDCD; padding-left:3px;max-width: 210px;
+word-wrap: break-word;
+	}
+.MainTable .year{
+	width:127px; display: table-cell; height:25px; line-height:25px; border-left: 1px solid #CDCDCD; padding-left:3px; text-align:center;max-width: 127px;
+word-wrap: break-word;
+	}
+.MainTable .month{
+	width:127px; display: table-cell; height:25px; line-height:25px; border-left: 1px solid #CDCDCD; padding-left:3px; text-align:center;max-width: 127px;
+word-wrap: break-word;
+	}
+.MainTable .level{max-width: 107px;
+word-wrap: break-word;
+	width:107px; display: table-cell; height:25px; line-height:25px; padding-left:3px; text-align:center;border-left: 1px solid #CDCDCD;
+	}
+/*-----------------------JoblistList---------------------------------------*/
+#container .JoblistList {
+	width: 715px;
+	float: left;
+	height: auto;
+	margin: 0 0 20px 20px;
+	min-height: 365px;
+}
+#container .JoblistDetails {
+	width:950px;
+	float: left;
+	height: auto;
+	margin: 0 0 20px 20px;
+	min-height: 365px;
+}
+
+.JoblistList .header, .JoblistDetails .header {width:100%; position:relative; height:30px; float:left; border-bottom:1px solid #e3e3e3; margin:15px 0;}
+.JoblistList .header ul, .JoblistDetails .header ul{width:auto; float:left; height:30px; list-style:none;}
+.JoblistList .header ul li, .JoblistDetails .header ul li{width:auto; float:left; padding-right:20px; margin-right:20px; border-right:1px solid #e3e3e3;  height:30px; line-height:30px; }
+.JoblistList .header ul li a, .JoblistDetails .header ul li a{ color:#0f81a2; border-bottom:2px solid #0f81a2; font-weight:bold; padding-bottom:5px}
+.JoblistList .header ul li a:hover, .JoblistList .header ul li a.active, .JoblistDetails .header ul li a:hover, .JoblistDetails .header ul li a.active {color:#242424; font-weight:bold; border-bottom:0px solid #0f81a2; }
+
+.JoblistDetails .header ul li.compose{
+	background: #f4f4f4; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNmQ2ZDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f4f4f4 0%, #d6d6d6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f4f4f4 0%,#d6d6d6 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f4f4f4 0%,#d6d6d6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-8 */
+	border: 1px solid #E3E3E3;
+    border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: -5px 20px 0 0;
+    padding: 0 10px 0 5px; position:relative;
+	}
+.JoblistDetails .header ul li.compose img{position:absolute; top:-9px; right:10px;}
+.JoblistDetails .header input{width: 320px;
+	padding: 0 10px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;
+}
+.JoblistDetails .header input.sml{width:100px !important;}
+.JoblistDetails .header .searchBtn {
+	 background: url("../images/advanced-searchBtn.png") repeat scroll 0 0 transparent;
+    height: 34px;
+    position: absolute;
+    right: 73px;
+    text-indent: -99999px;
+    top: -3px;
+    width: 88px;
+}
+.JoblistDetails .header .searchBtn:hover {
+	background: url(../images/advanced-searchBtnH.png);
+	cursor: pointer;
+}
+.JobMainTable{
+	width: 100%;
+	height: auto; min-height:250px;
+	font-size: 12px;
+	margin-top: 5px;
+	float: left; margin-bottom:10px;
+}
+.TableRowJob{
+	font-weight: bold;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	float: left;
+	background: #ebeeef;
+	display: table-row;
+}
+.TableRow:hover{background:#eeeeee;}
+.compnayJobs .TableRow:hover, #applylist .TableRow:hover{background:#eeeeee; cursor:default;}
+.TableRowJob .JobLocClm, .TableRowJob .JobTitleClm .title, .TableRowJob .JobCompanyClm, .TableRowJob .CndName, .TableRowJob .CndExp, .TableRowJob .CndEdu, .TableRowJob .CndClg, .TableRowJob .CndSkl, .TableRowJob .CndGnd, .TableRowJob .CndApl, .TableRowJob .JobIdClm, .TableRowJob .JobPosClm, .TableRowJob .JobpostedClm{height:27px !important; line-height:27px !important;}
+.JobIdClm {
+	width: 40px; padding-left:5px;
+	float:left; padding-right:20px;
+	height: 40px; text-align:center;
+	line-height: 40px;
+}
+.JobLocClm {
+	width: 130px; padding-left:5px;
+	float:left; padding-right:20px;
+	height: 40px; color:#333; word-wrap:break-word; overflow:hidden;
+	line-height: 40px; font-weight:bold;
+}
+.JobPosClm{
+    font-size: 12px; padding-left:5px;
+	float:left;height: 40px;
+	line-height: 40px; color:#333;
+    font-weight: normal; text-align:center;
+    padding-right: 0;
+    width: 75px;}
+.JobPosClm a{font-weight:bold;}
+.JobTitleClm {
+	width: 290px; padding-left:5px;
+	float:left; padding-right:20px;
+	height:auto; min-height:40px; color:#333;
+	font-weight:normal;
+}
+.JobTitleClmwd{width:375px !important;}
+.JobTitleClm .title{width:100%; height:30px; line-height:40px; float:left; font-weight:bold;color:#333;}
+.JobTitleClm .title a{ color:#0f81a2;}.JobTitleClm .title a:hover{color:#333;}
+.JobTitleClm .title span {color: #666666;float: right;font-size: 11px;font-weight: normal;width: auto;}
+.JobTitleClm .title span a{font-size:11px;}
+.JobTitleClm .descr{width:100%; height:auto; line-height:15px; float:left; color:#888; font-weight:normal; padding:0 0 8px 0;}
+.JobCompanyClm {
+	width: 145px; padding-left:5px;
+	float:left;
+	height: 40px; color:#333;
+	line-height: 40px; font-weight:normal;
+}
+.JobpostedClm {
+	width: 90px; padding-left:5px;
+	float:left; color:#666;
+	height: 40px;
+	line-height: 40px; font-weight:normal;
+}
+.newJobs{background: none repeat scroll 0 0 #CCCCCC;   bottom: 0;
+    font-weight: bold;   height: 20px;   line-height: 20px;   padding: 0 5px;
+    position: absolute;   right: 0;   width: auto;}
+.applied{background: none repeat scroll 0 0 #6a9508;  color:#fff;  bottom: 0;    font-weight: bold;    height: 20px;
+    line-height: 20px;    padding: 0 5px;    position: absolute;    left: 0px;    width: auto;
+	}
+.editJobs{background: none repeat scroll 0 0 #CCCCCC;
+    bottom: 0; display:none;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+    width: auto;}
+.editJobs a{margin-right:10px;}.editJobs a:hover{color:#FFF;}
+.TableRow:hover .editJobs{display:block;}
+
+.Cndsln {width:15px; padding-left:5px;float:left; padding-right:5px;height: 40px; color:#333;line-height: 40px; font-weight:bold;
+}
+.Cndsln input{width:auto; float:left; margin-top:12px;}
+.TableRowJob .Cndsln input{width:auto; float:left; margin-top:8px;}
+
+.CndName {width:135px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px; font-weight:bold;}
+.CndGnd {width:55px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px; text-align:center;}
+.CndExp {width:75px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px;}
+.CndEdu {width:120px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px;overflow:hidden;}
+.CndClg {width:200px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px;overflow:hidden;}
+.CndSkl {width:215px; padding-left:5px;float:left; padding-right:5px;height: 40px; line-height: 40px; overflow:hidden;}
+.CndApl {width:65px; float:left;height: 40px; line-height: 40px; overflow:hidden; text-align:center}
+
+.JoblistDetails .JobHead{width:100%; position:relative; min-height:75px; height:auto; margin-top:10px; border-bottom:1px solid #acacac; padding-bottom:8px; float:left;}
+.JobHead h2{width:auto; float:left; height:30px; font-size:22px; margin:0px; padding:0px; color:#242424;}
+.JobHead h3{width:auto; float:left; height:24px; margin:0px; padding:0px; color:#0F81A2;}
+.JobHead h3 a{color:#0F81A2; font-size:18px; font-weight:normal;}
+.JobHead .location{width:380px; height:25px; line-height:25px; float:left; color:#6d6d6d;}
+.JobHead .postedon{width:150px; height:25px; line-height:25px; float:left; color:#6d6d6d;}
+.JobHead .companyLogo{width:260px; height:80px; position:absolute; right:0px; bottom:5px; background:#efefef; border:1px solid #dedede;}
+.JobHead .companyLogo .logo{width:100%; height:50px; line-height:50px; text-align:center; border-bottom:1px solid #acacac;}
+.JobHead .companyLogo .viewMore{width:100%; height:25px; line-height:25px; text-align:center;}
+.JobHead .companyLogo .viewMore a{color:#0F81A2;}
+.JobHead .companyLogo .logo img{width:auto; height:50px;}
+.JoblistDetails .requirment{
+	width:600px; height:auto; float:left; color:#3b3b3b; margin:10px 0;
+	}
+.requirment p{margin:10px 0 0 0; font-size:12px; color:#181a1a; text-transform:capitalize;}
+.requirment h4{width:100%; height:25px; line-height:25px; color:#1e5867; font-size:14px; padding-bottom:2px; margin-bottom:5px; border-bottom:1px dashed #b8b8b8; font-family:Arial, Helvetica, sans-serif;}
+.JoblistDetails .tools{width:230px; height:auto; float:right; background:#efefef; border:1px solid #dedede; margin-top:15px; padding:15px; position:relative;}
+.tools h4{margin:0; padding:0; height:18px; width:100%; color:#242424; float:left; font-weight:normal; font-size:13px; border-bottom:1px solid #acacac;}
+.tools a{width:100%; height:34px; line-height:34px; float:left; border-bottom:1px solid #c0c0c0; color:#0F81A2;}
+.tools a img{float:left; margin:12px 8px 0 5px;}
+.tools a:hover{background:#e3e3e3;}
+.tools span.flagged{background:#6a9508; font-weight:bold; color:#fff;padding:6px 10px;margin-right:3px;}
+.tools span.Remflgd{background:#c82802; font-weight:bold; color:#fff;padding:6px 10px; }
+.tools a.flggedAR{width:136px; position:absolute; border-bottom:0; left:110px; top:34px;}
+.applybox{
+	width:927px; height:auto; float:left; color:#3b3b3b; margin:10px 0; padding:12px; background:#efefef;text-align: center;
+	}
+.applybox a, .applybox input{width:auto; height:auto; padding:5px 10px; background:url(../images/apply-bg.png) repeat-x left top; border:1px solid #028eb6; color:#fff; font-weight:bold; margin-right:10px; cursor:pointer;}
+.applybox span{float:left; width:auto; padding:5px 10px; background:#6a9508; font-weight:bold; color:#fff;}
+
+
+.JoblistDetails .applieCand{width:300px; height:auto; float:right; background:#efefef; border:1px solid #dedede; margin-top:15px; padding:15px;}
+.applieCand h4{margin:0; padding:0; height:22px; line-height:18px; width:100%; color:#242424; float:left; font-weight:bold; font-size:13px; border-bottom:1px solid #acacac;}
+.applieCand h4 span{width:auto; float:right; font-size:11px; font-weight:normal; color:#666;}
+.applieCand h4 span a{font-size:11px;}
+.applieCand .line{width:100%; float:left;height:28px; line-height:28px;  border-bottom:1px solid #c0c0c0; color:#0F81A2; position:relative;}
+.applieCand .line .cndName{width:180px; float:left;height:28px; line-height:28px; }
+.applieCand .line .cndLoca{width:100px; float:left;height:28px; line-height:28px; color:#898989; font-size:12px; }
+.applieCand .line input{width:auto; float:right; margin:7px 5px 0 0}
+
+/*---------------------Action----------------------------*/
+.applieCand .action{width:100%; height:auto; float:left; margin-top:15px;}
+.applieCand .action a{width:auto; float:left; padding:4px 12px; background:url(../images/apply-bg.png) repeat-x left; margin-right:3px; border:1px solid #fff; color:#fff;}
+.applieCand .action a:hover{background:#0e85a7;}
+
+.CndAction{position: absolute;
+width: auto;
+z-index: 100;
+right: 17px;}
+.CndAction .action{width:100%; height:auto; float:left; margin-top:15px;}
+.CndAction .action a{width:auto; float:left; padding:4px 12px; background:url(../images/actionBtnBg.png) repeat-x left; margin-right:3px; border:1px solid #8ab923; color:#fff;}
+.CndAction .action a:hover{background:#90b046;}
+.action a.shortlisted{background:url(../images/grnBtnbg.png) repeat-x left !important;}
+.action a.forwade{background:url(../images/btn-purple-bg.png) repeat-x left !important;}
+.action a.rejected{background:url(../images/redBtnbg.png) repeat-x left !important;}
+/*---------------------End TooTip----------------------------*/
+
+
+.JoblistDetails .CompanyProfile{
+	width:630px; height:auto; float:left; color:#3b3b3b; margin:10px 0;
+	}
+.JoblistDetails .ProfileLeft{width:690px; margin-left:0px;}
+.JoblistDetails .profileViewMain{width:690px !important;}
+.JoblistDetails .personalInfoView{width:670px !important; float:left;}
+.JoblistDetails .companyProfHead{width:100%; height:40px; float:left; border-bottom:1px solid #e3e3e3;}
+.companyProfHead h1{width:auto; float:left; font-size:18px; line-height:35px; color:#242424; margin-top:6px;}
+.companyProfHead .backtoall {width: auto;height: auto;float: right; margin-top:10px;}
+.CompanyProfile .section{width:600px; height:auto; padding:15px; background:#efefef; float:left;}
+.CompanyProfile .section .set{width:280px; float:left; margin-right:20px; position:relative;}
+.CompanyProfile .section .set .http{width:auto; float:left; line-height:42px;}
+.CompanyProfile .section .set .cwebsite {width: 215px !important;
+float: left;
+margin-right: -2px; }
+.CompanyProfile .section .set1{width:280px; float:right; margin-right:20px;}
+.JoblistDetails .CompanyLogo{width:160px; height:auto; float:left; border:1px solid #e3e3e3; padding:5px;}
+.CompanyLogo img{max-width:160px;}
+.CompanyDetails{color: #666666;
+    float: left;
+    font-size: 12px;
+    height: auto;
+    line-height: 16px;
+    margin: 10px 0;
+    width: 100%;}
+.CompanyDetails p{margin:0 0 10px 0}
+.CompanyProfile .section .set .requre {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../images/requir.png) no-repeat;
+	right: -2px;
+	top: 28px;
+	z-index: 1
+}
+.CompanyProfile h2{width:100%; float:left; margin:8px 0; font-size:14px;}
+.section .ajobhead{width:100%; height:25px; float:left; background:#fff; font-weight:bold;}
+.section .ajobrow{width:100%; height:25px; float:left; border-top:1px solid #e3e3e3;}
+.section .JobPostion{width:275px; height:25px; line-height:25px; float:left; padding-left:5px; font-size:12px; overflow:hidden;}
+.section .JobPostion a{color:#0F81A2; font-weight:bold;}.section .JobPostion a:hover{color:#242424;}
+.section .JobLocation{width:200px; height:25px; line-height:25px; float:left; padding-left:5px; font-size:12px; overflow:hidden;}
+.section .JobpostedOn{width:110px; height:25px; line-height:25px; float:left; padding-left:5px; font-size:12px; overflow:hidden;}
+.section  label{width:100%; height:20px; line-height:20px; float:left; font-weight:bold;}
+.section input{
+	width: 100%; margin:8px 0 8px 0px; float:left;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.section select {
+	width:100%; margin:8px 0 8px 0px; float:left;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf;
+	height: 220px; resize:none; padding:3px;
+	line-height: 15px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.section textarea {
+	width: 545px; margin:8px 0 8px 0px;
+	padding: 0 30px 0 20px; float:left;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf;
+	height: 250px; resize:none;
+	line-height: 15px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.CompanyContact textarea{
+	width: 198px; margin:0px 0 0px 0px;
+	padding:5px; float:left;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf;
+	height: 120px; resize:none;
+	line-height: 15px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.CompanyContact a{float:left; margin:5px 5px 0px 0;}
+
+
+
+.JoblistDetails .CompanyContact{
+	width:230px; height:auto; float:right; color:#3b3b3b; margin:10px 0; min-height:150px;
+	}
+.CompanyContact h2{width:100%; height:auto; float:left; font-size:14px; color:#333;}
+.CompanyContact .contactBox{width:210px; height:auto; padding:10px; border:1px solid #efefef; border-top:2px solid #789d26; float:left; margin-top:10px;line-height:20px;}
+.contactBox input[type="button"]{width:auto; padding:0; border:1px solid #ccc;  margin:5px 5px 0 0; cursor:pointer; padding:0 10px; float:left;}
+
+.JoblistList .companyListRow{width:100%; height:auto; padding-bottom:15px; border-bottom:1px solid #cdcdcd; float:left; margin-bottom:10px;}
+.companyListRow .CmLogo{width:165px; float:left; height:auto; font-weight:bold; font-size:12px; line-height:45px; color:#828282;}
+.companyListRow .CmLogo img{max-width:160px;width:auto; height:auto; max-height:47px;}
+.companyListRow .CmDetals{width:400px; padding-left:5px; float:left; height:auto;}
+.companyListRow .CmDetals h3{width:100%; height:25px; line-height:25px; float:left; color:#0f7e9f; font-size:14px; margin-top:7px; }
+.companyListRow .CmDetals h3 a{color:#0f7e9f;font-size:13px; }.companyListRow .CmDetals h3 a:hover{color:#666;}
+.companyListRow .CmDetals .descr{width:100%; height:auto; float:left; line-height:16px; font-size:12px; color:#727272;}
+.companyListRow .CmjbDetals{width:125px; float: right; height:auto; margin-top:7px;}
+.companyListRow .CmjbDetals a{width:100%; text-align:right; float:right; color:#0f7e9f; line-height:20px; font-size:11px;}.companyListRow .CmjbDetals a:hover{color:#666;}
+.companyListRow .CmjbDetals span{width:auto; float:right; height:auto; line-height:20px; color:#666; font-size:10px;}
+
+.Inbox{
+	width:100%; height:auto; float:left; margin-bottom:15px; border-bottom:1px solid #ddd;
+	}
+.composeMain{width:100%; height:auto; float:left; margin-bottom:15px; }
+.Inbox .headlabel{width:100%; height:25px; line-height:25px; border-top:1px solid #dedede; background:#f8f8f8;}
+.headlabel .selectAll{width:30px; text-align:center; border-right:1px solid #cccccc; float:left; height:15px; line-height:15px; margin-top:5px;}
+.headlabel .inboxBtn{width:auto; float:left; height:18px; line-height:18px; background:url(../images/inboxBtn.png) repeat-x; padding:0 10px; border:1px solid #cccccc; margin:2px 0 0 5px; font-size:12px; color:#8f8f8f;}
+.headlabel .inboxBtn:hover{cursor:pointer; color:#333;}
+.Inbox .row{width:100%; height:40px; line-height:40px; border-top:1px solid #dedede; background:#fff;}
+.Inbox .row .chkBox{width:30px; text-align:center; float:left; height:20px; line-height:20px; margin-top:12px; margin-right:5px;}
+.Inbox .row .chkBox{width:30px; text-align:center; float:left; height:20px; line-height:20px; margin-top:14px; margin-right:5px;}
+.Inbox .row .fromInb{width:270px; height:20px; float:left; line-height:20px;margin-top:10px; margin-right:5px; }
+.Inbox .row .fromInb:hover{cursor:pointer; text-decoration:underline;}
+.Inbox .row .subInb{width:500px; height:20px; float:left; line-height:20px;margin-top:10px; margin-right:5px; font-weight:bold; }
+.Inbox .row .dateInb{width:auto; height:20px; float:right; line-height:20px;margin-top:10px; margin-right:5px; color:#808080; }
+.Inbox .row .subInb a:hover{color:#333;}
+
+.Inbox .fromDetails{
+	width:270px; float:left; margin-top:15px; padding:10px;
+	height:auto; border-bottom:1px solid #dddddd; color:#939393;
+	background:#f8f8f8; border-top:1px solid #dddddd;
+	}
+.fromDetails a{color:#1697c7;}
+.Inbox .lines{width:100%; height:auto; font-size:12px; margin-bottom:5px; line-height:17px;}
+.Inbox .messageBody{
+	width:630px; height:auto;border-top:5px solid #dddddd; padding:10px;
+	background:#f8f8f8;border-bottom:1px solid #dddddd; float:right; margin-top:15px;
+	}
+.Mailsubject{font-weight:bold; color:#0f81a2;}.Mailsubject span{color:#000;}
+
+
+.composeMail{width:450px; height:auto; padding:10px; float:left; border:1px solid #dfdfdf; margin:10px; background:#f8f8f8;}
+.composeMail label{width:325px; height:20px; line-height:20px; margin:0px 0 0 5px; float:left;}
+.composeMail input{
+	width: 385px; margin:0px 0 8px 5px;
+	padding: 0 30px 0 20px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.composeMail textarea{
+	width: 385px; margin:5px 0 5px 5px;
+	padding: 0 30px 0 20px;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf;
+	height: 156px; resize:none;
+	line-height: 26px;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.composeMail input[type=button]{width:auto; float:left; height:25px; line-height:25px; background:#94b054; padding:0 10px; border:1px solid #cccccc; margin:2px 0 0 5px; font-size:12px; color:#fff; font-weight:bold;}
+.composeMail input[type=reset]{width:auto; float:left; height:25px; line-height:25px; background:url(../images/inboxBtn.png) repeat-x; padding:0 10px; border:1px solid #cccccc; margin:2px 0 0 5px; font-size:12px; color:#a4a4a4; font-weight:bold;}
+
+
+
+#container .postJobDetails{width:950px;
+	float: left;
+	height: auto;
+	margin:15px 0 20px 20px;
+	min-height: 365px;
+}
+.ApplicationQue{width:356px; height:auto; float:right; color:#3b3b3b; margin:10px 0; padding:12px; background:#efefef;}
+.ApplicationQue h2{width:100%; height:auto; font-size:16px; color:#03677e;}
+.ApplicationQue .quecont{width:100%; height:auto; min-height:75px; float:left; background:#fff; border:1px solid #d1d1d1; margin-top:10px;}
+.quecont h3{width:350px; padding-left:6px; height:25px; line-height:25px; font-size:12px; background:#d1d1d1;}
+.quecont .queset, .quesetech{width:344px; height:auto; margin:0 6px 6px 6px; padding:10px 0; float:left; border-bottom:1px dashed #d1d1d1;}
+.queset .row, .queset .QuesList, .queset .QuesCustom, .quesetech .row, .quesetech .QuesList, .quesetech .QuesCustom{width:100%; height:20px; line-height:20px; float:left; font-size:12px; margin-bottom:5px;}
+.row span{ margin-right:15px;}
+.QuesList select{width:100%; height:24px; padding:1px; border:1px solid #d1d1d1;}
+.QuesCustom input{width:340px; height:24px; padding:1px; border:1px solid #d1d1d1;}
+.quecont a{margin:0px 0 5px 7px;}
+
+.postJobDetails .postDetails{width:526px; height:auto; float:left; color:#3b3b3b; margin:10px 0; padding:12px; background:#efefef;}
+.postJobDetails .postDetails .set{width:170px; height:auto; float:left; margin-right:10px; position:relative;}
+.postJobDetails .postDetails .set span.expto{float:left; height:28px; line-height:28px; margin:0 5px; font-weight:bold; color:#333;}
+.postJobDetails .postDetails .sets{width:160px; height:auto; float:right;}
+.postJobDetails .postDetails input{
+	width:100%; margin:0px 0 8px 0px;
+	padding: 0 0px 0 0px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;
+	line-height: 26px; float:left;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.postJobDetails .postDetails textarea{
+	width:100%; margin:0px 0 8px 0px;
+	padding: 0 0px 0 0px;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf; font-size:12px; font-family:Arial, Helvetica, sans-serif;
+	height: 125px; resize:none;
+	line-height: 15px; float:left;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+.postJobDetails .postDetails select{
+	width:100%; margin:0px 0 8px 0px;
+	padding: 3px;
+	border: 1px solid #cfcfcf;
+	height: 28px;
+	line-height: 28px; float:left;
+	color: #5a5a5a;
+	font-size: 12px; margin-right:2px;}
+
+.postJobDetails button {
+	position: absolute;
+	width: 45px;
+	height: 26px;
+	background: url(../images/labelrightbg.png) repeat-x;
+	right: -1px;
+	top: 21px;
+	border: 0px;
+	border-left: 1px solid #D2D1D1;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #4F4F4F;
+	font-size: 16px;
+	}
+.postJobDetails label{width:100%; height:20px; float:left; line-height:20px; font-size:12px; font-weight:bold;}
+.postJobDetails label span{color:#900;}
+
+/*---------------------------------searchCnd----------------------------------*/
+.searchCnd{
+	width:725px; height:37px; float:left; border:1px solid #cbcbcb; margin-top:-11px; position:absolute; left:0; z-index:100;
+	background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmQyZDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #d2d2d2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d2d2d2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#d2d2d2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#d2d2d2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#d2d2d2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#d2d2d2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d2d2d2',GradientType=0 ); /* IE6-8 */
+	}
+.searchCnd a{width:auto; float:right; margin:7px 7px 0 0; font-size:13px; font-weight:bold; padding:3px 6px; background:url(../images/apply-bg.png) repeat-x; border:1px solid #fff; color:#fff;}
+.searchCnd a img{float:right; margin:4px 0 0 5px;}
+
+.nmsearch{width:550px; height:30px; float:left; margin:6px 0px 0 6px;}
+.nmsearch .searchBtn{right: 152px !important; top: 3px !important;}
+
+.adsearch{width:560px; height:auto; margin:8px 0 8px 8px; float:left; display:none;min-height:150px;}
+.adsearch .frmset{width:180px; height:auto; float:left; margin:0 6px 10px 0;}
+.adsearch .frmset label{width:100%; float:left; height:20px; line-height:20px; color:#7e7e7e; font-size:12px;}
+.adsearch .frmset select{
+	width:100%; padding:3px;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 26px;line-height: 26px; float:left;
+	color: #5a5a5a;font-size: 12px;}
+.adsearch .frmset input{
+	width:100% !important; padding:0 !important;
+	background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;
+	height: 25px;line-height: 25px; float:left;
+	color: #5a5a5a;font-size: 12px;}
+.adsearch .frmsetm{width:180px; height:auto; float:left; margin:-5px 6px 10px 0;}
+.adsearch .frmsetm select{
+	width:100%; padding:3px;
+	background: url(../images/search-input-bg.png) repeat-x left top #fff;
+	border: 1px solid #cfcfcf;
+	height: 55px; float:left;
+	color: #5a5a5a;font-size: 12px;}
+.adsearch .frmsetm label{width:100%; float:left; height:20px; line-height:20px; color:#565656; font-size:10px;}
+.adsearch .frmsetm label a{float:right; font-size:10px; background:none; padding:0px; border:0px; color:#0f7e9f; margin:0px; font-weight:normal;}
+.adsearch .AdsearchBtn{width:88px; height:34px; background:url(../images/advanced-searchBtn.png) no-repeat left; text-indent:-9999px; position:absolute; right:73px; bottom:29px;}
+.adsearch .AdsearchBtn:hover{background:url(../images/advanced-searchBtnH.png) no-repeat; cursor:pointer;}
+/*---------------------------Auto Completion-----------------------------------*/
+#auto_box {
+	width:100%; height:auto; float:left;
+}
+#auto_box span b {
+	float: right;
+	margin: 3px 0 0 3px;
+	font-size: 10px;
+	color: red;
+	cursor: pointer
+}
+#auto_box span {
+	width:auto; float:left; border:1px solid e3e3e3; padding:3px;
+	margin:3px; background:#fff; font-size:11px; color:#565656;
+}
+.highlight {
+	background: #DFF7FF
+}
+#auto_box .list_name {
+	overflow:auto; background:#FFF; border:1px solid #CFCFCF; border-top:0px;
+	height:auto; max-height:100px; width:100%; font-size:11px; float:left;
+}
+.list_name p{ border-bottom:1px solid #cfcfcf; width:98%;padding:5px 0 5px 3px; line-height:15px; font-size:11px; color:#999; }
+/*-----------------------Job's Advanced Search ---------------------------------------*/
+.adSearchJb{
+	width:580px; height:160px; padding:10px; position:absolute;z-index:110; top:57px; border:1px solid #2a2a2a; display:none;
+	background: #d2d2d2; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QyZDJkMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #d2d2d2 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2d2d2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d2d2d2 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d2d2d2 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d2d2d2 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d2d2d2 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d2d2', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+.adSearchJb .keyset{width:385px; float:left; height:auto; margin:0 9px 9px 0;}
+.adSearchJb .adfrmset{width:177px; float:left; height:auto; margin:0 9px 9px 0;}
+.adSearchJb .adfrmMultset{width:182px; float:left; height:auto; margin:0 9px 9px 0;}
+.adSearchJb label{width:100%; height:20px; line-height:20px; float:left; font-size:12px; color:#4c4c4c; }
+.adSearchJb input {
+    background: url("../images/search-input-bg.png") repeat-x scroll left top transparent;
+    border: 1px solid #CFCFCF;
+    color: #5A5A5A;
+    float: left;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.adSearchJb select {
+    background: url("../images/search-input-bg.png") repeat-x scroll left top #fff;
+    border: 1px solid #CFCFCF;
+    color: #5A5A5A;
+    float: left;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    padding: 4px !important;
+    width: 100% !important;
+}
+.adSearchJb select[multiple='multiple']{
+   height:83px !important;
+}
+.adSearchJb .searchBtn{width:88px; height:34px; background:url(../images/advanced-searchBtn.png) no-repeat; float:right; margin:75px 110px 0 0;}
+.adSearchJb .searchBtn:hover{background:url(../images/advanced-searchBtnH.png); cursor:pointer;}
+
+/*-----------------------Contact---------------------------------------*/
+.contatcLeft{width:625px; height:auto; float:left; margin:10px 0 0 15px;}
+.contatcLeft h2{width:100%; height:28px; line-height:28px; float:left; margin:5px 0;}
+.contatcLeft p{width:100%; height:20px; float:left; line-height:20px; font-size:14px; margin:0px;}
+.contatcLeft .Cset{width:264px; height:44px; float:left; background:#eeeeee; border:1px solid #bcbbbb; padding:8px; margin:0 15px 15px 0; position:relative;}
+.contatcLeft .Cset .requre {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../images/requir.png) no-repeat;
+	right: 10px;
+	top: 26px;
+	z-index: 1
+}
+.contatcLeft label{width:100%; height:18px; color:#8c8c8c; font-size:12px; float:left;}
+.Cset input{width: 255px;height: 25px;line-height: 25px;
+	float: left;border: 1px solid #b8b8b8;border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;color: #4c4c4c;
+}
+.contatcLeft .CsetB{width:560px; height:100px; float:left; background:#eeeeee; border:1px solid #bcbbbb; padding:8px; margin:0 0 10px 0}
+.CsetB textarea{width: 555px;height: 80px;line-height: 25px;
+	float: left;border: 1px solid #b8b8b8;border-top: 1px solid #9b9b9b;
+	background: url(../images/inputbg.png) repeat-x top #fff;
+	padding-left: 5px;color: #4c4c4c; resize:none;
+}
+.contatcLeft input[type=submit]{width:auto; height:auto; padding:5px 10px; background:url(../images/apply-bg.png) repeat-x left; float:left; color:#fff; border:2px solid #fff; margin:0px 0 0 0px; cursor:pointer; font-weight:bold;}
+
+.contactRight{width:345px; height:520px; float:right; background:url(../images/HomeRight.jpg) repeat-y left;}
+.contactRight h3{width:260px; float:left; font-size:16px; color:#02558a; height:auto; padding-bottom:5px; border-bottom:1px dashed #d5d5d5; margin-bottom:25px; font-weight:normal;}
+.ContactDetails{width:300px; float:left; height:auto; margin: 35px 0 0 30px;}
+
+
+#container .faqmain {
+	width: 715px;
+	float: left;
+	height: auto;
+	margin: 10px 0 20px 20px;
+	min-height: 365px;
+}
+
+
+
+/*-----------------------Pagination---------------------------------------*/
+.pagination{width:100%; height:35px; float:left; text-align:center; background:url(../images/paginationBg.png) repeat-x left; border:1px solid #d7d7d7;}
+.pagination a.nav {text-align:center; width:auto; line-height:35px;padding:10px 15px;}
+.pagination a.nav:hover{ border:1px solid #e3e3e3;padding:11px 14px 10px 14px; }
+.pagination a.nav.active{background:#fff; border:1px solid #e3e3e3; border-top:2px solid #0f81a2; padding:10px 14px; }
+
+.pagination a.previous{width:auto; float:left; color:#0f81a2; font-size:12px; font-weight:bold; line-height:35px; padding:0 15px; border-right:1px solid #e3e3e3;}
+.pagination a.previous:hover{background:#fff;}
+.pagination a.next{width:auto; float:right; color:#0f81a2; font-size:12px; font-weight:bold; line-height:35px; padding:0 15px; border-left:1px solid #e3e3e3;}
+.pagination a.next:hover{background:#fff;}
+
+/*-----------------------Footer---------------------------------------*/
+#footer {
+	width: 100%;
+	height: 60px;
+	background: #111111;
+}
+#footer a:hover{color:#fff;}
+#footer .twitter{width:20px; height:20px; background:url(../images/icon-twitter.png) no-repeat left; position:absolute; bottom:-3px; left:0;}
+#footer .twitter:hover{background-position:-21px; cursor:pointer;}
+#footer .facebook{width:20px; height:20px; background:url(../images/icon-facebook.png) no-repeat left; position:absolute; bottom:-3px; left:30px;}
+#footer .facebook:hover{background-position:-21px; cursor:pointer;}
+#footer .linkedIn{width:20px; height:20px; background:url(../images/icon-linkedin.png) no-repeat left; position:absolute; bottom:-3px; left:60px;}
+#footer .linkedIn:hover{background-position:-21px; cursor:pointer;}
+.ftrlogo a{text-indent:-99999px; float:left; width:20px; height:20px;}
+.ftrlogo {
+	width: 204px;
+	position: relative;
+	height: 40px;
+	float: left;
+	padding-right: 27px;
+	
+	background: url(../images/footer-dvdr.png) no-repeat right;
+}
+.fLogo{background:url(../images/footerlogo.png) no-repeat left; width:225px; height:60px;}
+.ftrMenu{
+	width:auto; float:left; margin:20px 0 0 20px;
+	}
+.ftrMenu ul{width:auto; float:left; list-style:none;}
+.ftrMenu ul a{color:#6a6a6a; line-height:20px; float:left; font-size:12px;}
+
+.googlePlay{width:132px; height:44px; float:left; background:url(../images/icon-googleplay.jpg) no-repeat; margin:9px 0 0 105px;}
+.googlePlay a{width:132px; height:44px; float:left; text-indent:-99999px; }
+.copyright{width:auto; float:right; margin:10px 0 0 0; color:#707070;text-align:right; line-height:20px;} .copyright a{ color:#707070;}
+
+
+#fpwdstatusmsg{width:383px; height:auto; position:absolute; top:160px; left:0px; background:#063; color:#FFF; font-size:12px; font-weight:bold; display:none; text-align:center;}
+
+#createPf{float:left; margin:5px 0;}
+.hiw1, .hiw2, .hiw3, .hiw4, .hiw5, .hiw6, .hiw7, .hiw8, .hiw9, .hiw10, .hiw11, .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .vp1, .vp2, .vp3, .vp4{display:none;}
+
+.howitsworks{margin-top:15px; float:left; width:282px; height:322px; position:relative;font-size:14px; color:#02558a; font-weight:bold;}
+
+.howitsworks .postjobsIMG{width:48px; height:48px; position:absolute; top:3px; left:5px; background:url(../images/homeicon.png) no-repeat -250px ; text-indent:-6666px; float:left;}
+.howitsworks .postjobsText{width:auto; height:auto; float:left; position:absolute; left:54px; top:3px;}
+.howitsworks .hwline1{width:62px; height:45px; float:left; position:absolute; top:22px; left:47px; background:url(../images/line1.png) no-repeat;}
+.howitsworks .searcCandIMG{width:48px; height:48px; position:absolute; top:50px; left:92px; background:url(../images/homeicon.png) no-repeat -300px ; text-indent:-6666px; float:left;}
+.howitsworks .searcCandText{width:auto; height:auto; float:left; position:absolute; left:148px; top:62px;}
+.howitsworks .hwline2{width:30px; height:55px; float:left; position:absolute; top:95px; left:93px; background:url(../images/line2.png) no-repeat;}
+.howitsworks .screenCandIMG{width:48px; height:48px; position:absolute; top:146px; left:62px; background:url(../images/homeicon.png) no-repeat -350px ; text-indent:-6666px; float:left;}
+.howitsworks .screenCandText{width:auto; height:auto; float:left; position:absolute; left:114px; top:162px;}
+.howitsworks .hwline3{width:28px; height:67px; float:left; position:absolute; top:193px; left:83px; background:url(../images/line3.png) no-repeat;}
+.howitsworks .shortCandIMG{width:48px; height:48px; position:absolute; top:248px; left:106px; background:url(../images/homeicon.png) no-repeat -149px ; text-indent:-6666px; float:left;}
+.howitsworks .shortCandText{width:auto; height:auto; float:left; position:absolute; left:100px; top:300px;}
+#rhthw1, #rhthw2, #rhthw3, #rhthw4, #rhthw5, #rhthw6, #rhthw7, #rhthw8, #rhthw9, #rhthw10, #rhthw11{display:none;}
+
+
+
+.advSearcgbx{width:640px; padding-left:6px; height:115px; background:#f5f5f5; border:1px solid #d1d1d1; border-top:0px; position:absolute; left:-4px; top:36px; z-index:1500; display:none;}
+.advSearcgbx #advncdSrchfields .adfrmset{width:225px !important;}
+.advSearcgbx #advncdSrchfields .adfrmMultset{width:240px !important;}
+.advSearcgbx #advncdSrchfields .searchBtn1{margin-right:53px !important;
+}
+.searchCaption{width: 100%;
+height: 25px;
+float: left;
+color: #88A2AA;
+font-size: 13px;
+}
+
+.btnDel{position:absolute; width:14px; height:14px; background:url(../images/vstatus.png) no-repeat -28px; text-indent:-9999px; right:3px; top:5px; float:left; display:none;}
+
+.addCommentProfile {
+	width: 293px;
+	height: auto; 
+	margin-top:15px;
+	float: left;
+}
+.addCommentProfile h2{width:100%; height:25px; line-height:25px; float:left; color:#07667a; margin-bottom:5px; font-size:14px; font-weight:normal; padding-bottom:5px; border-bottom:1px dashed #09F;}
+.addCommentProfile label{width:100%; height:20px; line-height:20px; float:left; color:#666;}
+.addCommentProfile input{width:100%; height:25px; resize:none; float:left; border:1px solid #ccc; margin-bottom:10px; color:#666;}
+.addCommentProfile textarea{width:100%; height:55px; resize:none; float:left; border:1px solid #ccc; font-family:Arial, Helvetica, sans-serif; margin-bottom:10px; color:#666;}
+.addCommentProfile input[type=button]{width:auto !important; float:left;  cursor:pointer;}
+
+.subTitle{width:100%; height:15px; line-height:15px; font-size:11px; color:#999;}
+
+
+.applicationAnswer label {width:100%; float:left; height:auto; line-height:22px; font-weight:bold;margin-bottom:5px;}
+.applicationAnswer input{
+	width: 600px; padding-left:5px;background: url(../images/search-input-bg.png) repeat-x left top;
+	border: 1px solid #cfcfcf;height: 24px; color: #5a5a5a; float:left;
+	font-size: 12px; margin-bottom:5px; margin-right:10px; }
+
+#upploadDiv{float: left;
+width: 281px;
+padding: 5px;
+background: antiqueWhite;
+margin: 5px 0;
+border: 2px solid #E3E3E3;}
+#upploadDiv .title{
+	width: 125px;
+	height: auto;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+#upploadDiv .title label, .upload label{width:100%; height:25px; line-height:25px; color:#666; font-size:12px;}
+
+.uploadmain .upload {
+	width: 130px;
+	height: 56px;
+	float: left;
+	margin: 0px 12px 12px 0px;
+	position: relative;
+}
+.uploadmain .upload input {
+	width: 100px !important;
+}
+.uploadmain select{width: 95%;
+height: 28px;
+line-height: 26px;
+float: left;
+border: 1px solid #B8B8B8;
+border-top: 1px solid #9B9B9B;
+background: url(../images/inputbg.png) repeat-x top white;
+padding-left: 5px;
+color: #8C8C8C;
+}
+
+.editDiv{display: none;
+float: left;
+background: antiqueWhite;
+margin: 9px 0;
+border: 2px solid #DFDFDF;
+padding: 5px;
+width: 585px;}
+
+
+#ProcessOverley {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	background: #000;
+	display: none;
+	z-index: 997;
+}
+#showProcessDiv {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+	padding: 5px;
+	display: none;
+	z-index: 450;
+	z-index: 999;
+}
+
+
+#showProcessDiv img {
+	padding-top: 10px;
+}

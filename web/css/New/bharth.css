@@ -1,0 +1,2620 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*********************************************Karteek's index page css start here*******************************************/
+
+*{margin:0 auto;
+  padding:0;}
+
+#bharth{
+    width:100%; 
+    height:auto;
+
+}
+/**********************top menu start here*******************/
+.menu_part{
+    width:100%;
+    height:41px;
+    float:left;
+    background-image:url(../../bbsimages/New/menu_bg.jpg);
+    background-repeat:repeat-x;
+}
+
+.menu_wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:44px;
+    background-image:url(../../bbsimages/New/menu_bg.jpg);
+    background-repeat:repeat-x ;
+}
+.menu_cont{
+    width:980px;
+    height:41px;
+    background-image:url(../../bbsimages/New/menu_bg.jpg);
+    background-repeat:repeat-x ;
+    position:relative;
+    z-index:9999999999;
+}
+.main_header {
+    width:980px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.talk_to_gugu_button{ float:left; width:100px; height:30px; margin-right:0px; margin-top:5px;}
+.talk_to_gugu_button a{float:left; width:100px; height:30px; background-image: url(../../bbsimages/New/talk_to_gugu_button.png) ; background-repeat:no-repeat;}
+.talk_to_gugu_button a:hover{background-position:0 -30px;}
+
+.menu_box{
+    width:566px;
+    height:auto;
+    float:right;
+    border-left:1px solid #043c99;
+    border-right:1px solid #011645;
+}
+.menu_box1{
+    width:400px;
+    height:auto;
+    float:left;
+
+}
+.header1{
+    width:395px;
+    height:41px;
+    float:right;
+}
+.header1_text{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color: #FAFAFA;
+    text-decoration:none;
+    padding-top:1px;
+    margin-left:10px;
+    margin-top:15px;
+}
+
+.home_img{
+    width:19px;
+    height:20px;
+    float:left;
+    background-image:url(../../bbsimages/New/home_icon.png);
+    background-repeat:no-repeat;
+    margin-top:12px;
+    margin-left:10px;
+}
+.home{
+    width:81px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.home a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding-top:1px;
+    margin-left:5px;
+    margin-top:15px;
+}
+.home a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+.my_bbs{
+    width:90px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.my_bbs_img{
+    width:25px;
+    height:23px;
+    float:left;
+    background-image: url(../../bbsimages/New/bbs_icon_new.png);
+    background-repeat:no-repeat;
+    margin-top:11px;
+    margin-left:10px;
+}
+.my_bbs a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-top:1px;
+    margin-left:0px;
+    margin-top:15px;
+}
+.my_bbs a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+.community{
+    width:100px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.community_img{
+    width:18px;
+    height:15px;
+    float:left;
+    background-image:url(../../bbsimages/New/post_icon.png);
+    background-repeat:no-repeat;
+    margin-top:15px;
+    margin-left:10px;
+}
+.community a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding-top:1px;
+    margin-left:5px;
+    margin-top:15px;
+}
+.community a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+.help{
+    width:80px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.help_img{
+    width:20px;
+    height:19px;
+    float:left;
+    background-image:url(../../bbsimages/New/help_icon.png);
+    background-repeat:no-repeat;
+    margin-top:12px;
+    margin-left:10px;
+}
+.help a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding-top:1px;
+    margin-left:5px;
+    margin-top:15px;
+}
+.help a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+.register{
+    width:105px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.register_img{
+    width:19px;
+    height:19px;
+    float:left;
+    background-image:url(../../bbsimages/New/register_icon.png);
+    background-repeat:no-repeat;
+    margin-top:12px;
+    margin-left:10px;
+}
+.register a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-top:1px;
+    margin-left:5px;
+    margin-top:15px;
+}
+.register a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+.signin{
+    width:95px;
+    height:41px;
+    float:left;
+    border-left:1px solid #011645;
+    border-right:1px solid #043c99;
+}
+.signin_img{
+    width:14px;
+    height:19px;
+    float:left;
+    background-image: url(../../bbsimages/New/signin_icon.png);
+    background-repeat:no-repeat;
+    margin-top:15px;
+    margin-left:10px;
+}
+.signin a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-top:1px;
+    margin-left:5px;
+    margin-top:15px;
+}
+.signin a:hover{
+    color:#f9ab5f;
+    text-decoration:underline;
+}
+
+/*********************************************************top menu end here***************************************************/
+
+
+/*********************************************************body part start here***************************************************/
+
+.body_part{
+    float:left;
+    width:100%;
+    height: auto;
+    /*    background-image: url(../../bbsimages/New/body_bg.jpg);*/
+    background-repeat:repeat-x y;
+}
+.body_part_wrapper{
+    width:978px;
+    height: auto;
+    background-color:#FFFFFF;
+}
+.body_main_cont{
+    float:left;
+    width:978px;
+    height: auto;
+    background-color:#FFFFFF;
+    margin:0 0 0 0;
+    border-left:#ebebeb solid 1px;
+    border-right:#ebebeb solid 1px;
+}
+.body_top_right_menu_cont{
+    float:right;
+    width:350px;
+    height: auto;
+    margin:15px 45px 0 0;
+}
+.body_top_menu_cont{
+    float:left;
+    width:978px;
+    height: auto;
+    margin:0 0 0 0;
+}
+
+.top_menu{ float:right; font-family:Arial; font-size:12px; color: #3e3e3e; font-weight:normal; width:310px; height:20px;  text-align:left; margin:0px 0px 0 0px;}
+.top_menu li{font-family:Arial; font-size:12px; color: #3e3e3e; font-weight:normal; width:380px; height:20px; margin-right:1px; list-style:none; display:inline;}
+.top_menu li a{font-family:Arial;font-size:12px;color:#3e3e3e;font-weight:normal;width:380px;height:20px;margin-left:1px;list-style:none;display:inline;text-decoration:none;}
+.top_menu li a:hover{color: #1ea1b9; text-decoration: none;}
+.top_menu li .top_Highlight{color:  #1ea1b9; text-decoration: none;}
+
+.post_a_free_ad_button{float:right; width:165px; height:33px; margin:13px 0px 0 0px;}
+.post_a_free_ad_button a{float:left; width:165px; height:33px; background-image: url(../../bbsimages/New/post_a_free_ad_button.png); background-repeat:no-repeat;}
+.post_a_free_ad_button a:hover{background-position:0 -33px;}
+
+
+.body_top_left_menu_cont{
+    float:left;
+    width:350px;
+    height: auto;
+    margin:30px 45px 0 35px;
+}
+.india_flag_img{
+    float:left;
+    width:50px;
+    height:50px;
+    background-image: url(../../bbsimages/New/india_flag_img.png);
+    background-repeat:no-repeat;
+    margin:0px 10px 0 0;
+}
+.all_india_input{
+    float:left;
+    width:115px;
+    height:auto;
+    margin:15px 0 0 0;
+}
+.logo_cont{
+    float:left;
+    width:980px;
+    height: auto;
+    margin:0px 0 0 0;
+}
+.logo{
+    float:left;
+    width:263px;
+    height:100px;
+    background-image: url(../../bbsimages/New/ameging_logo.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 366px;
+}
+.body_inner_mt_cont_1{
+    float:left;
+    width:980px;
+    height: auto;
+    margin:10px 0 0 0;
+}
+/*.search_full_bg_img{
+    float:left;
+    width:748px;
+    height:81px;
+    background-image:url(../../bbsimages/New/search_full_bg_img_new.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 121px;
+}*/
+.search_txt {
+    float:left;
+    width:64px;
+    height:64px;
+    margin:9px 0px 0 9px;
+    background-repeat:no-repeat;
+}
+.search_txt a{
+    float:left;
+    width:64px;
+    height:64px;
+    background-image:url(../../bbsimages/New/search_button.png);
+    background-repeat:no-repeat;
+}
+.search_txt a:hover{
+    background-position:0 -64px;
+}
+.search_box{
+    width:250px;
+    height:30px;
+    float:left;
+    background-repeat:no-repeat;
+    margin-top:26px;
+    margin-left:30px;
+}
+.search_box_input{
+    width:240px;
+    height:23px;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#000000;
+    border:none;
+    margin-left:5px;
+    margin-top:4px;
+}
+.catery_input{
+    float:left;
+    width:210px;
+    height:26px;
+    margin:28px 0 0 0;
+    border-left:solid 1px #666666;
+    border-right:solid 1px #666666;
+}
+.offered_input{
+    float:left;
+    width:115px;
+    height:26px;
+    margin:28px 0 0 0;
+}
+.blue_arrow{ float:left; width:54px; height:36px; margin-left:0px; margin-top:23px;}
+.blue_arrow a{float:left; width:54px; height:36px; background-image: url(../../bbsimages/New/blue_arrow.png); background-repeat:no-repeat;}
+.blue_arrow a:hover{background-position:0 -36px;}
+
+.premium_main_cont{
+    float:left;
+    width:980px;
+    height: auto;
+    margin-top:25px;
+}
+.premium_cont_txt{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 10px 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    text-transform:uppercase;
+    color:#ff7600;
+}
+.img_cont_prm{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 10px 33px;
+}
+
+.img_cont{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 10px 33px;
+}
+
+.img_cont table{
+
+}
+
+.img_cont_01{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 10px 0px;
+}
+.img_bg_1{
+    float:left;
+    width:220px;
+    height: 100px;
+    background-image: url(../../bbsimages/New/img_bg_1.png);
+    background-repeat:no-repeat;
+    margin-left: 10px;
+}
+.img_1{
+    float:left;
+    background-repeat:no-repeat;
+    margin:6px 0 0 6px;
+}
+
+.featured_cont_txt{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:20px 0 10px 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    text-transform:uppercase;
+    color:#ff7600;
+}
+
+
+/*********************************************************body part end here***************************************************/
+
+
+/*********************************************************right side part start here***************************************************/
+.socialmedia
+{
+    float:left;
+    position:fixed;
+    right:0px;
+    top:75px;
+    width:95px;
+    height:242px;
+    background:url(../../bbsimages/New/social_netbg_enter.png) no-repeat;
+    z-index:auto;
+    display:block;
+    visibility:visible;
+}
+.socialmedia ul
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.socialmedia ul li
+{
+    display:block;
+}
+.socialmedia ul li img
+{
+    padding:5px 0 0 0px;
+    border:none;
+}
+.f_img{ float:left; width:52px; height:51px; margin-left:18px; margin-top:50px;}
+.f_img a{float:left; width:52px; height:51px; background-image: url(../../bbsimages/New/f.png); background-repeat:no-repeat;}
+.f_img a:hover{background-position:0 -51px;}
+
+.t_img{ float:left; width:52px; height:51px; margin-left:0px; margin-top:5px;}
+.t_img a{float:left; width:52px; height:51px; background-image: url(../../bbsimages/New/t.png); background-repeat:no-repeat;}
+.t_img a:hover{background-position:0 -51px;}
+
+.g_img{ float:left; width:52px; height:51px; margin-left:0px; margin-top:5px;}
+.g_img a{float:left; width:52px; height:51px; background-image: url(../../bbsimages/New/g.png); background-repeat:no-repeat;}
+.g_img a:hover{background-position:0 -51px;}
+
+.h_img{ float:left; width:52px; height:51px; margin-left:0px; margin-top:5px;}
+.h_img a{float:left; width:52px; height:51px; background-image:url(../../bbsimages/New/h.png); background-repeat:no-repeat;}
+.h_img a:hover{background-position:0 -51px;}
+
+
+.feedback{ float:left; width:93px; height:48px; margin-left:-18px; margin-top:60px;}
+.feedback a{float:left; width:93px; height:48px; background-image: url(../../bbsimages/New/feed_back_img.png); background-repeat:no-repeat;}
+.feedback a:hover{background-position:0 -48px;}
+/*********************************************************right side part end here***************************************************/
+
+
+/*********************************************************footer city part start here***************************************************/
+.footer_city_part{
+    width:100%;
+    height: auto;
+    float:left;
+    background-color:#fefcfc;
+}
+.footer_city_part_wrapper{
+    width:980px;
+    height:180px;
+    background-image:url(../../bbsimages/New/footer_city_part_wrapper_bg.jpg);
+    background-repeat: no-repeat;
+}
+.featured{
+    float:left;
+    width:950px;
+    height: auto;
+    margin:20px 0 10px 0px;
+    font-family:Myriad Pro;
+    font-size:16px;
+    text-transform:uppercase;
+    color:#ff7600;
+}
+.footer_city_left_cont{
+    float:left;
+    width:95px;
+    height: auto;
+}
+.footer_city_left_txt ul {
+    float:left;
+    width:95px;
+    font-family:Arial;
+    font-size:12px;
+    color: #3d3e3e;
+    line-height:18px;
+    list-style: none;
+    text-decoration:none;
+    margin:0px 0px 0px 0px;}
+.footer_city_left_txt li {border: 0px;color: #3d3e3e; padding-bottom:2px;}
+.footer_city_left_txt ul a{text-decoration: none;}
+.footer_city_left_txt a:link{color: #3d3e3e;}
+.footer_city_left_txt a:visited{color: #3d3e3e;}
+.footer_city_left_txt ul a:hover{color: #1ea1b9;}
+
+/*********************************************************footer city part end here***************************************************/
+
+/*********************************************************footer part end here***************************************************/
+.footer_part{
+    float:left;
+    width:100%;
+    height:60px;
+    background-color:#ff7e00;
+}
+.footer_part_wrapper{
+    width:980px;
+    height:60px;
+}
+
+.footer_mt_cont{
+    float:left;
+    width:980px;
+    height: auto;
+}
+
+.copy_left_txt{
+    width:300px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #FFFFFF;
+    font-weight:normal;
+    margin-top:25px}
+.copy_left_txt a{text-decoration: none;}
+.copy_left_txt a:link{ color: #FFFFFF;}
+.copy_left_txt a:visited{color: #FFFFFF;}
+.copy_left_txt a:hover{color: #3d3e3e;}
+
+.footer_menu{ float:right; width:300px; height:20px; font-family:Arial; font-size:12px; color: #FFFFFF; font-weight:normal; text-align:right; margin-top:25px;}
+.footer_menu li{font-family:Arial; font-size:12px; color: #FFFFFF; font-weight:normal; width:300px; height:20px; margin-right:3px; list-style:none; display:inline;}
+.footer_menu li a{font-family:Arial;font-size:12px;color:#FFFFFF;font-weight:normal;width:300px;height:20px;margin-left:3px;list-style:none;display:inline;text-decoration:none;}
+.footer_menu li a:hover{color: #3d3e3e; text-decoration: none;}
+.footer_menu li .footer_Highlight{color:  #3d3e3e; text-decoration: none;}
+
+/****************footer part end here*****************/
+/*********************************************index page css end here*******************************************/
+
+/*********************************************car page css start here*******************************************/
+
+.car_main_cont{
+    float:left;
+    width:980px;
+    height: auto;
+    margin-top:45px;
+}
+.car_main_inner_cont{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 0 30px;
+}
+.car_mt_cont_920{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:0px 0 0px 0px;
+}
+
+.car_category{ float:left; width:920px; height:20px; font-family:Arial; font-size:12px; color: #333333; font-weight:normal; text-align:left; margin:0px 0px 0 0px;}
+.car_category li{font-family:Arial; font-size:12px; color: #333333; font-weight:normal; width:380px; height:20px; margin-right:3px; list-style:none; display:inline;}
+.car_category li a{font-family:Arial;font-size:12px;color: #333333;font-weight:normal;width:380px;height:20px;margin-left:3px;list-style:none;display:inline;text-decoration:none;}
+.car_category li a:hover{color: #1ea1b9; text-decoration: underline;}
+.car_category li .car_category_Highlight{color:  #1ea1b9; text-decoration: underline;}
+
+
+.cat_red_carp{ float:left; width:690px; height:20px; font-family:Arial; font-size:12px; color: #333333; font-weight:normal; text-align:left; margin:0px 0px 0 0px;}
+.cat_red_carp li{font-family:Arial; font-size:12px; color: #333333; font-weight:normal; width:380px; height:20px; margin-right:3px; list-style:none; display:inline;}
+.cat_red_carp li a{font-family:Arial;font-size:12px;color: #333333;font-weight:normal;width:380px;height:20px;margin-left:3px;list-style:none;display:inline;text-decoration:none;}
+.cat_red_carp li a:hover{color: #1ea1b9; text-decoration: underline;}
+.cat_red_carp li .cat_red_carp_Highlight{color:  #1ea1b9; text-decoration: underline;}
+
+
+
+
+.ikon_2006{
+    float:left;
+    width:920px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    /*font-weight:bold;*/
+    color:#ff9600;
+    padding:0 0 0 0;
+    margin:10px 0 0 0px;}
+
+.locations_boder_cont{
+    float:left;
+    width:920px;
+    height: auto;
+    border-bottom: dashed 1px #CCCCCC;
+    border-top: dashed 1px #CCCCCC;
+    margin:15px 0 0 0px;}
+.locations_main_left_cont{
+    float:left;
+    width:685px;
+    height: auto;
+    margin:0px 0 0 0px;}
+.locations_main_right_cont{
+    float:right;
+    width:205px;
+    height: auto;
+    margin:0px 0 0 0px;}
+
+.locations_inner_left_cont{
+    float:left;
+    width:685px;
+    height: auto;
+    margin:15px 0 0 0px;}
+
+.locations_left_top_cont{
+    float:left;
+    width:685px;
+    height: auto;
+    margin:0px 0 0 0px;}
+.locations_left_top_cont{
+    float:left;
+    width:117px;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;}
+.locations_right_top_cont{
+    float:right;
+    width:565px;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;}
+
+.ikon_2006_for_cont_txt{
+    float:left;
+    width:600px;
+    height: auto;
+    margin:15px 0 15px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;}
+
+.share_this_ad_cont_txt{
+    float:left;
+    width:205px;
+    height: auto;
+    margin:15px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;}
+.g_mt_cont{
+    float:left;
+    width:205px;
+    height: auto;
+    margin:10px 0 0 0px;}
+.car_g_img{ float:left; width:38px; height:24px; margin-left:0px; margin-top:0px;}
+.car_g_img a{float:left; width:38px; height:24px; background-image: url(../../bbsimages/New/car_g_img.png); background-repeat:no-repeat;}
+.car_g_img a:hover{background-position:0 -24px;}
+
+.o_border_outline{
+    float:left;
+    width:27px;
+    height: 24px;
+    background-image:url(../../bbsimages/New/o_border_outline.png);
+    background-repeat:no-repeat;
+    margin:0px 0 0 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#333333;
+    padding:5px 0 0 12px;}
+.change_img_1{
+    float:left;
+    width:205px;
+    height: auto;
+    /*background-image: url(../../bbsimages/New/change_img_1.png);*/
+    background-repeat:no-repeat;
+    margin:10px 0 0 0px;}
+
+.adtypy_mt_cont_txt{
+    float:left;
+    width:920px;
+    height: auto;
+    border-bottom: dashed 1px #CCCCCC;
+    /*margin:10px 0 10px 0px;*/
+}
+
+.adtypy_mt_fac_txt{
+    float:left;
+    width:920px;
+    height: auto;
+    /* border-bottom: dashed 1px #CCCCCC;*/
+    margin:15px 0 10px 0px;}
+
+.adtypy_inner_fac_left_cont{
+    float:left;
+    /*width:920px;*/
+    height: auto;
+    /*margin:15px 0 10px 0;*/
+}
+.adtypy_inner_left_cont{
+    float:left;
+    /*width:920px;*/
+    height: auto;
+    margin:10px 0 10px 0;
+}
+
+.adtypy_left_top_cont{
+    float:left;
+    width:auto;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;}
+.adtypy_right_top_cont{
+    float:left;
+    width:auto;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:18px;
+    color:#333333;
+    padding:0 0 0 0;
+}
+
+
+.user_info_cont{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:15px 0 5px;}
+.user_info_main_left_cont{
+    float:left;
+    width:400px;
+    height: auto;
+    margin:0px 0 0 0px;}
+.user_info_main_right_cont{
+    float:right;
+    width:205px;
+    height: auto;
+    margin:0px 0 0 0px;}
+
+.user_information_cont_txt{
+    float:left;
+    width:450px;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:18px;
+    font-weight:bold;
+    color:#333333;
+    padding:0px 0 0px 0;}
+.user_information_cont_mbl{
+    width:685px;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:18px;
+    font-weight:bold;
+    color:#333333;
+    padding:0px 0 0px 0;}
+.car_viwe_details_buton{ float:left; width:113px; height:32px; margin:5px 0 10px -5px;}
+.car_viwe_details_buton a{float:left; width:113px; height:32px; background-image: url(../../bbsimages/New/car_viwe_details_buton.png); background-repeat:no-repeat;}
+.car_viwe_details_buton a:hover{background-position:0 -32px;}
+
+.ad_options{ float:right; width:130px; height: auto; font-family:Arial; font-size:12px; color: #333333; font-weight:normal; text-align:left; margin:0px 0px 0 0px;}
+.ad_options li{font-family:Arial; font-size:12px; color: #333333; font-weight:normal; width:380px; height:20px; margin-right:3px; list-style:none; display:inline;}
+.ad_options li a{font-family:Arial;font-size:12px;color: #333333;font-weight:normal;width:380px;height:20px;margin-left:3px;list-style:none;display:inline;text-decoration:none;}
+.ad_options li a:hover{color: #1ea1b9; text-decoration: underline;}
+.ad_options li .car_category_Highlight{color:  #1ea1b9; text-decoration: underline;}
+
+
+.car_border_cont_1{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:10px 0 10px 0px;}
+.car_border_rel_1{
+    float:left;
+    width:920px;
+    height: auto;
+    margin:10px 0 10px 30px;}
+.car_top_border{
+    float:left;
+    width:920px;
+    height:14px;
+    background-image:url(../../bbsimages/New/car_top_border.png);
+    background-repeat:no-repeat;
+    margin:0px 0 0 0px;}
+.car_middel_border{
+    float:left;
+    width:920px;
+    height: auto;
+    background-color:#FFFFFF;
+    background-image:url(../../bbsimages/New/car_middel_border.png);
+    background-repeat: repeat-y;
+    margin:0px 0 0 0px;}
+.car_bottom_border{
+    float:left;
+    width:920px;
+    height:14px;
+    background-image:url(../../bbsimages/New/car_bottom_border.png);
+    background-repeat:no-repeat;
+    margin:0px 0 0 0px;}
+
+.change_img_2{
+    float:left;
+    width:437px;
+    /*height:365px;*/
+    /*background-image: url(../../bbsimages/New/change_img_2.png);*/
+    background-repeat:no-repeat;
+    margin:5px 0 0 25px;}
+
+.google_map_1{
+    float:left;
+    width:413px;
+    height:351px;
+    /*background-image: url(../../bbsimages/New/google_map_1.png);*/
+    background-repeat:no-repeat;
+    margin:5px 0 0 20px;}
+
+
+.car_img_border{
+    float:left;
+    width:153px;
+    height: auto;
+    border:0;
+    margin:10px 0 0px 26px;
+}
+.car_img_bg{
+    float:left;
+    width:153px;
+    height:99px;
+    background-color:#CCCCCC;
+    margin:0px 0 0px 0px;
+}
+.car_img_1{
+    float:left;
+    width:149px;
+    height:95px;
+    margin:2px 0 0px 2px;
+}
+.car_txt{
+    float:left;
+    width:153px;
+    height: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color: #595959;
+    text-align: center;
+    line-height:18px;
+    margin:5px 0 5px 0;
+}
+.rel_txt{
+    float:left;
+    width:153px;
+    height: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color: #595959;
+    text-align: center;
+    line-height:18px;
+    margin:5px 0 5px 0;
+}
+.rel_txt a:hover{color: #1ea1b9;}
+/*********************************************car page css end here*******************************************/
+
+/*********************************************car page css end here*******************************************/
+.car_fistpage_main_inner_cont{
+    float:left;
+    width:945px;
+    height: auto;
+    margin:0px 0 0 17px;
+}
+.car_fistpage_main_left_mt_cont_225{
+    float:left;
+    width:225px;
+    height: auto;
+    margin:0px 0 0px 0px;
+}
+.car_fistpage_main_right_mt_cont_707{
+    float:right;
+    width:707px;
+    height: auto;
+    margin:0px 0 0px 0px;
+}
+
+
+.car_fistpage_logo{
+    float:left;
+    width:225px;
+    height:92px;
+    background-image: url(../../bbsimages/New/ameging_logo.png);
+    background-repeat:no-repeat;
+    margin:20px 0px 0 0px;
+}
+.car_fistpage_flage_cont{
+    float:left;
+    width:225px;
+    height: auto;
+    margin:25px 0px 0 0px;
+}
+.car_fistpage_flag_img{
+    float:left;
+    width:50px;
+    height:50px;
+    background-image: url(../../bbsimages/New/india_flag_img.png);
+    background-repeat:no-repeat;
+    margin:0px 10px 0 0;
+}
+.car_fistpage_all_india_input{
+    float:left;
+    width:115px;
+    height:auto;
+    margin:15px 0 0 0;
+}
+
+
+.car_fistpage_top_border_1{
+    float:left;
+    width:225px;
+    height:41px;
+    background-image: url(../../bbsimages/New/car_fistpage_top_border_1.png);
+    background-repeat:no-repeat;
+    margin:20px 0px 0 0;
+}
+.car_fistpage_top_border_txt{
+    float:left;
+    width:200px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#484848;
+    margin:15px 0px 0 16px;
+}
+.car_fistpage_middel_border_1{
+    float:left;
+    width:225px;
+    height: auto;
+    background-image: url(../../bbsimages/New/car_fistpage_middel_border_1.png);
+    background-repeat: repeat-y;
+    margin:0px 0px 0 0;
+}
+.car_fistpage_bottom_border_1{
+    float:left;
+    width:225px;
+    height:11px;
+    background-image: url(../../bbsimages/New/car_fistpage_bottom_border_1.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 15px 0;
+}
+
+
+.car_fistpage_middel_inner_cont{
+    float:left;
+    width:194px;
+    height: auto;
+    margin:15px 0px 5px 15px;
+}
+.car_fistpage_car_input{
+    float:left;
+    width:194px;
+    height:19px;
+    margin:0px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color: #8db226;
+}
+.car_fistpage_car_celect_city_input{
+    float:left;
+    width:194px;
+    height:19px;
+    margin:35px 0 0 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color: #8db226;
+}
+
+.car_fistpage_qucik_mt_cont{
+    float:left;
+    width:182px;
+    height: auto;
+    margin:40px 0 0 0;
+}
+
+.car_fistpage_qucik_box_txt{
+    width:182px;
+    height:20px;
+    float:left;
+    border:solid 1px #bfbfbf;
+    margin-left:0px;
+    font:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #999999;
+    padding-left:10px;
+    margin-bottom:8px;
+}
+.car_fistpage_qucik_box_msgtxt{
+    width:182px;
+    height:60px;
+    float:left;
+    border:solid 1px #bfbfbf;
+    margin-left:0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #999999;
+    padding:5px 0 0 10px;
+    margin-bottom:8px;
+}
+.car_fistpage_send_img{
+    background-image: url(../../bbsimages/New/car_go_buton.png);
+    background-repeat:no-repeat;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#FFFFFF;
+    font-weight: normal;
+    cursor:pointer;
+    border:none;
+    width:68px;
+    height:27px;
+    float:right;
+    margin:0 -13px 0 0;
+}
+.car_fistpage_send_img:hover{
+    background-position:0 -27px;
+}
+
+.car_fistpage_top_border_2{
+    float:left;
+    width:225px;
+    height:43px;
+    background-image: url(../../bbsimages/New/car_fistpage_top_border_2.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 0;
+}
+.car_fistpage_top_border_2_txt{
+    float:left;
+    width:200px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:#FF7600;
+    text-align:center;
+    font-weight:bold;
+    margin:15px 0 10px 10px;
+}
+.car_fistpage_middel_border_2{
+    float:left;
+    width:225px;
+    height: auto;
+    background-image: url(../../bbsimages/New/car_fistpage_middel_border_2.png);
+    background-repeat: repeat-y;
+    margin:0px 0px 0 0;
+}
+.car_fistpage_bottom_border_2{
+    float:left;
+    width:225px;
+    height:9px;
+    background-image: url(../../bbsimages/New/car_fistpage_bottom_border_2.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 20px 0;
+}
+
+.car_fistpage_car_img_1{
+    float:left;
+    width:210px;
+    height:88px;
+    background-repeat:no-repeat;
+    margin:10px 0px 0px 6px;
+}
+
+.car_fistpage_main_right_mt_cont_707_inner{
+    float:right;
+    width:707px;
+    height: auto;
+    margin:3px 0 0px 0px;
+}
+.car_fistpage_right_img_1{
+    float:right;
+    width:289px;
+    height:100px;
+    background-repeat:no-repeat;
+    margin:0px 0px 0px 10px;
+}
+.car_fistpage_search_full_bg_img{
+    float:right;
+    width:707px;
+    height:auto;
+    background-image:url(../../bbsimages/New/search_full_bg_img_innerpage.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 0px;
+}
+.car_fistpage_search_box{
+    float:left;
+    width:627px;
+    height:auto;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 8px 8px 0px;
+    background-color:#ededed;
+    margin-top:9px;
+    border:1px solid #e3e3e3;
+    border-left:none;
+}
+.searh_part_white_space{
+    float:left;
+    width:560px;
+    height:36px;
+    background-image:url(../../bbsimages/New/searh_part_white_space.png);
+    background-repeat:no-repeat;
+    margin-top:5px;
+    margin-left:10px;
+}
+.search_txt_inner_page{
+    float:left;
+    width:78px;
+    height:81px;
+    /*margin:8px 0px 0 9px;*/
+    background-image:url(../../bbsimages/New/search_img_new.png);
+    background-repeat:no-repeat;
+}
+.search_box_innerpage{
+    width:200px;
+    height:30px;
+    float:left;
+    background-repeat:no-repeat;
+    margin:4px 0 0 15px;
+}
+.search_box_input_innerpage{
+    width:190px;
+    height:23px;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#000000;
+    border:none;
+    margin-left:5px;
+    margin-top:4px;
+}
+.catery_input_innerpage{
+    float:left;
+    width:210px;
+    height:26px;
+    margin:4px 0 0 0;
+    border-left:solid 1px #666666;
+    border-right:solid 1px #666666;
+}
+.offered_input_innerpage{
+    float:left;
+    width:115px;
+    height:26px;
+    margin:4px 0 0 0;
+}
+.blue_arrow_innerpage{ float:left; width:54px; height:36px; margin-left:0px; margin-top:5px; margin-left:-10px;}
+.blue_arrow_innerpage a{float:left; width:54px; height:36px; background-image: url(../../bbsimages/New/blue_arrow.png); background-repeat:no-repeat;}
+.blue_arrow_innerpage a:hover{background-position:0 -36px;}
+
+.advanced-search_button{ float:right; width:114px; height:14px; margin-right:57px; margin-top:5px;}
+.advanced-search_button a{float:left; width:114px; height:14px; background-image: url(../../bbsimages/New/advanced-search_button.png); background-repeat:no-repeat;}
+.advanced-search_button a:hover{background-position:0 -14px;}
+
+.car_9854_left_cont{
+    float:left;
+    width:500px;
+    height: auto;
+    border:solid 1px #CCCCCC;
+    margin:0px 0 0 0;
+}
+.car_9854_right_cont{
+    float:right;
+    width:200px;
+    height: auto;
+    margin:0px 0 0 0;
+}
+.car_postadd_bg_img{
+    float:left;
+    width:141px;
+    height:114px;
+    background-image:url(../../bbsimages/New/car_postadd_bg_img.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 30px;
+}
+.car_9854_txt{
+    float:left;
+    width:450px;
+    height: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color: #484848;
+    margin:10px 0 0 10px;
+}
+.car_9854_inner_cont_01{
+    float:left;
+    width:180px;
+    height:184px;
+    background-image:url(../../bbsimages/New/car_fistpage_right_img_3_bg.png);
+    background-repeat:no-repeat;
+    margin:10px 0 10px 10px;
+}
+.car_fistpage_right_img_3{
+    float:left;
+    width:161px;
+    height:166px;
+    /*background-image:url(../../bbsimages/New/car_fistpage_right_img_3.png);*/
+    background-repeat:no-repeat;
+    margin:5px 0 0px 7px;
+}
+.car_9854_inner_cont_txt{
+    float:left;
+    width:235px;
+    height: auto;
+    margin:10px 0 15px 20px;
+}
+.car_10_inner_cont_txt{
+    float:left;
+    width:135px;
+    height: auto;
+    margin:10px 0 15px 20px;
+}
+
+.maruthi_3164_txt ul {font-family:Arial, Helvetica, sans-serif;font-size:12px;list-style:none;text-decoration:none;margin:0 0px 0 0px;}
+.maruthi_3164_txt li {border: 0px;color: #666666;padding-bottom:3px;}
+.maruthi_3164_txt ul a{text-decoration: none;}
+.maruthi_3164_txt a:link{color:#333333;}
+.maruthi_3164_txt a:visited{color:#333333; }
+.maruthi_3164_txt ul a:hover{color:#1ea1b9;font-size:12px; text-decoration: underline;}
+
+.latest_ads_in_Car_cont_txt{
+    float:left;
+    width:710px;
+    height: auto;
+    background-color:#d4e6fd;
+    margin:15px 0 0px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    color: #061e55;
+    padding:10px 0 10px 10px;
+}
+.ikon_2006_left_bg_cont{
+    float:right;
+    width:707px;
+    height: auto;
+    border-bottom:dashed 1px #CCCCCC;
+    margin:10px 0 0px 0px;
+}
+.ex_ad_left_bg_cont{
+    float:left;
+    width:707px;
+    height: auto;
+    border-bottom:dashed 1px #CCCCCC;
+    margin:10px 0 0px 7px;
+}
+
+.ikon_2006_left_mt_cont{
+    float:left;
+    width:145px;
+    height: auto;
+    margin:10px 0 0px 0px;
+}
+.ikon_2006_left_img{
+    float:left;
+    width:133px;
+    height:110px;
+    background-color:#d9d9d9;
+    margin:0px 0 0px 5px;
+}
+.car_fistpage_right_img_4{
+    float:left;
+    width:127px;
+    height:103px;
+    background-repeat:no-repeat;
+    margin:3px 0 0px 3px;
+}
+.ikon_2006_left_txt_cont{
+    float:left;
+    width:435px;
+    height: auto;
+    margin:10px 0 30px 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:18px;
+    color:#333333;
+}
+
+.car_fistpage_more_details li{ float:left; width:120px; font-family:Arial; font-size:13px; list-style: url(../../bbsimages/New/more_details_bullot.png); font-weight:bold; color:#f75700; margin:15px 0 0 30px;}
+.car_fistpage_more_details a{text-decoration: none;list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.car_fistpage_more_details a:link{color:#f75700; list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.car_fistpage_more_details a:visited{color:#f75700; list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.car_fistpage_more_details a:hover{color: #f75700; text-decoration: underline;}
+
+.individual_rs_80{
+    float:right;
+    width:auto;
+    height: auto;
+    margin:45px 10px 0px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    line-height:18px;
+    color:#f75700;
+}
+
+.ikon_2006_110{
+    float:right;
+    width:117px;
+    height: auto;
+    margin:10px 0 0px 0px;
+}
+.individual_img{
+    float:right;
+    width:84px;
+    height:69px;
+    background-image:url(../../bbsimages/New/invaled_img.png);
+    background-repeat:no-repeat;
+    margin:10px 13px 0px 0px;
+}
+.dealer_img{
+    float:right;
+    width:84px;
+    height:69px;
+    background-repeat:no-repeat;
+    margin:10px 13px 0px 0px;
+}
+.individual_posting_txt{
+    float:right;
+    width:84px;
+    height: auto;
+    margin:25px 0 0px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    line-height:18px;
+    text-align:center;
+    color:#333333;
+}
+
+
+/*********************************************login page css start here*******************************************/
+.login_main_cont{
+    float:left;
+    width:978px;
+    height: auto;
+    background-color:#FFFFFF;
+    margin:0 0 0 0;
+    border-left:#ebebeb solid 1px;
+    border-right:#ebebeb solid 1px;
+}
+.login_inner_cont{
+    float:left;
+    width:945px;
+    height: auto;
+    margin:0px 0 0 17px;
+}
+.login_inner_mt_cont{
+    float:left;
+    width:945px;
+    height: auto;
+    margin:15px 0 0 0px;
+}
+
+.login_logo{
+    float:left;
+    width:225px;
+    height:92px;
+    background-image: url(../../bbsimages/New/car_fistpage_logo.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 0px;
+}
+.login_search_full_bg_img{
+    float:left;
+    width:707px;
+    height:81px;
+    background-image:url(../../bbsimages/New/search_full_bg_img_innerpage.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0 120px;
+}
+.login_page_1_bg{
+    float:left;
+    width:377px;
+    height:327px;
+    background-image: url(../../bbsimages/New/login_page_1_bg.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 30px 60px;
+}
+.login_page_2_bg{
+    float:right;
+    width:377px;
+    height:327px;
+    background-image: url(../../bbsimages/New/login_page_1_bg.png);
+    background-repeat:no-repeat;
+    margin:0px 60px 0 0px;
+}
+
+.login_inner_cont_01{
+    float:left;
+    width:320px;
+    height: auto;
+    margin:30px 0px 0 28px;
+}
+.login_small_logo{
+    float:left;
+    width:85px;
+    height:84px;
+    background-image: url(../../bbsimages/New/login_small_logo.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0px 115px;
+}
+.new_to_ameging{
+    float:left;
+    width:320px;
+    height:auto;
+    margin:15px 0 0 0;
+    font-family: Helvetica, sans-serif;
+    font-size:18px;
+    color:#043b9a;
+}
+.join_txt{
+    float:left;
+    width:320px;
+    height:auto;
+    margin:10px 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:25px;
+    color:#3e3e3e;
+}
+.register_now_button{ float:right; width:117px; height:40px; margin:5px 10px 0 0;}
+.register_now_button a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/register_now_button.png); background-repeat:no-repeat;}
+.register_now_button a:hover{background-position:0 -40px;}
+
+
+.login_inner_cont_02{
+    float:left;
+    width:275px;
+    height: auto;
+    margin:30px 0px 0 55px;
+}
+.login_small_logo_2{
+    float:left;
+    width:85px;
+    height:84px;
+    background-image: url(../../bbsimages/New/login_small_logo_2.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0px 90px;
+}
+.login_small_logo_3{
+    float:left;
+    width:85px;
+    height:84px;
+    background-image: url(../../bbsimages/New/lock_small_logo_2.png);
+    background-repeat:no-repeat;
+    margin:0px 0px 0px 90px;
+}
+.sign_txt{
+    float:left;
+    width:275px;
+    height:auto;
+    margin:15px 0 0 0;
+    font-family: Helvetica, sans-serif;
+    font-size:18px;
+    color:#043b9a;
+}
+.login_email_box{
+    width:247px;
+    height:25px;
+    float:left;
+    background-image:url(../../bbsimages/New/login_box_img.png);
+    background-repeat:no-repeat;
+    border:none;
+    margin:10px 0 0 0;
+    font:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color: #3e3e3e;
+    padding-left:10px;
+}
+.forgot_password{
+    float:left;
+    width:273px;
+    height:auto;
+    margin:5px 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#3662ae;
+}
+
+.register_now_button{ float:right; width:117px; height:40px; margin:5px 10px 0 0;}
+.register_now_button a{float:left; width:117px; height:40px; background-image:  url(../../bbsimages/New/register.png); background-repeat:no-repeat;}
+.register_now_button a:hover{background-position:0 -40px;}
+
+.register1_now_button{ float:right; width:117px; height:40px; margin:5px 10px 0 0;}
+.register1_now_button a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/register_now_button1.png); background-repeat:no-repeat;}
+.register1_now_button a:hover{background-position:0 -40px;}
+.log_in_button{ float:right; width:117px; height:40px; margin:8px 0px 0 0;}
+.log_in_button a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/sign_in_button_new.png); background-repeat:no-repeat;}
+.log_in_button a:hover{background-position:0 -40px;}
+.sign_in_button{ float:right; width:117px; height:40px; margin:13px 8px 0 0;}
+.sign_in_button a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/sign_in_button.png); background-repeat:no-repeat;}
+.sign_in_button a:hover{background-position:0 -40px;}
+
+/*********************************************login page css end here*******************************************/
+
+/*********************************************help page css start here*******************************************/
+.help_main_bg{
+    float:left;
+    width:478px;
+    height:522px;
+    background:url(../../bbsimages/New/help_bg.png);
+    background-repeat:no-repeat;
+    margin:10px 0 0 10px;}
+
+.helppage_img{
+    float:left;
+    width:68px;
+    height:61px;
+    background-image:url(../../bbsimages/New/help_img.png);
+    background-repeat:no-repeat;
+    margin:28px 0 0 26px;}
+
+.get_best_cont_txt{
+    float:left;
+    width:270px;
+    height: auto;
+    margin:28px 0 0 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:#0a489a;
+    padding:0 0 0 0;}
+.get_best_close{
+    float:left;
+    /*width:300px;*/
+    height: auto;
+    margin:18px 0 0 39px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:#0a489a;
+    padding:0 0 0 0;}
+
+
+.helppage_right{
+    float:right;
+    width:227px;
+    height: auto;
+    margin:20px 55px 0 0px;}
+
+.helppage_home_img{
+    float:left;
+    width:160px;
+    height:221px;
+    /*background-image:url(../../bbsimages/New/helppage_home_img.png);*/
+    background-repeat:no-repeat;
+    margin:90px 0px 0 20px;}
+
+
+.BBS_Logo_img{
+    float:left;
+    width:160px;
+    height:221px;
+    background-image:url(../../bbsimages/Lead_Logo.png);
+    background-repeat:no-repeat;
+    margin:90px 0px 0 20px;}
+
+
+.i_am_cont_txt{
+    float:left;
+    width:227px;
+    height: 20px;
+    margin:0px 0 0 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    border-bottom: dashed 1px #CCCCCC;
+    padding:0 0 0 0;}
+
+.helppage_1_box_cont{
+    float:left;
+    width:227px;
+    height: 24px;
+    margin:15px 0 0 0px;}
+.residential_property{
+    width:227px;
+    height:24px;
+    float:left;
+    background-repeat:no-repeat;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    border: solid 1px #CCCCCC;
+    margin-left:0px;
+    margin-top:0px;
+    padding-top:3px;}
+
+.helppage_2_box_cont{
+    float:left;
+    width:227px;
+    height: 24px;
+    margin:10px 0 0 0px;}
+.bangalore{
+    width:127px;
+    height:24px;
+    float:left;
+    background-repeat:no-repeat;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    border: solid 1px #CCCCCC;
+    margin-left:0px;
+    margin-top:0px;
+    padding-top:3px;}
+
+.helppage_3_box_cont{
+    float:left;
+    width:227px;
+    height: auto;
+    margin:15px 0 0 0px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;}
+.comment{
+    width:227px;
+    height:53px;
+    float:left;
+    background-repeat:no-repeat;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    border:none;
+    margin-left:0px;
+    margin-top:0px;
+    padding-top:5px;}
+
+.contact_details_cont_txt{
+    float:left;
+    width:211px;
+    height: 20px;
+    margin:35px 0 0 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    border-bottom: dashed 1px #CCCCCC;
+    padding:0 0 0 0;}
+
+.helppage_name_mt_cont{
+    float:left;
+    width:227px;
+    height: auto;
+    margin:5px 0 0 0px;}
+.helppage_name_mt_left{
+    float:left;
+    width:150px;
+    height: auto;
+    margin:0px 0 0 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #666666;
+    padding:0px 0 0 0;}
+.helppage_name_mt_right{
+    float:right;
+    width:70px;
+    height: auto;
+    margin:20px 0 0 0px;}
+
+.dont_pop_cont_txt{
+    float:left;
+    width:227px;
+    height: 20px;
+    margin:30px 0 0 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color: #000000;
+    padding:0px 0 0 0;}
+
+.helppage_submit_button{ float:left; width:83px; height:30px; margin-left:-5px; margin-top:-7px;}
+.helppage_submit_button a{float:left; width:83px; height:30px; background-image: url(../../bbsimages/New/submit_bot.jpg); background-repeat:no-repeat;}
+.helppage_submit_button a:hover{background-position:0 -30px;}
+
+.verify_submit_button{ float:right; width:90px; height:30px; margin-left:19px; margin-top:5px;}
+.verify_submit_button a{float:left; width:90px; height:30px; background-image: url(../../bbsimages/New/verify_bot.jpg); background-repeat:no-repeat;}
+.verify_submit_button a:hover{background-position:0 -30px;}
+
+.phone_txt_box{width:150px; height:28px; float:left; background-image: url(../../bbsimages/New/phone_txt_box.jpg); background-repeat:no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; border:none; padding-left:5px; padding-right:5px; margin-top:4px; }
+.comment_txt_box{width:235px; height:53px; float:left; background-image: url(../../bbsimages/New/comment_txt_box.jpg); background-repeat:no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; border:none; padding-left:5px; padding-right:7px; margin-top:8px; padding-top:5px; }
+
+.captcha_txt_box{width:80px; height:30px; float:left; background-image: url(../../bbsimages/New/captcha_txt_box.jpg); background-repeat:no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; border:none; padding-left:5px; padding-right:5px; margin-top:4px; }
+
+
+/*********************************************help page css end here*******************************************/
+
+
+/********************************************* Other Styles Start Here*******************************************/
+
+
+.faqs{width:900px;
+      height:auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      margin:20px 0px 0px 0px;
+}
+#container {
+    width: 500px;
+    height: auto;
+    background: #fff;
+    min-height: 150px;
+    display: table;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+#container .faqmain {
+    width: 668px;
+    float: left;
+    height: auto;
+    margin: 10px 0 20px 18px;
+
+}
+.txt{ float:left;
+      width:275px;
+      height:auto;
+      margin:15px 0 0 20px;
+      font-family: Helvetica, sans-serif;
+      font-size:18px;
+      color:#043b9a;
+}
+/*********************************************register page css Start here*******************************************/
+
+.verdana_form_mainhead {
+    FONT-SIZE:20px;
+    FONT-FAMILY:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    COLOR:#046DBE;
+    margin-top:10px;
+    /*float:left;*/
+    margin-left:10px;
+}
+#rfDIv ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    width:100%;
+
+}
+#rfDIv th
+{
+    text-align:left;
+    font-weight:normal;
+    font-size:12px;
+    color:#222222;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#rfDIv tr
+{
+
+    width:500px;
+    display:block;
+    margin:0;
+    clear:both;
+}
+#rfDIv td
+{
+    width:208px;
+    font-size:12px;
+    color:#222222;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top:7px;
+
+}
+#rfDIv b
+{
+    padding-right:3px;
+    font-weight:normal;
+    /*width:183px;*/
+    float:left;
+    text-align:right;
+
+}
+.blueHeader {
+    padding-left:8px;
+    height:30px;
+    float:left;
+    color:#05446b;
+    width:500px;
+    margin:2% 0%;
+    font-size:13px;
+}
+#regform
+{
+    font-size:12px;
+    color:#222222;
+
+}
+#regform select
+{
+    width:253px;
+}
+/*.register_submit{ float:left; width:103px; height:35px;}*/
+.register_submit {float:left;width:110px; height:33px; background-image: url(../../bbsimages/New/RegisterDis_new.png);background-repeat:no-repeat; border:none; cursor:pointer; margin-top:0px;}
+.register_submit:hover{background-position:0 -33px;}
+/*********************************************register page css end here*******************************************/
+
+.log_in_button{ float:right; width:117px; height:40px; margin:8px 0px 0 0;}
+.log_in_button {float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/sign_in_button_new.png); background-repeat:no-repeat;}
+.log_in_button :hover{background-position:0 -40px;}
+
+.advance_search_txt{ font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#9b939b; padding-top:2px; }
+.advance_search_txt_input{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#9b939b; width:97px; height:21px; border:1px solid #b5c5d8; -moz-border-radius:6px; -webkit-border-radius:6px;  border-radius:6px; }
+
+.refine_bot{ float:left; width:130px; height:19px; margin-left:10px; margin-top:10px;}
+.refine_bot a{float:left; width:130px; height:19px; background-image: url(../../bbsimages/New/refine_bot.jpg); background-repeat:no-repeat;}
+.refine_bot a:hover{background-position:0 -19px;}
+
+.refine_search_bot{ float:right; width:135px; height:27px; margin-right:23px;}
+.refine_search_bot a{float:right; width:135px; height:27px; background-image: url(../../bbsimages/New/refine_searchbot.jpg); background-repeat:no-repeat;}
+.refine_search_bot a:hover{background-position:0 -27px;}
+
+.register_bg{float:left; width:671px; height:749px; background-image: url(../../bbsimages/New/register_bg.jpg); background-repeat:no-repeat; margin-left:20px;}
+
+/*********************************************register page css End here*******************************************/
+
+
+/*********************************************new register page css Strat here*******************************************/
+
+.postAd_part{
+    width:802px;
+    height:auto;
+    float:left;
+    margin-left:140px;
+}
+.postAd_heading{
+    width:800px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#093b8f;
+    margin-left:-50px;
+    margin-bottom:20px;
+}
+
+.registering_part{
+    width:802px;
+    height:auto;
+    float:left;
+    margin-left:86px;
+}
+
+.registering_heading{
+    width:800px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#093b8f;
+}
+.registering_body_part{
+    width:740px;
+    height:auto;
+    float:left;
+    margin-top:25px;
+    margin-left:65px;
+}
+.registering_body_left_part{
+    width:430px;
+    height:auto;
+    float:left;
+}
+.registering_body_right_part{
+    width:253px;
+    height:489px;
+    float:right;
+    background-image: url(../../bbsimages/New/registering_bg.png); background-repeat:no-repeat;
+}
+.registering_input_txt{
+    width:236px;
+    height:32px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;
+    font-weight:normal;
+    background-image: url(../../bbsimages/New/regestring_txt_bg.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#FFFFFF;
+    padding-left:5px;
+    float:right;
+}
+.registering_input_txt1{
+    width:230px;
+    height:66px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;
+    font-weight:normal;
+    background-image: url(../../bbsimages/New/registering_bg1.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#FFFFFF;
+    padding-left:5px;
+    float:right;
+    margin-top:5px;
+}
+.registering_txt1{
+    width:90px;
+    height:35px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;
+    font-weight:normal;
+    padding-top:5px;
+}
+
+.registering_now_button{ float:left; width:117px; height:40px;margin-left:40px;}
+.registering_now_button a{float:left; width:117px; height:40px; background-image:  url(../../bbsimages/New/register.png); background-repeat:no-repeat;}
+.registering_now_button a:hover{background-position:0 -40px;}
+
+
+.registering_right_heading{
+    width:206px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#093b8f;
+    margin-top:32px;
+    margin-left:26px;
+}
+.registering_right_menu{
+    width:225px;
+    height:auto;
+    float:left;
+    margin-top:32px;
+    margin-left:15px;
+}
+.registering_right_menu li{
+    width:225px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:12.3px; color:#000000;
+    list-style:none;
+    border-bottom:1px dotted #333333;
+    margin-top:15px;
+    padding-bottom:15px;
+}
+
+/********************************************* new register page css End here*******************************************/
+
+/********************************************* Feedback page css Start here*******************************************/
+
+.customer_support_part{
+    width:864px;
+    height:auto;
+    float:left;
+    margin-left:63px;
+}.customer_support_heading{
+    width:855px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#093b8f;
+}
+.customer_support_heading p{
+    width:864px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;
+    line-height:18px;
+    margin-top:15px;
+}
+.customer_support_form_bg {float:left; width:693px; height:519px; background-image: url(../../bbsimages/New/customer_support_bg.png); background-repeat:no-repeat; margin-left:75px; margin-top:25px; padding-bottom:50px;}
+
+.customer_support_form_txt{
+    width:136px;
+    height:40px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;
+    font-weight:bold;
+    padding-top:7px;
+}
+.customer_support_input_txt{
+    width:337px;
+    height:36px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;
+    font-weight:normal;
+    background-image: url(../../bbsimages/New/customer_support_txt.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#f8f8f8;
+    padding-left:5px;
+}.customer_support_input_txt1{
+    width:337px;
+    height:100px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;
+    font-weight:normal;
+    background-image: url(../../bbsimages/New/customer_support_txt1.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#f8f8f8;
+    padding-left:5px;
+    float:left;
+}
+.customer_support_input_txt2{
+    width:202px;
+    height:32px;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;
+    font-weight:normal;
+    background-image: url(../../bbsimages/New/customer_support_txt2.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#f8f8f8;
+    padding-left:5px;
+}
+.customer_support_thanks_txt{
+    width:auto;
+    height:auto;
+    font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#055299;
+    font-weight:bold;
+    padding-top:10px;
+}
+.customer_support_submit{
+    width:63px;
+    height:22px;
+    float:left;
+    margin-left:85px;
+}
+.customer_support_submit a{
+    width:63px;
+    height:22px;
+    float:left;
+    background-image: url(../../bbsimages/New/customer_support_submit.png); background-repeat:no-repeat;
+    border:none;
+    background-color:#f8f8f8;
+}
+.customer_support_submit a:hover{
+    background-position:0 -22px;
+}
+.customer_support_small_txt{
+    width:auto;
+    height:auto;
+    font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#666666;
+    font-weight:normal;
+}
+/********************************************* Feedback page css Start here*******************************************/
+
+#msg {display:none; position:absolute; z-index:200; background:url(../images/msg_arrow.gif) left center no-repeat; padding-left:7px}
+#msgcontent {display:block;color:#f00;font-size:12px;padding:5px; min-width:150px; max-width:250px}
+
+
+
+/*********************************************popup page css start here*******************************************/
+
+#basic-modal-content {display:none;}
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container a.modalCloseImg {background:url(../../bbsimages/New/close.png) no-repeat; width:30px; height:30px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;  margin:500px 20px 0px 0px;}
+
+.car_viwe_details_buton1{ float:left; width:113px; height:32px; margin:5px 0 10px -5px;}
+.car_viwe_details_buton1 a{float:left; width:113px; height:32px; background-image: url(../../bbsimages/New/car_viwe_details_buton.png); background-repeat:no-repeat;}
+.car_viwe_details_buton1 a:hover{background-position:0 -32px;}
+
+.popup_main_bg{
+    float:left;
+    width:813px;
+    height:507px;
+    background:url(../../bbsimages/New/Pop-up-bg.png);
+    background-repeat:no-repeat;
+    margin:10px 0 0 10px;}
+
+.logo_icon_img{
+    float:left;
+    width:55px;
+    height:54px;
+    background-image:url(../../bbsimages/New/logo_icon.png);
+    background-repeat:no-repeat;
+    margin:28px 100px 0 382px;}
+
+.register_user{width:350px;
+               height:250px;
+               float:left;
+               margin:10px 0px 0px 35px;
+} 
+
+.register1_icon{width:185px;
+                height:55px;
+                float:left;}  
+
+.register1_img{width:38px;
+               height:50px;
+               float:left;
+}
+
+.name{width:65px;
+      height:20px;
+      font-family:arial;
+      font-size:12px;
+      float:left;
+      margin:20px 0px 0px 0px;}
+
+.forgot_password1{
+    font-family:arial;
+    font-size:12px;
+    float:right;
+    width:135px;
+    height:auto;
+    margin:10px 0 0 0
+}
+
+.sign_in_button1{ float:left; width:117px; height:40px; margin:-15px 0px 0px 20px;}
+.sign_in_button1 a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/sign_in_button.png); background-repeat:no-repeat;}
+.sign_in_button1 a:hover{background-position:0 -40px;	}
+
+
+.new_register_user{width:350px;
+                   height:350px;
+                   float:right;
+                   margin:-5px 30px 0px 0px;
+} 
+
+.newregister1_img{width:38px;
+                  height:50px;
+                  float:left;
+                  margin:0px 0px 0px 0px;
+}
+
+.width{width:235px;
+       height:33px;
+       float:right;
+}
+.close{width:30px;
+       height:30px;
+       float:right;
+       margin:0px -27px 0px 0px;}
+.popup_main_sml{
+    width:413px;
+    height:507px;
+    background:url(../../bbsimages/New/Pop-up-sml.png);
+    background-repeat:no-repeat;
+    margin:10px 0 0 10px;}
+
+.rst_pswd_pop{
+    width:350px;
+    height:250px;
+    float:left;
+    margin:10px 0px 0px 35px;
+
+} 
+.rst_pswd_icon{width:200px;
+               height:55px;
+               float:left;}  
+.rst_pswd_img{width:38px;
+              height:50px;
+              float:left;
+}
+.rst_pswd_button{ float:left; width:117px; height:40px; margin:15px 0px 0px 20px;}
+.rst_pswd_button a{float:left; width:117px; height:40px; background-image: url(../../bbsimages/New/register_now_button.png); background-repeat:no-repeat;}
+.rst_pswd_button a:hover{background-position:0 -40px;	}
+
+
+/********************************************* Area conveter popup page css strat here*******************************************/
+
+.area_cvntr_pop{
+    width:350px;
+    height:250px;
+    float:left;
+    margin:10px 0px 0px 50px;
+
+} 
+.area_cvntr_icon{width:300px;
+                 height:55px;
+                 float:left;}  
+.area_cvntr_img{
+    height:50px;
+    float:left;
+}
+.popup_main_sml2{
+    width:413px;
+    height:450px;
+    background:url(../../bbsimages/New/Pop-up-sml2.png);
+    background-repeat:no-repeat;
+    margin:10px 0 0 10px;}
+#simplemodal-area-CloseImg {background:url(../../bbsimages/New/close.png) no-repeat; width:30px; height:30px;  z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;  margin:435px 25px 0px 0px;}
+
+/********************************************* Area conveter popup page css end here*******************************************/
+
+
+/*********************************************popup page css end here*******************************************/
+
+
+/*********************************************My Account Menu css starts here*******************************************/
+
+.manage_response_part{
+    width:942px;
+    height:auto;
+    float:left;
+    margin-left:23px;
+}
+.manage_response_part_left{
+    width:225px;
+    height:auto;
+    float:left;
+    border:1px solid #d4d4d4;
+}
+.manage_response_part_right{
+    width:692px;
+    height:auto;
+    float:right;
+}
+.manage_response_myaccount_txt{
+    width:212px;
+    height:auto;
+    float:left;
+    margin-left:17px;
+    margin-top:18px;
+}
+.manage_response_myaccount_txt p{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    color:#000000;
+    padding-bottom:12px;
+}
+.manage_response_myaccount_txt ul{
+    margin-left:12px;
+}
+.manage_response_myaccount_txt ul li{
+    width:210px;
+    height:19px;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+    color:#000000;
+    background-repeat:no-repeat;
+    margin-top:7px;
+}
+.manage_response_myaccount_txt ul li a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    text-decoration:none;
+    padding-left:25px;
+    padding-top:4px;
+}
+.manage_response_myaccount_txt ul li a:hover{
+    color:#FF6600;
+}
+.manage_response_myaccount_txt p a{
+    width:210px;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#000000;
+    text-decoration:none;
+}
+.manage_response_myaccount_txt p a:hover{
+    color:#FF6600;
+}
+.manage_response_right_txt_heading{
+    width:692px;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    color:#046dbe;
+    text-align:left;
+}
+.manage_response_right_txt_heading h1{
+    width:650px;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    color:#046dbe;
+}
+.manage_response_right_txt_heading p{
+    width:183px;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#000000;
+    line-height:22px;
+}
+.manage_response_right_txt_heading h2{
+    width:330px;
+    height:auto;
+    float:right;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#000000;
+    text-align:right;
+    line-height:27px;
+
+}
+.manage_response_right_txt_please{
+    width:543px;
+    height:auto;
+    float:left;
+    margin-top:20px;
+}
+.manage_response_right_txt_please p{
+    width:332px;
+    height:auto;
+    float:left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#000000;
+    margin-top:8px;
+}
+.manage_response_right_txt_please h3{
+    width:128px;
+    height:auto;
+    float:left;
+    line-height:27px;
+}
+.manage_response_right_open{
+    float:right; 
+    width:67px; 
+    height:33px; 
+}
+.manage_response_right_open a{
+    float:left; 
+    width:67px; 
+    height:33px; 
+    background-image: url(../../bbsimages/New/open_bot.png); 
+    background-repeat:no-repeat;
+}
+.manage_response_right_open a:hover{
+    background-position:0 -33px;
+}
+.manage_response_right_tab_txt1{
+
+    height:28px; 
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#346dbe;
+}
+.manage_response_right_tab_txt2{
+
+    height:28px; 
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#346dbe;
+    border-left:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+}
+.manage_response_right_tab_txt2 a{
+
+    height:28px; 
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#FF9900;
+    text-decoration:underline;
+
+}
+.manage_response_right_tab_txt2 a:hover{
+    color:#000000;
+    text-decoration:underline;
+}
+.manage_response_right_detals_txt{
+    width:692px;
+    height:128px;
+    background-color:#E3E3E3; 
+    float:left;
+}
+.manage_response_right_detals_txt p{
+    width:371px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    margin-left:9px;
+    margin-top:15px;
+}
+.manage_response_right_detals_txt span{
+    width:183px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    margin-top:15px;
+}
+.manage_response_right_detals_txt h1{
+    width:122px;
+    height:auto;
+    float:left;
+}
+.manage_response_right_detals_txt h1 a:hover{
+    color:#000000;
+    text-decoration:none;
+}
+
+.manage_response_right_detals_txt h1 a{
+    width:auto;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#FF0000;
+    margin-top:15px;
+    text-decoration:underline;
+    font-weight:bold;
+    margin-left:30px;
+}
+.manage_response_right_requirment_txt{
+    width:650px;
+    height:auto;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    margin-left:9px;
+    margin-top:15px;
+}
+
+
+/*********************************************My Account Menu css ends here*******************************************/
+
+
+/*********************************************My Account Ads css strats here*******************************************/
+
+
+.my_account_ad_bg_cont{
+    float:right;
+    width:710px;
+    height: auto;
+    margin:5px 5px 0px 0px;
+}
+
+.my_account_ad_cont{
+    float:left;
+    width:85px;
+    height: auto;
+    margin:5px 0 0px 0px;
+}
+
+.my_account_ad_bg{
+    float:left;
+    width:81px;
+    height:81px;
+    background-color:#d9d9d9;
+    margin:0px 0px 0px 0px;
+}
+
+.my_account_ad_img{
+    float:left;
+    width:75px;
+    height:75px;
+    background-repeat:no-repeat;
+    margin:3px 0 0px 3px;
+
+}
+
+
+.my_account_ad_left_txt_cont{
+    float:left;
+    width:500px;
+    height: 85px;
+    margin:5px 0 5px 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:18px;
+    color:#333333;
+    padding-right: 5px;
+    border-right: dashed 1px #CCCCCC;
+}
+.my_account_ad_more_details li{ float:left; width:100px; font-family:Arial; font-size:11px; list-style: url(../../bbsimages/New/more_details_bullot.png); font-weight:bold; color:#f75700; margin:5px 0 0 2px;}
+.my_account_ad_more_details a{text-decoration: none;list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.my_account_ad_more_details a:link{color:#f75700; list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.my_account_ad_more_details a:visited{color:#f75700; list-style: url(../../bbsimages/New/more_details_bullot.png);}
+.my_account_ad_more_details a:hover{color: #f75700; text-decoration: underline;}
+
+.my_account_ad_status{
+    float:right;
+    width:87px;
+    height: auto;
+    margin:10px 0 0px 0px;
+}
+
+.my_account_ad_status_txt{
+    float:right;
+    width:67px;
+    height: auto;
+    margin:30px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    line-height:18px;
+    text-align:center;
+    color:#333333;
+}
+/*********************************************My Account Ads css ends here*******************************************/
+
+.post_an_ad_button{ float:left; width:105px; height:41px; margin-top:-9px;}
+.post_an_ad_button a{float:left; width:105px; height:41px; background-image:  url(../../bbsimages/New/inner_login.jpg); background-repeat:no-repeat;}
+.post_an_ad_button a:hover{background-position:0 -41px;}
+
+/********************************************* Other Styles End Here*******************************************/

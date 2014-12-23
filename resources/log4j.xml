@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+	<appender name="file"
+		class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="5" />
+		<param name="File" value="/home/bbsadmin/Buysell.log" />
+		<param name="threshold" value="DEBUG"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} %5p %c{1}:%L - %m%n" />
+		</layout>
+	</appender>
+	
+	<logger name="com.buysell.actionclass">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.beans">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.comand">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.db">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+     <logger name="com.buysell.server">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.servlets">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.siteAdds">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+     <logger name="com.buysell.util">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.webshop.actionclasses">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.webshop.db">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="com.buysell.webshop.util">
+        <level value="DEBUG"/>
+        <appender-ref ref="file"/>
+    </logger>
+</log4j:configuration>

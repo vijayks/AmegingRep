@@ -1,0 +1,53 @@
+<table width="700px" bgcolor="#4D9EDF" style="color:#FFF" align="center">
+  <tr>
+    <td><table width="698px" bgcolor="#FFFFFF">
+      <tr>
+        <td><table width="650px" bgcolor="#4d9edf" style="color:#FFFFFF;">
+          <tr>
+            <td><table width="645px" align="center">
+              <tr>
+                <td style="line-height:30px;" align="left">Hello <b>$name,</b><br />
+                  This is account confirmation mail from Bharatbuysell.com<br />
+                  This email is important and it contains Bharatbuysell account information,do keep this email safely</td>
+                <td align="right"><img src="http://bharatbuysell.com/bbsimages/EmailLogo.gif" width="150" height="80" alt="Bharatbuysell" /></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="645px" align="center"><tr></tr></table></td>
+          </tr>
+          <tr>
+            <td><table width="645px" align="center"><tr><td><u><b>Bharatbuysell Advantages:</b></u></td></tr></table></td>
+          </tr>
+          <tr>
+            <td><table width="645px" align="center">
+              <tr>
+                <td>&nbsp;&nbsp;</td>
+                <td><ul style="list-style-image:url(http://getmyprints.co.in/bbsimages/arrow.jpg)">
+                  <li>Bharatbuysell is delivered in a electronic envelop with an attached stamp. </li>
+                  <li>You get paid the value of the stam as a token of appreciation for opening and reading the contents of Bharatbuysell.</li>
+                  <li>You recepient code is unique and will be the same on all bharatbuysells you recieve irrespictive of the sender.This code is known only to you and the Bharatbuysell system, therefore spammers and fraudsters can not trick you easily.</li>
+                  <li>You will recieve promotional offers, discounts and other advertisements strictly based on the preferences you opted for during registration.However you are free to change your prefernce list from the Bharatbuysel account settings at any time.</li>
+                  <li>All Bharatbuysell senders are verified and Bharatbuysell has zero tolerance to spam. </li>
+                </ul></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="645px" align="center"><tr><td><p>To ensure that Bharatbuysells are not filter into your "junk/bulk" folder,kindly add Admin@Bharatbuysell.com to the address book of your inbox.</p>
+              <p>We recommand you to provide more information about you while confirming your Bharatbuysell Account, so that we will be able to deliver you Bharatbuysells which best suites you!</p>
+              <p>Please click the below link to confirm to your email,you will be able to login to Bharatbuysell after confirming your registration.</p></td></tr></table></td>
+          </tr>
+          <tr>
+            <td><table width="645px" align="center">
+              <tr>
+                <td>&nbsp;&nbsp;</td>
+                <td><a href=$link style="padding:0 0 10px 40px;color:#C03;font-size:18px;font-weight:700;text-decoration:underline;">Confirm your Bharatbuysell Account</a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

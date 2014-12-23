@@ -1,0 +1,59 @@
+<table width="700" bgcolor="#4d9edf">
+  <tr>
+    <td><table width="698" bgcolor="#FFFFFF">
+      <tr>
+        <td> <table width="696" bgcolor="#4d9edf" style="color:#FFFFFF;">
+        <tr>
+          <td><table width="680" align="center"><tr>
+              <td width="530">Hello <strong>$fname,</strong><br /><br />
+
+                  Your Friend <strong>$name</strong> has felt Ad titled <strong>"$title"</strong>  in Bharatbuysell.com is suitable for your requirement and hence forwarded it to  you.<br />
+                    <br />
+To view the ad  <a href="$link" style="color:#C03">click here</a></td>
+              <td width="152" valign="top"><img src="http://bharatbuysell.com/bbsimages/EmailLogo.gif" width="146" height="76" alt="Bharatbuysell" /></td></tr></table></td>
+            </tr>
+
+
+
+        <tr>
+          <td>
+             <table align="center" width="680"><tr>
+               <td><strong><u>Some special things you can do in Bharatbuysell.com</u></strong></td></tr></table>
+          </td>
+        </tr>
+        <tr>
+        <td>
+        <table align="left" width="680"><tr><td>
+        You can earn BBS points which you can redeem for different items available by </td></tr></table>
+      </td>
+      </tr>
+      <tr>
+      <td>
+      <table align="right" width="610"><tr><td>
+          <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Inviting friends in few clicks to join Bharatbuysell.com <br />
+           <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Writing unique articles based on your experience with Bharatbuysell.com <br />
+           <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Posting special ads  <br />
+           <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Receiving sms/email based on preferences you opted for  <br />
+
+
+        </td></tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <table align="center" width="680"><tr><td>There is lots of interesting stuff happening on <a href="#" style="color:#C03">www.bharatbuysell.com .</a> Check it out.</td></tr></table>
+         </td>
+        </tr>
+        <tr>
+          <td>
+          <table align="center" width="680" ><tr><td height="59">Warm Regards,<br />
+              Bharatbuysell Team.<br />
+              e-mail: <a href="mailto:admin@bharatbuysell.com" style="color:#000000;text-decoration:underline;">admin@bharatbuysell.com</a></td></tr></table>
+              </td>
+          </tr>
+    </table></td>
+      </tr>
+    </table>
+     </td>
+  </tr>
+</table>

@@ -1,0 +1,35 @@
+/*
+    Document   : sugg
+    Created on : May 5, 2009, 1:17:19 PM
+    Author     : bbsadmin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#sri {
+
+   /*scrollbar-3dlight-color:red;
+	   scrollbar-arrow-color:green;
+	   scrollbar-base-color : yellow;
+	   scrollbar-face-color : #66CCFF;*/
+	   overflow:auto;
+	   
+	   top:0px;
+	   height :200px;
+	   width: 300px;
+	   position:relative;
+	   visibility:hidden;
+
+}
+
+#nt {
+	background-color: #FFFFFF;
+	height:20px;
+	border-bottom:1px solid #4D9EDF;
+
+}

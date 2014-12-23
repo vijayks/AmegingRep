@@ -1,0 +1,78 @@
+<table width="700" bgcolor="#4d9edf">
+  <tr>
+    <td><table width="698" bgcolor="#FFFFFF">
+      <tr>
+        <td><table width="696" bgcolor="#4d9edf" style="color:#FFFFFF;">
+        <tr>
+          <td><table width="680" align="center"><tr>
+              <td width="530">Hello <strong>$name,</strong><br />
+                  <br />
+                  <strong>Congratulations… </strong><br>
+                You have been allotted with <b>10 BBS points</b> on behalf of your  Registration. </td>
+              <td width="152" valign="top"><img src="http://bharatbuysell.com/bbsimages/EmailLogo.gif" width="146" height="76" alt="Bharatbuysell" /></td></tr></table></td>
+            </tr>
+
+        <tr>
+          <td>
+          <table width="680" align="center"><tr><td>This is account confirmation mail from Bharatbuysell.com. This  email is important and it contains Bharatbuysell account information, do keep  this email safely.</td></tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <table bgcolor="#F9F9F9" align="center" width="672"><tr><td>
+              <table bgcolor="#f9f9f9" width="670" style="color:#000000;padding-left:20px;" align="center"><tr><td width="70"><strong>Login</strong></td><td width="10"><strong>:</strong></td><td>$usName</td></tr>
+             <tr><td width="70"> <strong>Password</strong></td><td width="10"><strong>:</strong></td><td>$pwd</td></tr></table>
+           </td></tr></table>
+           </td>
+        </tr>
+        <tr>
+          <td>
+             <table align="center" width="680"><tr><td>
+             <b><u>Benefits of registering in Bharatbuysell.com:</u></b></td></tr></table>
+          </td>
+        </tr>
+        <tr>
+        <td>
+        <table align="left" width="680"><tr><td>
+        <ul><li>
+            On Bharatbuysell.com you can easily search or post ads, events, announcements  for anything.</li>
+            <li>
+            User Friendly - Bharatbuysell.com has been made keeping  the user in mind. The information is easily accessible through               category  browsing, easy search &amp; latest ads so that you find the information much  faster.  </li>
+            <li>Visibility - Bharatbuysell.com is a powerful platform for the  advertisers to showcase their offers &amp; receive quick          response. The ads are  clearly visible throughout the website which gives maximum visibility to the  users.</li>
+        <li>BBS Points are Bharatbuysell  points, which you can redeem for different items available and earn by</li>
+        </ul></td></tr></table>
+      </td>
+      </tr>
+      <tr>
+      <td>
+      <table align="right" width="610"><tr><td>
+            <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Making your friend  register by inviting <br />
+            <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Receiving sms/email  about special offers<br />
+            <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Posting special Ads<br />
+            <img src="http://bharatbuysell.com/bbsimages/tick.gif">&nbsp;Posting an unique article  about Bharatbuysell.<br />
+
+        </td></tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <table align="center" width="680"><tr><td><ul><li>You will receive promotional offers, discounts and other advertisements             strictly based on the preferences you opted for. However you are free to change  your preferences list in your             Bharatbuysell account at any time. </li></ul></td></tr></table>
+         </td>
+        </tr>
+        <tr>
+          <td>
+          <table align="center" width="680" ><tr><td>Please click the link to confirm to your email
+<a href=$link style="padding:0 0 10px 40px;color:#C03;text-decoration:underline;" target="_blank"><strong>Confirm your Bharatbuysell  Account</strong></a>
+            <p>To ensure that Bharatbuysell.com mails are not filtered into  your &quot;junk/bulk&quot; folder, kindly add admin@Bharatbuysell.com to the  address book of your inbox.</p>
+            <p>Warm Regards,<br />
+              Bharatbuysell Team.<br />
+              e-mail: <a href="mailto:admin@bharatbuysell.com" style="color:#000000;text-decoration:underline;">admin@bharatbuysell.com</a></p></td></tr></table>
+              </td>
+          </tr>
+    </table></td>
+      </tr>
+    </table>
+     </td>
+  </tr>
+</table>
+

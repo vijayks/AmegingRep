@@ -1,0 +1,101 @@
+
+# Xml files mapping 
+
+xmlFileName=cities.xml
+xmlFilePath=/home/ATS1/countries/
+mappingFileName=mapping.xml
+mappingFilePath=/home/ATS1/mapping/
+countryLocation=/home/ATS1/countries/
+
+# db Mapping ..
+
+dbAddress=jdbc:mysql://localhost:3306/adb?user=root&password=
+db.connection.max.poolsize = 50
+db.connection.timeout = 600000
+
+# mail server mapping
+
+mail.from=archimadan@vsnl.net
+mail.server.host=smtp.vsnl.net
+mail.server.username=archimadan
+mail.server.user.password=buysell5
+
+# site ads mapping
+
+site-add-sleep-time=60000
+add-loader-sleep-time=600000
+add-monitor-populate-number=600000
+
+#scroll ads mapping
+
+scrollAds.thread.sleepTime=1800000
+
+
+# Pagination mapping
+
+NOfpageNums=3
+top=10
+middle=20
+bottom=30
+
+
+# city filter used mapping
+localurl=/Buysell
+
+/basicSearch.do=R
+/createAd.do=R
+/clf.do=R
+/displayClfAds.do=R
+/sRefine.do=R
+/spoffer.do=R
+/ccs=R
+/specificAdsAction.do=R
+/edit_ad_for_renew.do=R
+/edit_ad_for_update.do=R
+/delete_specific_ads.do=R
+/delete_specific_ads.do=R
+/deleteSavedSearch.do=R
+/deleteSavedAlert.do=R
+/redemptionPage2.do=r
+/dealers.do=R
+
+typeFile=types.txt
+PRICE=N
+imgsrc=/Ameging/
+
+jackrabbit.home=/Ameging/jrb
+
+
+invite.mail.subject=Invitation from Bharatbuysell.com
+citi.thread.sleepTIme=3600000
+
+smsurl=http://www.perfectsmsc.com/messageapi.asp?username=blueignite&password=madan&sender=BBuysell
+maxCount=5
+maxPerAd=1
+articleurl=http://localhost:8090/ba/br
+smsAlertDelayWorkerDelayTime=1800000
+
+#db Connection check time
+
+DbConnectionCheck=3600000
+
+
+#bbs POINTS MAPPING
+Ipod=1600
+CoffeeMug=700
+T-Shirt=600
+SpecialAd=400
+Cap=400
+Travelling-Bag=900
+
+
+#email subjects
+InviteEmailTemplate.vm=
+postingAd.vm=
+regConfirmation.vm=
+resendEmailCode.vm=
+resetPassword.vm=
+sendToFriend.vm=
+
+#rupeemail confirmation mesg
+rupeeMailReg=10 BBS points on behalf of Registration through www.rupeemail.in
